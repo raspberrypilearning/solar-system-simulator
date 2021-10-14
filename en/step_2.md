@@ -29,9 +29,6 @@ Find the `# load_planets function` comment. Create the function below it and, in
 ---
 language: python
 filename: main.py — load_planets()
-line_numbers: true
-line_number_start:  
-line_highlights: 
 ---
 # load_planets function
 def load_planets():
@@ -62,9 +59,6 @@ Call `load_planets()` in your `setup()` function.
 ---
 language: python
 filename: main.py — setup()
-line_numbers: true
-line_number_start: 
-line_highlights: 
 ---
 def setup():
   # Put code to run once here
@@ -94,9 +88,6 @@ Find the `#draw_orbits function` comment. Create the function below it and add t
 ---
 language: python
 filename: main.py — draw_orbits()
-line_numbers: true
-line_number_start: 
-line_highlights: 
 ---
 # draw_orbits function
 def draw_orbits():
@@ -118,9 +109,6 @@ Call your `draw_orbits()` function from your `draw()` function.
 ---
 language: python
 filename: main.py — draw()
-line_numbers: true
-line_number_start: 
-line_highlights: 
 ---
 def draw():
   # Put code to run every frame here
