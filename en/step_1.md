@@ -3,7 +3,7 @@
 Get introduced to Python dictionaries by creating a model of the Solar System.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896. Thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
+<span style="color: #0faeb0">**The limits of models:**</span> Even the most advanced models smiplify things, or leave out details, to make them easier to build and run. This model keeps the order of the planets' speeds and sizes, but not their exact relationships. To keep Mercury large enough to click, and slow-moving enough for users to catch it, you need to ignore the fact that Neptune is more than 600 times slower, and Jupiter is over 24000 times its size!
 </p>
 
 You will:
