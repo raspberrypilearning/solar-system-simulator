@@ -42,7 +42,7 @@ def load_planets():
       'speed': 1,
       'info': 'The smallest, and fastest, planet.'
   }
---- /code --
+--- /code ---
 
 --- /task ---
 
