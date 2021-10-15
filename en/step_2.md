@@ -62,7 +62,6 @@ filename: main.py — setup()
 ---
 def setup():
   # Put code to run once here
-  global cx, cy
   size(400, 400)
   frame_rate(60)
   load_planets()
@@ -127,8 +126,6 @@ def draw():
  **Test:** Run your code and see the orbit of Mercury appear.
 
 ![A yellow circle, surrounded by a white ring, on a black background.](images/mercury_orbit.png)
-
-**Debug:** if you get a message about `cx` or `cy` being 'not defined', check your `setup()` to be sure they are declared `global`. If they are, check that they're also assigned values in `setup()`.
 
 **Debug:** if you get a message about `mercury` being 'not defined', check your `load_planets()` to be sure that it declares `mercury` as `global`. Also, check that `load_planets()` is called in `setup()`.
 

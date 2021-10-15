@@ -9,6 +9,8 @@ Draw the planet Mercury in orbit of the sun.
 </div>
 </div>
 
+### Draw Mercury
+
 The code for creating an orbiting planet has been included for you in the `make_planet()` function.
 
 --- task ---
