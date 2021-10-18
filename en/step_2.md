@@ -11,7 +11,7 @@ Create a dictionary of data about Mercury, and draw its orbit.
 
 --- task ---
 
-Open the [Solar System starter project](https://trinket.io/python/b5352050e7){:target="_blank"}. Trinket will open in another browser tab.
+Open the [Solar System starter project](https://trinket.io/python/33d830b0ce){:target="_blank"}. Trinket will open in another browser tab.
 
 If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
