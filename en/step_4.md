@@ -5,18 +5,18 @@
 Add Venus and Earth to join Mercury in your model.
 </div>
 <div>
-![A yellow circle, surrounded by three white rings, with a red circle rotating around the inner ring, on a black background.](images/all_orbits.gif)
+![A black background with a yellow circle, surrounded by three white rings. A red circle is orbiting around the inside ring.](images/all_orbits.gif)
 </div>
 </div>
 
-Values for other planets have been incldued in the `planets.csv` file.
+Values for other planets are in the `planets.csv` file.
 
 --- collapse ---
 ---
 title: What's in planets.csv?
 ---
 
-`planets.csv` has a line of headings, followed by one line for each planet in the Solar System. The colour of a planet is broken up into three values — one each for red, green, and blue. For example:
+`planets.csv` has a line of headings, followed by one line for each planet in the Solar System. The colour of a planet is made of three values — one each for red, green, and blue. For example:
 
 ```
 planet,colour_r,colour_g,colour_b,size,orbit,speed,info
@@ -34,8 +34,8 @@ Add `global` variables for Venus and Earth to your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start:  
-line_highlights:
+line_number_start: 42
+line_highlights: 44
 ---
 # load_planets function
 def load_planets():
@@ -46,15 +46,15 @@ def load_planets():
 
 --- task ---
 
-Add code below your `mercury` dictionary to load the information in `planets.csv` to a variable and then split it into a list of lines.
+Below your `mercury` dictionary, load `planets.csv` to a variable. Then split that variable into a list of lines.
 
 --- code ---
 ---
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start:  
-line_highlights:
+line_number_start: 46
+line_highlights: 55
 ---
   mercury = {
       'name': 'Mercury',
@@ -72,19 +72,19 @@ line_highlights:
 
 --- /task ---
 
-Now you have the data loaded into your program. Next, you'll that data into dictionaries like the one you made for Mercury.
+Now you have the data in your program. Next, you'll make that data into dictionaries, like the one you made for Mercury.
 
 --- task ---
 
-After loading the file, split `lines[2]` at the commas. Load the list of values that creates into a `venus` dictionary. Turn any text strings of numbers into Python numbers — using `int()` and `float()` — as you do.
+Split `lines[2]` at the commas and store it in `planet`. Load the list of values from `planet` into a `venus` dictionary. As you are making the dictionary, change any numbers from text to Python numbers using `int()` and `float()`.
 
 --- code ---
 ---
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start:  
-line_highlights:
+line_number_start: 55
+line_highlights: 59-67
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -103,11 +103,11 @@ line_highlights:
 
 --- /task ---
 
-Next you'll the `earth` data in the same way. The code to do this is almost the same as the code for `venus`, so you can save a lot of work here by copying it.
+Next you'll the add `earth` data in the same way. The code to do this is almost the same as the code for `venus`. You can save time by copying and pasting the code instead of typing it again.
 
 --- task ---
 
-Copy the `venus` code and paste it a few lines down. Then just change `lines[2]` to `lines[3]` and `venus` to `earth`. Check that the indentation of the first line is still correct.
+Copy the `venus` code and paste it below the original. Change `lines[2]` to `lines[3]`, and `venus` to `earth`. Check that the indentation of the first line is still correct.
 
 --- collapse ---
 ---
@@ -117,9 +117,9 @@ title: Copying and pasting
 You can copy text and paste a copy in another place.
 
  1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C`, or `Cmd + C` on a Mac.
- 3. Move your the text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V`, or `Cmd + V` on a Mac.
+ 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C` on Windows or Linux, or `Cmd + C` on a Mac.
+ 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
+ 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
 
 --- /collapse ---
 
@@ -130,8 +130,8 @@ You can copy text and paste a copy in another place.
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start:  
-line_highlights:
+line_number_start: 55
+line_highlights: 69-77
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -170,8 +170,8 @@ Go to your `draw_orbits()` function and add the orbits of Venus and Earth.
 language: python
 filename: main.py — draw_orbits()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 24
+line_highlights: 30-31
 ---
 # draw_orbits function
 def draw_orbits():
@@ -190,8 +190,10 @@ def draw_orbits():
 
  **Test:** Run your code and see the orbits of Venus and Earth appear.
 
-![A yellow circle, surrounded by three white rings, with a red circle rotating around the inner ring, on a black background.](images/all_orbits.gif)
+![A black background with a yellow circle, surrounded by three white rings. A red circle is orbiting around the inside ring.](images/all_orbits.gif)
 
-**Debug:** if you get a message about `venus` or `earth` being 'not defined', check your `load_planets()` to be sure that it declares them as `global`.
+**Debug:** if you see a message about `venus` or `earth` being 'not defined', check `load_planets()`. Make sure you have declared `venus` and `earth`  as `global`.
 
 --- /task ---
+
+--- save ---

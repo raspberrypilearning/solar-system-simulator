@@ -1,58 +1,63 @@
-
 --- question ---
 
 ---
 legend: Question 2 of 3
 ---
 
-Your project used data loaded from a file to let you chart hundreds of pieces of information. Which of these pieces of code would correctly load `data.csv` into a variable as a text string?
+Your project read a lot of data from dictionaries to create the planets and their orbits. If your program contained this dictionary, how would you print the height of the mountain?
+
+```python
+
+mountain = {
+ 'name': 'Kangchenjunga',
+ 'range': 'Himalayas',
+ 'height': '8586 metres'
+}
+
+```
 
 --- choices ---
 
+- ( ) 
+```python
+print(height)
+```
+  --- feedback ---
+
+  Not exactly, this would print a variable called `height`. This dictionary is in the `mountain` variable.
+
+  --- /feedback ---
+
 - (x) 
 ```python
-with open('data.csv') as f:
-  info = f.read()
+print(mountain['height'])
 ```
+
   --- feedback ---
 
-  That's correct! This will load `data.csv` as `f` and then `read()` it into `info` as a text string.
+    Correct! This will print the value stored with the `height` key.
 
   --- /feedback ---
 
 - ( ) 
 ```python
-open('data.csv') as f:
-  info = f.read()
+print(mountain{'height'})
 ```
 
   --- feedback ---
-
-  Not quite, this is very close, but it's missing something important at the start.
+ 
+  Almost right — braces (`{}`) are used to create a dictionary. But a different pair of characters are used to get a value from it.
 
   --- /feedback ---
 
 - ( ) 
 ```python
-with open('data.csv') as f:
-info = f.read()
+print(mountain)
 ```
 
   --- feedback ---
-  
-  Very close! This is all the correct code, but the indentation is wrong.
-
-  --- /feedback ---
-
-- ( ) 
-```python
-with open('data.csv') as f:
-  info = read(f)
-```
-
-  --- feedback ---
-  
-  Not exactly — the `read()` function belongs to the file stored in `f`, so you have to call it with `.` instead of by passing `f` to it.
+ 
+  Close! This will print the whole dictionary — you just want to print the value stored with the 'height' key.
 
   --- /feedback ---
 

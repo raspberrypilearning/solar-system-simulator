@@ -3,7 +3,7 @@
 Get introduced to Python dictionaries by creating a model of the Solar System.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The limits of models:**</span> Even the most advanced models smiplify things, or leave out details, to make them easier to build and run. This model keeps the order of the planets' speeds and sizes, but not their exact relationships. To keep Mercury large enough to click, and slow-moving enough for users to catch it, you need to ignore the fact that Neptune is more than 600 times slower, and Jupiter is over 24000 times its size!
+<span style="color: #0faeb0">**The limits of models:**</span> Even very advanced models leave out details, to make them easier to build and run. This model keeps the order of the planets' speeds and sizes. But, for example, Mercury needs to be slow enough to click. So the model makes Mercury faster than the other planets, but not as fast as it really is.
 </p>
 
 You will:
@@ -28,3 +28,4 @@ Run the program to create the model. Try clicking on each planet to see facts ab
 --- print-only ---
 ![Completed project](images/completed_preview.png)
 --- /print-only ---
+

@@ -1,6 +1,6 @@
 ## Reflection
 
-Well done, you've made an interactive chart! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Well done, you've made a model of our Solar System! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
 
 Answer the three questions below to reflect on what you've learnt.
 
@@ -14,51 +14,60 @@ Have fun!
 legend: Question 1 of 3
 ---
 
-You created and used a lot of lists in your project. Which of these is the proper way to create a list of animal names?
+You made a lot of dictionaries in your project. Which of these is the right way to create a dictionary about a person?
 
 --- choices ---
 
 - ( ) 
 ```python
-names = ('cat', 'dog', 'rabbit')
+person = ['age', 12, 'hair', 'brown']
 ```
 
   --- feedback ---
 
-  Close! But lists don't use parentheses — `()`.
+  Not quite, this is a list. Lists are made with square brackets (`[]`).
+
+  --- /feedback ---
+
+- ( ) 
+```python
+person = {
+  'age' = 12,
+  'hair' = 'brown'
+}
+```
+
+  --- feedback ---
+
+  Close! But, when making a dictionary, keys and their values aren't separated by `=`.
+
+  --- /feedback ---
+
+- ( ) 
+```python
+person = {
+  age: 12,
+  hair: 'brown'
+}
+```
+
+  --- feedback ---
+
+  Almost. Dictionary keys need to be values — text strings, numbers, etc.
 
   --- /feedback ---
 
 - (x) 
 ```python
-names = ['cat', 'dog', 'rabbit']
+person = {
+  'age': 12,
+  'hair': 'brown'
+}
 ```
 
   --- feedback ---
 
-  That's correct! Square brackets (`[]`) and commas between the items on the list.
-
-  --- /feedback ---
-
-- ( ) 
-```python
-names = ['cat' 'dog' 'rabbit']
-```
-
-  --- feedback ---
-
-  Not quite, list items are separated by more than spaces.
-
-  --- /feedback ---
-
-- ( ) 
-```python
-names = ['cat': 'dog': 'rabbit']
-```
-
-  --- feedback ---
-
-  Very close, but lists aren't separated by colons (`:`).
+  Correct! Dictionaries are created with `{}`. Each key and value is separated with `:`, and pairs of `key: value` are separated by `,`. You can also make the dictionary with one line for each pair, to make it easier to read.
 
   --- /feedback ---
 

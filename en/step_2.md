@@ -5,7 +5,7 @@
 Create a dictionary of data about Mercury, and draw its orbit.
 </div>
 <div>
-![A yellow circle, surrounded by a white ring, on a black background.](images/mercury_orbit.png){:width="300px"}
+![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png){:width="300px"}
 </div>
 </div>
 
@@ -19,16 +19,47 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 ### Make a dictionary
 
-You can create a dictionary using braces `{}`. Python uses dictionaries to store a **value** with a **key**. You can use the key get the value later.
+You can use a normal dictionary to look up a word's meaning. Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (e.g. `'distance'`) to get a value that's a number, or anything else you can store in Python .
+
+--- collapse ---
+---
+title: Python dictionaries
+---
+
+A dictionary in Python stores pairs of **keys** and **values**.
+
+Both a keys and values can be almost any value you can store in Python. Although neither lists nor dictionaries can be keys.
+
+You can use a key to get its connected value.
+
+To make a dictionary you use braces (`{}`), with key: value pairs, separated by commas, inside. For example:
+
+```python
+person = {
+  'age': 12,
+  'height': 149.5,
+  'hair': 'brown',
+}
+```
+`age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets (`[]`). For example:
+
+```python
+print(person['hair'])
+```
+Will print out the value `brown`.
+--- /collapse ---
 
 --- task ---
 
-Find the `# load_planets function` comment. Create the function below it and, inside the function, a global `mercury` dictionary with some keys and values about the planet.
+Find the `# load_planets function` comment. Create the function below the comment. Inside the function, make a global `mercury` dictionary.  Then, add information about Mercury to the dictionary.
 
 --- code ---
 ---
 language: python
 filename: main.py — load_planets()
+line_numbers: true
+line_number_start: 30
+line_highlights: 31-41
 ---
 # load_planets function
 def load_planets():
@@ -46,10 +77,7 @@ def load_planets():
 
 --- /task ---
 
-When creating a dictionary write your key, followed by a colon, then the value you want to link to that key. For example: `'size': 15`. Put a comma between each key:value pair. 
-
-
-You can put each pair on its own line. This makes the code easier to read, but be sure to keep it all inside the braces (`{}`).
+You can put each key: value pair on its own line. This makes the code easier to read, but be sure to keep it all inside the braces (`{}`).
 
 --- task ---
 
@@ -59,6 +87,9 @@ Call `load_planets()` in your `setup()` function.
 ---
 language: python
 filename: main.py — setup()
+line_numbers: true
+line_number_start: 44
+line_highlights: 48
 ---
 def setup():
   # Put code to run once here
@@ -74,19 +105,22 @@ def setup():
 ### Draw Mercury's orbit
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Modeling orbits:**</span> the real planets don't orbit in perfect circles. Their orbits are actually oval shaped. But using circles makes the model easier to build!
+<span style="color: #0faeb0">**Modeling orbits:**</span> The real planets' orbits are not perfect circles — they're oval shaped. But using circles makes the model easier to build!
 </p>
 
-You can get a value out of a dictionary using its key in square brackets (`[]`), just like getting a list item by its index. For example `mercury['size']` would get you the matching value, `15`.
+You can get a value out of a dictionary using its key in square brackets (`[]`),  like getting a list item by its index. For example `mercury['size']` would get you the matching value, `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the function below it and add the code to draw Mercury's orbit around the centre using the `orbit` value from the `mercury` dictionary.
+Find the `#draw_orbits function` comment. Create the function below it. Then draw Mercury's orbit around the centre of the model.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw_orbits()
+line_numbers: true
+line_number_start: 24
+line_highlights: 25-29
 ---
 # draw_orbits function
 def draw_orbits():
@@ -108,6 +142,9 @@ Call your `draw_orbits()` function from your `draw()` function.
 ---
 language: python
 filename: main.py — draw()
+line_numbers: true
+line_number_start: 56
+line_highlights: 61 
 ---
 def draw():
   # Put code to run every frame here
@@ -125,14 +162,19 @@ def draw():
 
  **Test:** Run your code and see the orbit of Mercury appear.
 
-![A yellow circle, surrounded by a white ring, on a black background.](images/mercury_orbit.png)
+![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png)
 
-**Debug:** if you get a message about `mercury` being 'not defined', check your `load_planets()` to be sure that it declares `mercury` as `global`. Also, check that `load_planets()` is called in `setup()`.
+**Debug:** if you see a message about `mercury` being 'not defined':
+ - check your `load_planets()` to be sure that it declares `mercury` as `global`
+ - check that `load_planets()` is called in `setup()`
 
-**Debug:** if the orbit isn't appearing, check that you have called `draw_orbits()` in your `draw()` function. Also, check `draw_orbits()` to be sure you have used `stroke(255)` to make the ellipse white.
+**Debug:** if the orbit isn't appearing:
+ - check that you have called `draw_orbits()` in your `draw()` function
+ - check `draw_orbits()` to be sure you have used `stroke(255)` to make the ellipse white
 
-**Debug:** if the orbit is a filled circle, instead of a ring, make sure you have included `no_fill()` in your `draw_orbits()` function.
+**Debug:** if the orbit is a filled circle, instead of a ring, check you have `no_fill()` in your `draw_orbits()` function.
 
 --- /task ---
 
 --- save ---
+

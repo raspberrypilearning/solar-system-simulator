@@ -5,25 +5,25 @@
 Draw the planet Mercury in orbit of the sun.
 </div>
 <div>
-![A yellow circle, surrounded by a white ring, with a red circle rotating around the ring, on a black background.](images/mercury_click.gif){:width="300px"}
+![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury_click.gif){:width="300px"}
 </div>
 </div>
 
 ### Draw Mercury
 
-The code for creating an orbiting planet has been included for you in the `make_planet()` function.
+The `make_planet()` function to draw a planet was included as part of the starter project.
 
 --- task ---
 
-Find the `# draw_planets function` comment. Create the function below it and add code to call `make_planet()` with Mercury's colour, orbit, size, and speed.
+Find the `# draw_planets function` comment. Create the function below it. Then add code to your function to call `make_planet()`, passing it the values it needs.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 32
+line_highlights: 33-39
 ---
 # draw_planets function
 def draw_planets():
@@ -35,21 +35,21 @@ def draw_planets():
     )
 --- /code ---
 
-**Tip:** You created your dictionary with one line for each key:value pair. You can do the same with function parameters, to make the code easier to read.
+**Tip:** You created your dictionary with one line for each key:value pair. You can do the same when passing values to a function, to make your code easier to read.
 
 --- /task ---
 
 --- task ---
 
-Add a call to your `draw_planets()` in the `draw()` function, so the planets get redrawn in every frame.
+Add a call to your `draw_planets()` in the `draw()` function.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 63
+line_highlights: 69
 ---
 def draw():
   # Put code to run every frame here
@@ -66,36 +66,39 @@ def draw():
 
 **Test:** Run your code and see Mercury in orbit!
 
-![A yellow circle, surrounded by a white ring, with a red circle rotating around the ring, on a black background.](images/mercury.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check that all the keys you are using when calling `make_planet()` are spelt the same way as in `load_planets()`. Whether the letters are UPPERCASE or lowercase is important too.
+**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPERCASE or lowercase is important too.
 
-**Debug:** If Mercury doesn't appear, check that you are calling `draw_planets()` in your `draw()` function and that it is after `background(0)`.
+**Debug:** If Mercury doesn't appear:
+ - check that you are calling `draw_planets()` in `draw()` 
+ - make sure that call is after `background(0)`
 
-**Debug:** If Mercury is too big, moving too slowly, or still not visible, check that the order of the parameters in your `draw_planets()` function matches the example above.
+**Debug:** If Mercury is too big, too slow, or not visible: Check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
 
 --- /task ---
 
 ### Tell users about the planet
 
-When users click on Mercury, your program should print the information about the planet in `mercury['info']`. The project already has the `mouse_pressed()` function and code for getting the colour the mouse was clicked on.
+Users will click on Mercury. Then your program will print the information in `mercury['info']`.
+
+The `mouse_pressed()` function was included as part of the starter project. It contains code to get the colour a user clicked on. You can use this to tell which planet they have clicked.
+
 
 --- task ---
 
-Find the `mouse_pressed()` function and add an `if` statement that will prent Mercury's name and information when its colour is clicked.
+Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
 
 --- code ---
 ---
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start:  
-line_highlights: 
+line_number_start: 72 
+line_highlights: 77-79
 ---
-
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
-  no_stroke()
   pixel_colour = color(get(mouse_x, mouse_y))
 
   if pixel_colour == mercury['colour']:
@@ -110,11 +113,10 @@ def mouse_pressed():
 
 **Test:** Run your code and click on Mercury to see its information print out. If it's moving too fast, change the `frame_rate()` value in `setup()` to slow the whole model down.
 
-![A yellow circle, surrounded by a white ring, with a red circle rotating around the ring, on a black background. Information about Mercury appears in the text output.](images/mercury_click.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring. Information about Mercury appears in the text output.](images/mercury_click.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Mercury: ceck that your condition looks exactly like `if pixel_colour == mercury['colour']:`. Make sure you have `==` and not just `=`.
+**Debug:** If nothing happens when you click on Mercury check your `if` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 
-**Debug:** If you get a message about 'KeyError' when you click on Mercury, check that your spellings for `mercury['name']` and `mercury['info']` match the spellings in `load_planets()`
+**Debug:** If you get a message about 'KeyError', check the spelling of your keys (`'name'` and `'info'`) in `mouse_pressed()`. Make sure the spelling is the same in `load_planets()`.
 
 --- /task ---
-

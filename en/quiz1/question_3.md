@@ -5,16 +5,22 @@
 legend: Question 3 of 3
 ---
 
-You have a program with this code:
+Your program took values from a list and stored them in a dictionary. If you have a program with this code:
 
 --- code ---
 ---
 language: python
 ---
 
-colours = ['red', 'green', 'blue', 'yellow', 'pink', 'brown']
+pets = ['cat', 'dog', 'rabbit']
 
-print(colour[2])
+person = {
+  'age': 12,
+  'hair': 'brown',
+  'pet': pets[1]
+}
+
+print(person['pet'])
 
 --- /code ---
 
@@ -22,52 +28,46 @@ If you run the program, which of these would you expect it to display?
 
 --- choices ---
 
-- ( ) 
-```
-red
-green
-blue
-yellow
-pink
-brown
-```
-  --- feedback ---
-  
-  That's not quite right — a particular list element has been selected using `[]`.
-
-  --- /feedback ---
-
 - (x) 
 ```
-blue
+dog
 ```
-
   --- feedback ---
-
-  That's correct! 'blue' is the list item which was selected for printing.
+  
+  That's right! The `person` dictionary has saved 'dog' — which has the index `1` in the `pets` list — with the 'pet' key.
 
   --- /feedback ---
 
 - ( ) 
 ```
-green
+cat
 ```
 
   --- feedback ---
-  
-  Not exactly. Although 'green' is the second item in the list, list indexes start at `0`.
+
+  Close — 'cat' is the first item in `pets`, but list indexes don't start from `1`.
 
   --- /feedback ---
 
 - ( ) 
 ```
-blue
-blue
+pets[1]
 ```
 
   --- feedback ---
   
-  Not quite. The `2` in the square brackets is the index of the item to be printed, not the number of times to print it.
+  Not exactly. Python will get the string stored at `pets[1]` and store that string in `person` with the 'pet' key.
+
+  --- /feedback ---
+
+- ( ) 
+```
+['cat', 'dog', 'rabbit']
+```
+
+  --- feedback ---
+  
+  Not quite. This is the whole `pets` list. But only one item from that list was added to the dictionary.
 
   --- /feedback ---
 
