@@ -95,7 +95,7 @@ language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
 line_number_start: 72 
-line_highlights: 77-79
+line_highlights: 76-78
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
