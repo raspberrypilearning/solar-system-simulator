@@ -10,7 +10,7 @@ steps:
   - title: Create a dictionary
   - title: Make Mercury
   - title: Load more planets
-  - title: Add interaction
+  - title: Make Venus & Earth
   - title: Reflection
     knowledge_quiz:
       path: quiz1
