@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a dictionary of data about Mercury, and draw its orbit.
+To start, you'll collect some information about Mercury and draw its orbit.
 </div>
 <div>
 ![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png){:width="300px"}
@@ -19,7 +19,7 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 ### Make a dictionary
 
-You can use a normal dictionary to look up a word's meaning. Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (e.g. `'distance'`) to get a value that's a number, or anything else you can store in Python .
+You can use a normal dictionary to look up a word's meaning. Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (like `'distance'`) to get a value that's a number, or anything else you can store in Python .
 
 --- collapse ---
 ---
@@ -28,11 +28,11 @@ title: Python dictionaries
 
 A dictionary in Python stores pairs of **keys** and **values**.
 
-Both a keys and values can be almost any value you can store in Python. Although neither lists nor dictionaries can be keys.
+Both keys and values can be almost any value you can store in Python. Although neither lists nor dictionaries can be keys.
 
 You can use a key to get its connected value.
 
-To make a dictionary you use braces (`{}`), with key: value pairs, separated by commas, inside. For example:
+To make a dictionary you use curly brackets `{}`, with key: value pairs inside. A pair is a key, followed by a colon (`:`), followed by the value connected to that key. For example:
 
 ```python
 person = {
@@ -41,7 +41,7 @@ person = {
   'hair': 'brown',
 }
 ```
-`age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets (`[]`). For example:
+`age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets `[]`. For example:
 
 ```python
 print(person['hair'])
@@ -52,6 +52,41 @@ Will print out the value `brown`.
 --- task ---
 
 Find the `# load_planets function` comment. Create the function below the comment. Inside the function, make a global `mercury` dictionary.  Then, add information about Mercury to the dictionary.
+
+<table>
+<thead>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>name</td>
+    <td>Mercury</td>
+  </tr>
+  <tr>
+    <td>colour</td>
+    <td>color(165, 42, 42)</td>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>orbit</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <td>speed</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>info</td>
+    <td>The smallest, and fastest, planet.</td>
+  </tr>
+</tbody>
+</table>
 
 --- code ---
 ---
@@ -74,10 +109,10 @@ def load_planets():
       'info': 'The smallest, and fastest, planet.'
   }
 --- /code ---
-
+**Tip:** You can put each key: value pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
 --- /task ---
 
-You can put each key: value pair on its own line. This makes the code easier to read, but be sure to keep it all inside the braces (`{}`).
+Using a dictionary lets you keep all the information about Mercury in one place. This makes it easier to find it, and change it if you need to.
 
 --- task ---
 
@@ -108,11 +143,13 @@ def setup():
 <span style="color: #0faeb0">**Modeling orbits:**</span> The real planets' orbits are not perfect circles — they're oval shaped. But using circles makes the model easier to build!
 </p>
 
-You can get a value out of a dictionary using its key in square brackets (`[]`),  like getting a list item by its index. For example `mercury['size']` would get you the matching value, `15`.
+You can get a value out of a dictionary using its key in square brackets `[]`,  like getting a list item by its index. For example `mercury['size']` would get you the matching value, `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the function below it. Then draw Mercury's orbit around the centre of the model.
+Find the `#draw_orbits function` comment. Create the function below it. Then draw Mercury's orbit around the centre of the model using `ellipse`.
+
+[[[processing-python-ellipse]]]
 
 --- code ---
 ---
