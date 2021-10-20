@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Draw Venus and Earth to join Mercury in orbit.
+See Venus and Earth orbit the sun.
 </div>
 <div>
 ![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Venus and Earth appear in the text output.](images/all_planets_info.gif){:width="400px"}

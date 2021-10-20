@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Draw the planet Mercury in orbit of the sun.
+Now you'll put Mercury in orbit of the sun.
 </div>
 <div>
 ![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury_click.gif){:width="300px"}
