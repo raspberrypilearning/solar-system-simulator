@@ -11,6 +11,10 @@ You will:
  - Load data from a file into **dictionaries**
  - Create an animated, interactive, Solar System model using the `p5` library
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**Dicitionaries:**</span> When you make a Python dictionary it stores things you can look up later. This is a lot like a normal dictionary. But the Python version can store much more than the meanings of words!
+</p>
+
 --- no-print ---
 --- task ---
 ### Try it

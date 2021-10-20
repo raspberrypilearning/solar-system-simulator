@@ -21,6 +21,8 @@ title: What's in planets.csv?
 ```
 planet,colour_r,colour_g,colour_b,size,orbit,speed,info
 Mercury,165,42,42,15,150,1,The smallest and fastest planet.
+Venus,255,190,200,30,200,0.75,The hottest planet in the Solar System. Water would turn to steam and some metals would melt just by being there!
+Earth,104,149,197,35,300,0.5,You are here — the only planet we know of that can support life.
 ```
 
 --- /collapse ---
@@ -46,7 +48,9 @@ def load_planets():
 
 --- task ---
 
-Below your `mercury` dictionary, load `planets.csv` to a variable. Then split that variable into a list of lines.
+Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then use the `splitlines()` function to split the text string in `data` into a list. Each line in the string will become an item in the list.
+
+[[[generic-python-file-read]]]
 
 --- code ---
 ---
@@ -54,7 +58,7 @@ language: python
 filename: main.py — load_planets()
 line_numbers: true
 line_number_start: 46
-line_highlights: 55
+line_highlights: 55-57
 ---
   mercury = {
       'name': 'Mercury',
@@ -72,7 +76,7 @@ line_highlights: 55
 
 --- /task ---
 
-Now you have the data in your program. Next, you'll make that data into dictionaries, like the one you made for Mercury.
+Now you have the data in your program. Next, you'll make that data into dictionaries, like the one you made for Mercury. `lines[2]` has the data for Venus, and `lines[3]` has the dat for Earth.
 
 --- task ---
 

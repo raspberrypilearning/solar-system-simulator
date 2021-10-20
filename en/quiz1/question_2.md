@@ -24,7 +24,7 @@ print(height)
 ```
   --- feedback ---
 
-  Not exactly, this would print a variable called `height`. This dictionary is in the `mountain` variable.
+  Not exactly, this would print a variable called `height`. This dictionary is called `mountain`.
 
   --- /feedback ---
 
