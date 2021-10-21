@@ -11,7 +11,7 @@ Now you'll put Mercury in orbit of the sun.
 
 ### Draw Mercury
 
-The `make_planet()` function to draw a planet was included as part of the starter project.
+The `make_planet()` function to draw a planet was included as part of the starter project. It takes the colour, orbit, size and speed of a planet. Then it draws the planet orbiting the sun.
 
 --- task ---
 
