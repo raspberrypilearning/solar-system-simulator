@@ -22,8 +22,8 @@ Find the `# draw_planets function` comment. Create the function below it. Then a
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 32
-line_highlights: 33-39
+line_number_start: 18
+line_highlights: 19-25
 ---
 # draw_planets function
 def draw_planets():
@@ -46,10 +46,10 @@ Add a call to your `draw_planets()` in the `draw()` function.
 --- code ---
 ---
 language: python
-filename: main.py — draw_planets()
+filename: main.py — draw()
 line_numbers: true
-line_number_start: 63
-line_highlights: 69
+line_number_start: 49
+line_highlights: 55
 ---
 def draw():
   # Put code to run every frame here
@@ -94,8 +94,8 @@ Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's nam
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 72 
-line_highlights: 76-78
+line_number_start: 58 
+line_highlights: 62-64
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here

@@ -22,8 +22,8 @@ Go to your `draw_planets()` function. Add `make_planet()` calls, passing it the 
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 34
-line_highlights: 43-55
+line_number_start: 20
+line_highlights: 29-41
 ---
 # draw_planets function
 def draw_planets():
@@ -76,8 +76,8 @@ In `mouse_pressed()` add `elif` statements after the `if` you made for Mercury. 
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 112 
-line_highlights: 119-125
+line_number_start: 98 
+line_highlights: 105-111
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
