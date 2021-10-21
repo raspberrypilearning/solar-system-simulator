@@ -11,27 +11,35 @@ Now you'll put Mercury in orbit of the sun.
 
 ### Draw Mercury
 
-The `make_planet()` function to draw a planet was included as part of the starter project.
+The `make_planet()` function was included as part of the starter project. `make_planet()` takes the colour, orbit, size and speed of a planet. Then it draws the planet orbiting the sun.
 
 --- task ---
 
-Find the `# draw_planets function` comment. Create the function below it. Then add code to your function to call `make_planet()`, passing it the values it needs.
+Find the `# draw_planets function` comment. Create the function below it. 
+
+Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 32
-line_highlights: 33-39
+line_number_start: 18
+line_highlights: 19-30
 ---
 # draw_planets function
 def draw_planets():
+  
+  colour = mercury['colour']
+  orbit = mercury['orbit']
+  size = mercury['size']
+  speed = mercury['speed']
+
   make_planet(
-    mercury['colour'], 
-    mercury['orbit'], 
-    mercury['size'], 
-    mercury['speed']
+    colour, 
+    orbit, 
+    size, 
+    speed
     )
 --- /code ---
 
@@ -46,10 +54,10 @@ Add a call to your `draw_planets()` in the `draw()` function.
 --- code ---
 ---
 language: python
-filename: main.py — draw_planets()
+filename: main.py — draw()
 line_numbers: true
-line_number_start: 63
-line_highlights: 69
+line_number_start: 52
+line_highlights: 58
 ---
 def draw():
   # Put code to run every frame here
@@ -84,7 +92,6 @@ Users will click on Mercury. Then your program will print the information in `me
 
 The `mouse_pressed()` function was included as part of the starter project. It contains code to get the colour a user clicked on. You can use this to tell which planet they have clicked.
 
-
 --- task ---
 
 Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
@@ -94,8 +101,8 @@ Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's nam
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 72 
-line_highlights: 76-78
+line_number_start: 60 
+line_highlights: 64-66
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here

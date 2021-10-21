@@ -36,8 +36,8 @@ Add `global` variables for Venus and Earth to your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 42
-line_highlights: 44
+line_number_start: 32
+line_highlights: 34
 ---
 # load_planets function
 def load_planets():
@@ -57,8 +57,8 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 46
-line_highlights: 55-57
+line_number_start: 36
+line_highlights: 45-47
 ---
   mercury = {
       'name': 'Mercury',
@@ -87,8 +87,8 @@ Split `lines[2]` at the commas and store it in `planet`. Load the list of values
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 55
-line_highlights: 59-67
+line_number_start: 45
+line_highlights: 49-57
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -134,8 +134,8 @@ You can copy text and paste a copy in another place.
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 55
-line_highlights: 69-77
+line_number_start: 45
+line_highlights: 69-67
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -174,8 +174,8 @@ Go to your `draw_orbits()` function and add the orbits of Venus and Earth.
 language: python
 filename: main.py — draw_orbits()
 line_numbers: true
-line_number_start: 24
-line_highlights: 30-31
+line_number_start: 10
+line_highlights: 16-17
 ---
 # draw_orbits function
 def draw_orbits():

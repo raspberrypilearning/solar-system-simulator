@@ -19,7 +19,7 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 ### Make a dictionary
 
-You can use a normal dictionary to look up a word's meaning. Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (like `'distance'`) to get a value that's a number, or anything else you can store in Python .
+Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (like `'distance'`) to get a value that's a number, or anything else you can store in Python .
 
 --- collapse ---
 ---
@@ -93,8 +93,8 @@ Find the `# load_planets function` comment. Create the function below the commen
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 30
-line_highlights: 31-41
+line_number_start: 16
+line_highlights: 17-27
 ---
 # load_planets function
 def load_planets():
@@ -123,8 +123,8 @@ Call `load_planets()` in your `setup()` function.
 language: python
 filename: main.py — setup()
 line_numbers: true
-line_number_start: 44
-line_highlights: 48
+line_number_start: 30
+line_highlights: 34
 ---
 def setup():
   # Put code to run once here
@@ -156,8 +156,8 @@ Find the `#draw_orbits function` comment. Create the function below it. Then dra
 language: python
 filename: main.py — draw_orbits()
 line_numbers: true
-line_number_start: 24
-line_highlights: 25-29
+line_number_start: 10
+line_highlights: 11-15
 ---
 # draw_orbits function
 def draw_orbits():
@@ -180,8 +180,8 @@ Call your `draw_orbits()` function from your `draw()` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 56
-line_highlights: 61 
+line_number_start: 42
+line_highlights: 47 
 ---
 def draw():
   # Put code to run every frame here
