@@ -36,8 +36,8 @@ Add `global` variables for Venus and Earth to your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 28
-line_highlights: 30
+line_number_start: 32
+line_highlights: 34
 ---
 # load_planets function
 def load_planets():
@@ -57,8 +57,8 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 32
-line_highlights: 41-43
+line_number_start: 36
+line_highlights: 45-47
 ---
   mercury = {
       'name': 'Mercury',
@@ -87,8 +87,8 @@ Split `lines[2]` at the commas and store it in `planet`. Load the list of values
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 41
-line_highlights: 45-53
+line_number_start: 45
+line_highlights: 49-57
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -134,8 +134,8 @@ You can copy text and paste a copy in another place.
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 41
-line_highlights: 55-63
+line_number_start: 45
+line_highlights: 69-67
 ---
   with open('planets.csv') as f:
     data = f.read()

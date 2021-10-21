@@ -15,7 +15,9 @@ The `make_planet()` function was included as part of the starter project. `make_
 
 --- task ---
 
-Find the `# draw_planets function` comment. Create the function below it. Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
+Find the `# draw_planets function` comment. Create the function below it. 
+
+Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
 
 --- code ---
 ---
@@ -54,8 +56,8 @@ Add a call to your `draw_planets()` in the `draw()` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 49
-line_highlights: 55
+line_number_start: 52
+line_highlights: 58
 ---
 def draw():
   # Put code to run every frame here
@@ -90,7 +92,6 @@ Users will click on Mercury. Then your program will print the information in `me
 
 The `mouse_pressed()` function was included as part of the starter project. It contains code to get the colour a user clicked on. You can use this to tell which planet they have clicked.
 
-
 --- task ---
 
 Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
@@ -100,8 +101,8 @@ Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's nam
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 58 
-line_highlights: 62-64
+line_number_start: 60 
+line_highlights: 64-66
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
