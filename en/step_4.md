@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add Venus and Earth to join Mercury in your model.
+It's time for Venus and Earth to join Mercury in your model.
 </div>
 <div>
 ![A black background with a yellow circle, surrounded by three white rings. A red circle is orbiting around the inside ring.](images/all_orbits.gif)
