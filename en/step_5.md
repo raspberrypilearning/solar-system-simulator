@@ -1,21 +1,120 @@
-## Make Venus & Earth
+## Make Earth
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-See Venus and Earth orbit the sun.
+Now finish the model by adding the planet you're on!
 </div>
 <div>
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Venus and Earth appear in the text output.](images/all_planets_info.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
 </div>
 </div>
 
-## Draw the planets
+### Load the data
 
 --- task ---
 
-Go to your `draw_planets()` function. Add `make_planet()` calls, passing it the values for Venus and Earth.
+Add a `global` variable for Earth your `load_planets()` function:
 
-**Tip:** You copy pasted code, then made small changes, to create your `venus` and `earth` dictionaries. You can do the same here, to draw these with less typing.
+--- code ---
+---
+language: python
+filename: main.py — load_planets()
+line_numbers: true
+line_number_start: 32
+line_highlights: 34
+---
+# load_planets function
+def load_planets():
+  global mercury, venus, earth
+--- /code ---
+
+--- /task ---
+
+You already have the data in your program. Earth's data was loaded into `lines` when you loaded `planets.csv`.
+
+--- task ---
+
+Below your `venus` disctionary, split `lines[3]` and put it in an `earth` dictionary.
+
+**Tip:** You can copy-paste the code you used to make the `venus` dictionary, and then just make small changes, to save you some time.
+
+--- code ---
+---
+language: python
+filename: main.py — load_planets()
+line_numbers: true
+line_number_start: 45
+line_highlights: 69-67
+---
+  with open('planets.csv') as f:
+    data = f.read()
+    lines = data.splitlines()
+
+  planet = lines[2].split(',')
+  #print(planet)
+  venus = { 
+    'name': planet[0],
+    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])),
+    'size': int(planet[4]), 
+    'orbit': int(planet[5]),
+    'speed': float(planet[6]), 
+    'info': planet[7]
+  }
+
+  planet = lines[3].split(',') 
+  earth = { 
+    'name': planet[0],
+    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])),
+    'size': int(planet[4]), 
+    'orbit': int(planet[5]),
+    'speed': float(planet[6]), 
+    'info': planet[7]
+  }
+
+--- /code ---
+
+--- /task ---
+
+### Draw the orbit
+
+Go to your `draw_orbits()` function and add the orbit of Earth.
+
+--- code ---
+---
+language: python
+filename: main.py — draw_orbits()
+line_numbers: true
+line_number_start: 10
+line_highlights: 16
+---
+# draw_orbits function
+def draw_orbits():
+  no_fill()
+  stroke(255) # Make it white
+  
+  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+  ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+  ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+ **Test:** Run your code and see the orbits of Venus and Earth appear.
+
+![A black background with a yellow circle, surrounded by three white rings. A red and pink circles orbiting the inside rings.](images/all_orbit.gif)
+
+**Debug:** if you see a message about `earth` being 'not defined', check `load_planets()`. Make sure you have declared `earth`  as `global`.
+
+--- /task ---
+
+### Draw Earth
+
+--- task ---
+
+Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Earth. Like with Venus, you can copy-paste code here to save yourself some work.
 
 --- code ---
 ---
@@ -68,7 +167,7 @@ def draw_planets():
 
 --- task ---
 
-**Test:** Run your code and check that Venus and Earth are orbiting the Sun.
+**Test:** Run your code and check that Earth is orbiting the Sun.
 
 ![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings.](images/all_planets.gif){:width="400px"}
 
@@ -78,13 +177,13 @@ def draw_planets():
 
 --- /task ---
 
-## Tell users about the planets
+### Tell users about Earth
 
-Like Mercury, Venus and Earth should print out an interesting fact when they're clicked on.
+Like Mercury and Venus, Earth should print out an interesting fact when it's clicked on.
 
 --- task ---
 
-In `mouse_pressed()` add `elif` statements after the `if` you made for Mercury. Have them check for Venus and Earth's colours. Then, if there's a match, `print()` the right fact.
+In `mouse_pressed()` add an `elif` statement for Earth like the one you made for Venus. Have it check for Earth's colour. Then, if there's a match, `print()` the right fact.
 
 --- code ---
 ---
@@ -114,11 +213,11 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your code. Click on Venus and then Earth, to see their information print out.
+**Test:** Run your code. Click on Earth, to see its information print out.
 
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Venus and Earth appear in the text output.](images/all_planets_info.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on a planet, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Debug:** If nothing happens when you click on Earth, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 
 --- /task ---
 

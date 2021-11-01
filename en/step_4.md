@@ -1,11 +1,11 @@
-## Load more planets
+## Make Venus
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time for Venus and Earth to join Mercury in your model.
+It's time for Venus to join Mercury in your model.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by three white rings. A red circle is orbiting around the inside ring.](images/all_orbits.gif)
+![A black background with a yellow circle, surrounded by two white rings. Red, and pink circles are orbiting around the rings. Information about Venus appears in the text output.](images/venus_info.gif)
 </div>
 </div>
 
@@ -27,9 +27,11 @@ Earth,104,149,197,35,300,0.5,You are here — the only planet we know of that ca
 
 --- /collapse ---
 
+### Load the data
+
 --- task ---
 
-Add `global` variables for Venus and Earth to your `load_planets()` function:
+Add a `global` variable for Venus your `load_planets()` function:
 
 --- code ---
 ---
@@ -41,7 +43,7 @@ line_highlights: 34
 ---
 # load_planets function
 def load_planets():
-  global mercury, venus, earth
+  global mercury, venus
 --- /code ---
 
 --- /task ---
@@ -80,7 +82,7 @@ Now you have the data in your program. Next, you'll make that data into dictiona
 
 --- task ---
 
-Split `lines[2]` at the commas and store it in `planet`. Load the list of values from `planet` into a `venus` dictionary. As you are making the dictionary, change any numbers from text to Python numbers using `int()` and `float()`.
+Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out.
 
 --- code ---
 ---
@@ -88,16 +90,55 @@ language: python
 filename: main.py — load_planets()
 line_numbers: true
 line_number_start: 45
-line_highlights: 49-57
+line_highlights: 49-50
 ---
   with open('planets.csv') as f:
     data = f.read()
     lines = data.splitlines()
 
   planet = lines[2].split(',') # Split Venus' data
+  print(planet)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Try running your code, and look at the list of data it prints out. Notice that the numbers are inside  quotes (`'`). This shows that Python sees them as text strings, instead of numbers it could do maths with.
+
+![The information about Venus, printed out as a list.](images/venus_info.png)
+
+**Debug:** If your `planet` is printing out as a list with only one item then check that you have `','` in the `()` of `lines[2].split()`.
+
+**Debug:** If you see a message about `split` being 'not defined', check that you have included `lines[2].` before it.
+
+**Debug:** If you see a message like `'list' object has no attribute 'split'`, check that you have included `[2]` after `lines`.
+
+**Tip:** Now that you've used it for testing, you can comment-out `print(planet)` with `#`.
+
+--- /task ---
+
+--- task ---
+
+Load the list of values from `planet` into a `venus` dictionary. As you are making the dictionary, change any numbers from text to numbers. Use `int()` for whole numbers and `float()` for decimals.
+
+--- code ---
+---
+language: python
+filename: main.py — load_planets()
+line_numbers: true
+line_number_start: 45
+line_highlights: 51-58
+---
+  with open('planets.csv') as f:
+    data = f.read()
+    lines = data.splitlines()
+
+  planet = lines[2].split(',') # Split Venus' data
+  #print(planet)
   venus = { 
     'name': planet[0],
-    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])),
+    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
     'size': int(planet[4]), # int() for whole numbers
     'orbit': int(planet[5]),
     'speed': float(planet[6]), # float() for decimals
@@ -107,11 +148,49 @@ line_highlights: 49-57
 
 --- /task ---
 
-Next you'll the add `earth` data in the same way. The code to do this is almost the same as the code for `venus`. You can save time by copying and pasting the code instead of typing it again.
+--- task ---
+
+### Draw the orbit
+
+Go to your `draw_orbits()` function and add the orbit of Venus.
+
+--- code ---
+---
+language: python
+filename: main.py — draw_orbits()
+line_numbers: true
+line_number_start: 10
+line_highlights: 16
+---
+# draw_orbits function
+def draw_orbits():
+  no_fill()
+  stroke(255) # Make it white
+  
+  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+  ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+
+--- /code ---
+
+--- /task ---
 
 --- task ---
 
-Copy the `venus` code and paste it below the original. Change `lines[2]` to `lines[3]`, and `venus` to `earth`. Check that the indentation of the first line is still correct.
+ **Test:** Run your code and see the orbit of Venus appear.
+
+![A black background with a yellow circle, surrounded by two white rings. A red circle is orbiting around the inside ring.](images/mercury_venus_orbit.gif)
+
+**Debug:** if you see a message about `venus` being 'not defined', check `load_planets()`. Make sure you have declared `venus`  as `global`.
+
+--- /task ---
+
+### Draw the planet
+
+--- task ---
+
+Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Venus.
+
+**Tip:** You can copy and paste the code you used to make Mercury, to save some time and typing. Just change all the mentions of `mercury` to `venus` in the copy.
 
 --- collapse ---
 ---
@@ -125,41 +204,87 @@ You can copy text and paste a copy in another place.
  3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
  4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
 
+Then you can make any changes you need to make to the copy.
+
+![Code being copied and changed as described.](images/code_copy.gif){:width="300px"}
+
 --- /collapse ---
 
-![The code being copied and changed as described.](images/code_copy.gif){:width="300px"}
+--- code ---
+---
+language: python
+filename: main.py — draw_planets()
+line_numbers: true
+line_number_start: 20
+line_highlights: 34-56
+---
+# draw_planets function
+def draw_planets():
+  colour = mercury['colour']
+  orbit = mercury['orbit']
+  size = mercury['size']
+  speed = mercury['speed']
+
+  make_planet(
+    colour, 
+    orbit, 
+    size, 
+    speed
+    )
+
+  colour = venus['colour']
+  orbit = venus['orbit']
+  size = venus['size']
+  speed = venus['speed']
+
+  make_planet(
+    colour, 
+    orbit, 
+    size, 
+    speed
+    )
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code and check that Venus is orbiting the Sun.
+
+![A black background with a yellow circle, surrounded by two white rings. Red and pink circles are orbiting around the rings.](images/mercury_venus.gif){:width="400px"}
+
+**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPERCASE or lowercase is important too.
+
+**Debug:** If any planet is too big, too slow, or not visible: Check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+
+--- /task ---
+
+### Tell users about Venus
+
+Like Mercury, Venus should print out an interesting fact when it's clicked on.
+
+--- task ---
+
+In `mouse_pressed()` add `elif` statements after the `if` you made for Mercury. Have them check for Venus's colour. Then, if there's a match, `print()` the right fact.
 
 --- code ---
 ---
 language: python
-filename: main.py — load_planets()
+filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 45
-line_highlights: 69-67
+line_number_start: 111 
+line_highlights: 118-123
 ---
-  with open('planets.csv') as f:
-    data = f.read()
-    lines = data.splitlines()
+def mouse_pressed():
+# Put code to run when the mouse is pressed here
+  pixel_colour = color(get(mouse_x, mouse_y))
 
-  planet = lines[2].split(',')
-  venus = { 
-    'name': planet[0],
-    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])),
-    'size': int(planet[4]), 
-    'orbit': int(planet[5]),
-    'speed': float(planet[6]), 
-    'info': planet[7]
-  }
-
-  planet = lines[3].split(',') 
-  earth = { 
-    'name': planet[0],
-    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])),
-    'size': int(planet[4]), 
-    'orbit': int(planet[5]),
-    'speed': float(planet[6]), 
-    'info': planet[7]
-  }
+  if pixel_colour == mercury['colour']:
+    print(mercury['name'])
+    print(mercury['info'])
+  elif pixel_colour == venus['colour']:
+    print(venus['name'])
+    print(venus['info'])
 
 --- /code ---
 
@@ -167,36 +292,11 @@ line_highlights: 69-67
 
 --- task ---
 
-Go to your `draw_orbits()` function and add the orbits of Venus and Earth.
+**Test:** Run your code. Click on Venus, to see its information print out.
 
---- code ---
----
-language: python
-filename: main.py — draw_orbits()
-line_numbers: true
-line_number_start: 10
-line_highlights: 16-17
----
-# draw_orbits function
-def draw_orbits():
-  no_fill()
-  stroke(255) # Make it white
-  
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-  ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
-  ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Venus and Earth appear in the text output.](images/all_planets_info.gif){:width="400px"}
 
---- /code ---
-
---- /task ---
-
---- task ---
-
- **Test:** Run your code and see the orbits of Venus and Earth appear.
-
-![A black background with a yellow circle, surrounded by three white rings. A red circle is orbiting around the inside ring.](images/all_orbits.gif)
-
-**Debug:** if you see a message about `venus` or `earth` being 'not defined', check `load_planets()`. Make sure you have declared `venus` and `earth`  as `global`.
+**Debug:** If nothing happens when you click on Venus, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 
 --- /task ---
 

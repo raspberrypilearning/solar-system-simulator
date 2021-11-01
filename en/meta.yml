@@ -9,8 +9,8 @@ steps:
   - title: Introduction
   - title: Create a dictionary
   - title: Make Mercury
-  - title: Load more planets
-  - title: Make Venus & Earth
+  - title: Make Venus
+  - title: Make Earth
   - title: Reflection
     knowledge_quiz:
       path: quiz1
