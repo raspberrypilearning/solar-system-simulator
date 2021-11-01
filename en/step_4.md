@@ -38,8 +38,8 @@ Add a `global` variable for Venus your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 32
-line_highlights: 34
+line_number_start: 34
+line_highlights: 36
 ---
 # load_planets function
 def load_planets():
@@ -59,21 +59,21 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 36
-line_highlights: 45-47
+line_number_start: 38
+line_highlights: 47-49
 ---
-  mercury = {
-      'name': 'Mercury',
-      'colour': color(165, 42, 42),
-      'size': 15,
-      'orbit': 150,
-      'speed': 1,
-      'info': 'The smallest, and fastest, planet.'
-  }
-  
-  with open('planets.csv') as f:
-    data = f.read()
-    lines = data.splitlines()
+    mercury = {
+        'name': 'Mercury',
+        'colour': color(165, 42, 42),
+        'size': 15,
+        'orbit': 150,
+        'speed': 1,
+        'info': 'The smallest, and fastest, planet.'
+    }
+    
+    with open('planets.csv') as f:
+      data = f.read()
+      lines = data.splitlines()
 --- /code ---
 
 --- /task ---
@@ -89,24 +89,24 @@ Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 45
-line_highlights: 49-50
+line_number_start: 47
+line_highlights: 51-52
 ---
-  with open('planets.csv') as f:
-    data = f.read()
-    lines = data.splitlines()
+    with open('planets.csv') as f:
+      data = f.read()
+      lines = data.splitlines()
 
-  planet = lines[2].split(',') # Split Venus' data
-  print(planet)
+    planet = lines[2].split(',') # Split Venus' data
+    print(planet)
 --- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Try running your code, and look at the list of data it prints out. Notice that the numbers are inside  quotes (`'`). This shows that Python sees them as text strings, instead of numbers it could do maths with.
+**Test:** Try running your code, and look at the list of data it prints out. Notice that the numbers are inside  quotes `'`. This shows that Python sees them as text strings, instead of numbers it could do maths with.
 
-![The information about Venus, printed out as a list.](images/venus_info.png)
+![The information about Venus, printed out as a list.](images/venus_dict.png)
 
 **Debug:** If your `planet` is printing out as a list with only one item then check that you have `','` in the `()` of `lines[2].split()`.
 
@@ -127,23 +127,23 @@ Load the list of values from `planet` into a `venus` dictionary. As you are maki
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 45
-line_highlights: 51-58
+line_number_start: 47
+line_highlights: 53-60
 ---
-  with open('planets.csv') as f:
-    data = f.read()
-    lines = data.splitlines()
+    with open('planets.csv') as f:
+      data = f.read()
+      lines = data.splitlines()
 
-  planet = lines[2].split(',') # Split Venus' data
-  #print(planet)
-  venus = { 
-    'name': planet[0],
-    'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
-    'size': int(planet[4]), # int() for whole numbers
-    'orbit': int(planet[5]),
-    'speed': float(planet[6]), # float() for decimals
-    'info': planet[7]
-  }
+    planet = lines[2].split(',') # Split Venus' data
+    #print(planet)
+    venus = { 
+      'name': planet[0],
+      'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
+      'size': int(planet[4]), # int() for whole numbers
+      'orbit': int(planet[5]),
+      'speed': float(planet[6]), # float() for decimals
+      'info': planet[7]
+    }
 --- /code ---
 
 --- /task ---
@@ -216,7 +216,7 @@ language: python
 filename: main.py — draw_planets()
 line_numbers: true
 line_number_start: 20
-line_highlights: 34-56
+line_highlights: 34-44
 ---
 # draw_planets function
 def draw_planets():
@@ -272,8 +272,8 @@ In `mouse_pressed()` add `elif` statements after the `if` you made for Mercury. 
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 111 
-line_highlights: 118-123
+line_number_start: 92
+line_highlights: 99-101
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
@@ -294,7 +294,7 @@ def mouse_pressed():
 
 **Test:** Run your code. Click on Venus, to see its information print out.
 
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Venus and Earth appear in the text output.](images/all_planets_info.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by two white rings. Red, and pink circles are orbiting around the rings. Information about Venus appears in the text output.](images/venus_info.gif){:width="400px"}
 
 **Debug:** If nothing happens when you click on Venus, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 

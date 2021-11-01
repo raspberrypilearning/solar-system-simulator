@@ -20,8 +20,8 @@ Add a `global` variable for Earth your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 32
-line_highlights: 34
+line_number_start: 47
+line_highlights: 49
 ---
 # load_planets function
 def load_planets():
@@ -34,17 +34,17 @@ You already have the data in your program. Earth's data was loaded into `lines` 
 
 --- task ---
 
-Below your `venus` disctionary, split `lines[3]` and put it in an `earth` dictionary.
+Below your `venus` dictionary, split `lines[3]` and put it in an `earth` dictionary.
 
-**Tip:** You can copy-paste the code you used to make the `venus` dictionary, and then just make small changes, to save you some time.
+**Tip:** You can copy-paste the code you used to make the `venus` dictionary to save you some time. Then just make small changes — `lines[2]` to `lines[3]`, and `venus` to `earth`.
 
 --- code ---
 ---
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 45
-line_highlights: 69-67
+line_number_start: 60
+line_highlights: 75-83
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -85,7 +85,7 @@ language: python
 filename: main.py — draw_orbits()
 line_numbers: true
 line_number_start: 10
-line_highlights: 16
+line_highlights: 17
 ---
 # draw_orbits function
 def draw_orbits():
@@ -122,7 +122,7 @@ language: python
 filename: main.py — draw_planets()
 line_numbers: true
 line_number_start: 20
-line_highlights: 34-56
+line_highlights: 47-57
 ---
 # draw_planets function
 def draw_planets():
@@ -190,8 +190,8 @@ In `mouse_pressed()` add an `elif` statement for Earth like the one you made for
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 111 
-line_highlights: 118-123
+line_number_start: 115 
+line_highlights: 125-127
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
