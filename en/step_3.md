@@ -127,3 +127,5 @@ def mouse_pressed():
 **Debug:** If you get a message about 'KeyError', check the spelling of your keys (`'name'` and `'info'`) in `mouse_pressed()`. Make sure the spelling is the same in `load_planets()`.
 
 --- /task ---
+
+--- save ---
