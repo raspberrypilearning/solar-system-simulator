@@ -1,10 +1,10 @@
 ## What next?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Codebreaker](https://projects.raspberrypi.org/en/projects/codebreaker/) project. In that project, you will make a model of the solar system to teach people about the planets.
+If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Codebreaker](https://projects.raspberrypi.org/en/projects/codebreaker/) project. In that project, you will analyse a graph to crack a hidden code!
 
 --- print-only ---
 
-![The codebreaker project](images/codebreaker.png)
+![The codebreaker project.](images/codebreaker.png)
 
 --- /print-only ---
 
