@@ -5,7 +5,7 @@
 Now finish the model by adding the planet you're on!
 </div>
 <div>
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by three white rings. On  the rings, red, pink, and blue circles orbit around the yellow circle. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
 </div>
 </div>
 
@@ -13,7 +13,7 @@ Now finish the model by adding the planet you're on!
 
 --- task ---
 
-Add a `global` variable for Earth your `load_planets()` function:
+Add a `global` variable for Earth to your `load_planets()` function:
 
 --- code ---
 ---
@@ -30,13 +30,13 @@ def load_planets():
 
 --- /task ---
 
-You already have the data in your program. Earth's data was loaded into `lines` when you loaded `planets.csv`.
+You already have the data in your program: Earth's data was loaded into `lines` when you loaded `planets.csv`.
 
 --- task ---
 
 Below your `venus` dictionary, split `lines[3]` and put it in an `earth` dictionary.
 
-**Tip:** You can copy-paste the code you used to make the `venus` dictionary to save you some time. Then just make small changes — `lines[2]` to `lines[3]`, and `venus` to `earth`.
+**Tip:** You can copy and paste the code you used to make the `venus` dictionary to save you some time. Then just make small changes — `lines[2]` to `lines[3]`, and `venus` to `earth`.
 
 --- code ---
 ---
@@ -104,9 +104,9 @@ def draw_orbits():
 
  **Test:** Run your code and see the orbits of Venus and Earth appear.
 
-![A black background with a yellow circle, surrounded by three white rings. A red and pink circles orbiting the inside rings.](images/all_orbit.gif)
+![A black background with a yellow circle, surrounded by three white rings. On two of the rings, red and pink circles orbit the yellow circle.](images/all_orbit.gif)
 
-**Debug:** if you see a message about `earth` being 'not defined', check `load_planets()`. Make sure you have declared `earth`  as `global`.
+**Debug:** If you see a message about `earth` being 'not defined', check `load_planets()`. Make sure you have declared `earth`  as `global`.
 
 --- /task ---
 
@@ -114,7 +114,7 @@ def draw_orbits():
 
 --- task ---
 
-Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Earth. Like with Venus, you can copy-paste code here to save yourself some work.
+Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Earth. Like with Venus, you can copy and paste code here to save yourself some work.
 
 --- code ---
 ---
@@ -167,13 +167,13 @@ def draw_planets():
 
 --- task ---
 
-**Test:** Run your code and check that Earth is orbiting the Sun.
+**Test:** Run your code and check that Earth orbits the Sun.
 
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings.](images/all_planets.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by three white rings. On the rings, red, pink, and blue circles orbit around the yellow circle.](images/all_planets.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPERCASE or lowercase is important too.
+**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
 
-**Debug:** If any planet is too big, too slow, or not visible: Check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Debug:** If any planet is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
 
 --- /task ---
 
@@ -213,9 +213,9 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your code. Click on Earth, to see its information print out.
+**Test:** Run your code. Click on Earth to see its information print out.
 
-![A black background with a yellow circle, surrounded by three white rings. Red, pink, and blue circles are orbiting around the rings. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
+![A black background with a yellow circle, surrounded by three white rings. On the rings, red, pink, and blue circles orbit around the yellow circle. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
 
 **Debug:** If nothing happens when you click on Earth, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 
