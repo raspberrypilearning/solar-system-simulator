@@ -57,7 +57,7 @@ print(mountain)
 
   --- feedback ---
  
-  Close! This will print the whole dictionary — you just want to print the value stored with the 'height' key.
+  Close! This will print the whole dictionary — you just want to print the value stored with the `height` key.
 
   --- /feedback ---
 
