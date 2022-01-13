@@ -11,7 +11,7 @@ Now you'll put Mercury in orbit of the sun.
 
 ### Draw Mercury
 
-The `make_planet()` function was included as part of the starter project. `make_planet()` takes the colour, orbit, size and speed of a planet. Then it draws the planet orbiting the sun.
+The `make_planet()` function is included as part of the starter project. `make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
 
 --- task ---
 
@@ -43,7 +43,7 @@ def draw_planets():
     )
 --- /code ---
 
-**Tip:** You created your dictionary with one line for each key:value pair. You can do the same when passing values to a function, to make your code easier to read.
+**Tip:** You created your dictionary with one line for each `key:value` pair. You can do the same when passing values to a function to make your code easier to read.
 
 --- /task ---
 
@@ -76,13 +76,13 @@ def draw():
 
 ![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPERCASE or lowercase is important too.
+**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
 
 **Debug:** If Mercury doesn't appear:
- - check that you are calling `draw_planets()` in `draw()` 
- - make sure that call is after `background(0)`
+ - Check that you are calling `draw_planets()` in `draw()` 
+ - Make sure that that call is after `background(0)`
 
-**Debug:** If Mercury is too big, too slow, or not visible: Check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Debug:** If Mercury is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
 
 --- /task ---
 
@@ -94,7 +94,7 @@ The `mouse_pressed()` function was included as part of the starter project. It c
 
 --- task ---
 
-Find `mouse_pressed()`  and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
+Find `mouse_pressed()` and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
 
 --- code ---
 ---
@@ -122,8 +122,10 @@ def mouse_pressed():
 
 ![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring. Information about Mercury appears in the text output.](images/mercury_click.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Mercury check your `if` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Debug:** If nothing happens when you click on Mercury, check your `if` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
 
 **Debug:** If you get a message about 'KeyError', check the spelling of your keys (`'name'` and `'info'`) in `mouse_pressed()`. Make sure the spelling is the same in `load_planets()`.
 
 --- /task ---
+
+--- save ---

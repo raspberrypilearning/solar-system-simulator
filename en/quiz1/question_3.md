@@ -5,7 +5,7 @@
 legend: Question 3 of 3
 ---
 
-Your program took values from a list and stored them in a dictionary. If you have a program with this code:
+Your program took values from a list and stored them in a dictionary. Now, you have a program with this code:
 
 --- code ---
 ---
@@ -34,7 +34,7 @@ dog
 ```
   --- feedback ---
   
-  That's right! The `person` dictionary has saved 'dog' — which has the index `1` in the `pets` list — with the 'pet' key.
+  That's right! The `person` dictionary has saved 'dog' — which has the index `1` in the `pets` list — with the `pet` key.
 
   --- /feedback ---
 
@@ -56,7 +56,7 @@ pets[1]
 
   --- feedback ---
   
-  Not exactly. Python will get the string stored at `pets[1]` and store that string in `person` with the 'pet' key.
+  Not exactly. Python will get the string stored at `pets[1]` and store that string in `person` with the `pet` key.
 
   --- /feedback ---
 
