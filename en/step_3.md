@@ -11,13 +11,17 @@ Now you'll put Mercury in orbit of the sun.
 
 ### Draw Mercury
 
-The `make_planet()` function is included as part of the starter project. `make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
+The `make_planet()` function is written in a separate file that is included as part of the starter project and imported into `main.py` for you to use.
+
+`make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
 
 --- task ---
 
 Find the `# draw_planets function` comment. Create the function below it. 
 
 Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
+
+[[[parameters]]]
 
 --- code ---
 ---

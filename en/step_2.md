@@ -88,6 +88,8 @@ Find the `# load_planets function` comment in the starter project. Create the fu
 </tbody>
 </table>
 
+Curly brackets `{}` are used to start and end the dictionary. A colon `:` is used to separate the key and the value(s). A comma `,` is used to separate each dictionary item. 
+
 --- code ---
 ---
 language: python
@@ -109,7 +111,9 @@ def load_planets():
       'info': 'The smallest, and fastest, planet.'
   }
 --- /code ---
+
 **Tip:** You can put each `key: value` pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
+
 --- /task ---
 
 Using a dictionary lets you keep all the information about Mercury in one place. This makes it easier to find it, and change it if you need to.
@@ -132,7 +136,6 @@ def setup():
   frame_rate(60)
   load_planets()
   
-  
 --- /code ---
 
 --- /task ---
@@ -140,14 +143,14 @@ def setup():
 ### Draw Mercury's orbit
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Modelling orbits:**</span> The real planets' orbits are not perfect circles — they're oval shaped. But using circles makes the model easier to build!
+<span style="color: #0faeb0">**Modelling orbits:**</span> The real planets' orbits are not perfect circles — they're the shape of an ellipse. But using circles makes the model easier to build!
 </p>
 
 You can get a value out of a dictionary by putting its key in square brackets `[]`, just like getting a list item by its index. For example `mercury['size']` would get you the matching value `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the function below it. Then draw Mercury's orbit around the centre of the model using `ellipse`.
+Find the `#draw_orbits function` comment. Create the `draw_orbits()` function below it. Then draw Mercury's orbit as an `ellipse` centered in the middle  of the model `width/2` and `height/2`. The size of the `ellipse` will be `mercury['orbit']` which is stored in your dictionary as `150`.
 
 [[[processing-python-ellipse]]]
 
@@ -165,7 +168,6 @@ def draw_orbits():
   stroke(255) # Make it white
   
   ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-  
   
 --- /code ---
 
@@ -189,7 +191,6 @@ def draw():
   no_stroke()
   draw_sun()
   draw_orbits()
-  
   
 --- /code ---
 
