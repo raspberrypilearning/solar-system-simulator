@@ -146,11 +146,11 @@ def setup():
 <span style="color: #0faeb0">**Modelling orbits:**</span> The real planets' orbits are not perfect circles — they're the shape of an ellipse. But using circles makes the model easier to build!
 </p>
 
-You can get a value out of a dictionary by putting its key in square brackets `[]`, just like getting a list item by its index. For example `mercury['size']` would get you the matching value `15`.
+You can get a value from a dictionary by putting its key in square brackets `[]`, just like getting a list item by its index. For example, `mercury['size']` would get you the matching value `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the `draw_orbits()` function below it. Then draw Mercury's orbit as an `ellipse` centered in the middle  of the model `width/2` and `height/2`. The size of the `ellipse` will be `mercury['orbit']` which is stored in your dictionary as `150`.
+Find the `#draw_orbits function` comment. Create the `draw_orbits()` function below it. Then draw Mercury's orbit as an `ellipse` centered in the middle  of the model `width/2` and `height/2`. The size of the `ellipse` will be `mercury['orbit']`, which is stored in your dictionary as `150`.
 
 [[[processing-python-ellipse]]]
 
