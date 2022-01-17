@@ -28,9 +28,9 @@ title: Python dictionaries
 
 A dictionary in Python stores pairs of **keys** and **values**.
 
-Keys and values can be almost any value you can store in Python. Although neither lists nor dictionaries can be keys.
+Keys and values can be almost any value you can store in Python. Although lists and dictionaries cannot be keys.
 
-You can use a key to get its connected value.
+You can use a key to get its associated value.
 
 To make a dictionary, you use curly brackets `{}`, with `key: value` pairs inside. A pair is a key, followed by a colon (`:`), followed by the value connected to that key. For example:
 
