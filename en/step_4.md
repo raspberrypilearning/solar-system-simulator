@@ -68,7 +68,7 @@ line_highlights: 47-49
         'size': 15,
         'orbit': 150,
         'speed': 1,
-        'info': 'The smallest, and fastest, planet.'
+        'info': 'The smallest and fastest planet.'
     }
     
     with open('planets.csv') as f:
