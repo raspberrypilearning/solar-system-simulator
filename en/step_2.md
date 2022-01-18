@@ -83,7 +83,7 @@ Find the `# load_planets function` comment in the starter project. Create the fu
   </tr>
   <tr>
     <td>info</td>
-    <td>The smallest, and fastest, planet.</td>
+    <td>The smallest and fastest planet.</td>
   </tr>
 </tbody>
 </table>
@@ -108,7 +108,7 @@ def load_planets():
       'size': 15,
       'orbit': 150,
       'speed': 1,
-      'info': 'The smallest, and fastest, planet.'
+      'info': 'The smallest and fastest planet.'
   }
 --- /code ---
 
