@@ -11,13 +11,17 @@ Now you'll put Mercury in orbit of the sun.
 
 ### Draw Mercury
 
-The `make_planet()` function is included as part of the starter project. `make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
+The `make_planet()` function is written in a separate file that is included as part of the starter project and imported into `main.py` for you to use.
+
+`make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
 
 --- task ---
 
 Find the `# draw_planets function` comment. Create the function below it. 
 
 Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
+
+[[[parameters]]]
 
 --- code ---
 ---
@@ -43,13 +47,13 @@ def draw_planets():
     )
 --- /code ---
 
-**Tip:** You created your dictionary with one line for each `key:value` pair. You can do the same when passing values to a function to make your code easier to read.
+**Tip:** You created your dictionary with one line for each `key: value` pair. You can do the same when passing values to a function to make your code easier to read.
 
 --- /task ---
 
 --- task ---
 
-Add a call to your `draw_planets()` in the `draw()` function.
+Add a call to `draw_planets()` in the `draw()` function.
 
 --- code ---
 ---
@@ -88,7 +92,7 @@ def draw():
 
 ### Tell users about the planet
 
-Users will click on Mercury. Then your program will print the information in `mercury['info']`.
+Users will click on Mercury and your program will print the information in `mercury['info']`.
 
 The `mouse_pressed()` function was included as part of the starter project. It contains code to get the colour a user clicked on. You can use this to tell which planet they have clicked.
 

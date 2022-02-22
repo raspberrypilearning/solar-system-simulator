@@ -45,15 +45,15 @@ person = {
 
 - ( ) 
 ```python
-person = {
-  age: 12,
-  hair: 'brown'
-}
+person = 
+  'age': 12,
+  'hair': 'brown'
+
 ```
 
   --- feedback ---
 
-  Almost. Dictionary keys need to be values — text strings, numbers, etc.
+  Almost. Dictionaries need to begin and end with curly brackets `{` `}`.
 
   --- /feedback ---
 
