@@ -17,6 +17,7 @@ You will:
 </p>
 
 --- no-print ---
+
 --- task ---
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
@@ -28,6 +29,7 @@ Run the program to create the model. Try clicking on each planet to see facts ab
 </div>
 </div>
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
