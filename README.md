@@ -1,4 +1,4 @@
-# solar-system-simulator
+# Solar System Simulator
 
 ![solar-system-simulator](banner.png)
 
