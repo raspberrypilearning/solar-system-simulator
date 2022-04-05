@@ -4,6 +4,7 @@ Get to know Python dictionaries by creating a model of the solar system.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**The limits of models:**</span> Even very advanced models leave out details to make them easier to build and run. In fact, it's not possible to make an accurate model of the whole solar system as all the planets pull on each other because of gravity. The maths to predict exactly where they will go has not been invented yet as a result.
+
 <br>This model uses the order of the planets, and their speeds and sizes. But, for example, Mercury needs to be slow enough so you can click on it. So the model makes Mercury faster than the other planets, but not as fast as it really is.
 </p>
 
