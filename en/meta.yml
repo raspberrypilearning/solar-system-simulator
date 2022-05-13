@@ -2,8 +2,8 @@ title: Solar system
 hero_image: images/banner.png
 description: Get to know Python dictionaries by creating a model of the solar system
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-10-13"
 steps:
   - title: Introduction
