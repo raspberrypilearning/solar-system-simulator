@@ -1,24 +1,28 @@
+---
 title: Solar system
 hero_image: images/banner.png
 description: Get to know Python dictionaries by creating a model of the solar system
 version: 4
 listed: false
 copyedit: false
-last_tested: "2021-10-13"
+last_tested: '2021-10-13'
 steps:
-  - title: Introduction
-  - title: Create a dictionary
-  - title: Make Mercury
-    completion: engaged
-  - title: Make Venus
-  - title: Make Earth
-    completion: internal   
-  - title: Reflection
-    completion: external
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
-  - title: Upgrade your project
-  - title: What next?
+- title: Introduction
+- title: Create a dictionary
+- title: Make Mercury
+  completion:
+  - engaged
+- title: Make Venus
+- title: Make Earth
+  completion:
+  - internal
+- title: Reflection
+  knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
+  completion:
+  - external
+- title: Upgrade your project
+- title: What next?
