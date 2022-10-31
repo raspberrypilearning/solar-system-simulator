@@ -37,4 +37,4 @@ You will:
 <span style="color: #0faeb0">**Dicitionaries:**</span> When you make a Python dictionary, it stores things you can look up later. This is a lot like a normal dictionary. But the Python version can store much more than the meanings of words!
 </p>
 
-
+![](http://code.org/api/hour/begin_rp_solar.png)
