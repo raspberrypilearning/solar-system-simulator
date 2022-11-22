@@ -1,0 +1,91 @@
+person
+
+age
+
+height
+
+hair
+
+brown
+
+load_planets
+
+mercury
+
+name
+
+colour
+
+size
+
+orbit
+
+speed
+
+info
+
+The smallest and fastest planet.
+
+draw_orbits
+
+draw_sun
+
+draw_planets
+
+make_planet
+
+pixel_colour
+
+The hottest planet in the solar system. Water would turn to steam and some metals would melt just by being there!
+
+You are here — the only planet we know of that can support life.
+
+planet,colour_r,colour_g,colour_b,size,orbit,speed,info
+
+venus
+
+data
+
+lines
+
+earth
+
+mountain
+
+range
+
+height
+
+Kangchenjunga
+
+Himalayas
+
+8586 metres
+
+cat
+
+dog
+
+rabbit
+
+pets
+
+Mars
+
+Jupiter
+
+Saturn
+
+Uranus
+
+Neptune
+
+Home of Olympus Mons — the highest mountain in the Solar System.
+
+The largest planet in the Solar System but with the shortest day — a little under ten hours.
+
+Saturn's rings are wide enough to fit almost 10 Earths side-by-side. But they're only around 10 metres high!
+
+The coldest planet in the Solar System and the first discovered after the telescope was invented.
+
+The farthest planet from the Sun. Neptune's day is only 16 hours — but its year is 165 Earth years!
