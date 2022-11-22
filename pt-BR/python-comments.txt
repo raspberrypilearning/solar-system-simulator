@@ -1,0 +1,31 @@
+load_planets function
+
+Put code to run once here
+
+draw_orbits function
+
+Make it white
+
+Put code to run every frame here
+
+draw_planets function
+
+Put code to run when the mouse is pressed here
+
+Split Venus' data
+
+int() for whole numbers
+
+float() for decimals
+
+Yellow
+
+2D transformation
+
+Centre the orbit on the centre of the model
+
+Rotate 'speed' degrees every frame
+
+Draw the planet
+
+End the 2D transformation
