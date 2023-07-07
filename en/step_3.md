@@ -28,8 +28,8 @@ Make variables to store the values needed to draw Mercury. Then call `make_plane
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 18
-line_highlights: 19-30
+line_number_start: 17
+line_highlights: 18-29
 ---
 # draw_planets function
 def draw_planets():
@@ -44,7 +44,7 @@ def draw_planets():
     orbit, 
     size, 
     speed
-    )
+  )
 --- /code ---
 
 **Tip:** You created your dictionary with one line for each `key: value` pair. You can do the same when passing values to a function to make your code easier to read.
@@ -60,8 +60,8 @@ Add a call to `draw_planets()` in the `draw()` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 55
-line_highlights: 61
+line_number_start: 51
+line_highlights: 57
 ---
 def draw():
   # Put code to run every frame here
@@ -105,8 +105,8 @@ Find `mouse_pressed()` and add an `if` statement. Have it `print` Mercury's name
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 64
-line_highlights: 68-70
+line_number_start: 60
+line_highlights: 64-66
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
@@ -122,7 +122,7 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your code and click on Mercury to see its information print out. If it's moving too fast, change the `frame_rate()` value in `setup()` to slow the whole model down.
+**Test:** Run your code and click on Mercury to see its information print out. If it's moving too fast, change the `frame_rate` value in the `run()` function to slow the whole model down.
 
 ![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring. Information about Mercury appears in the text output.](images/mercury_click.gif){:width="400px"}
 

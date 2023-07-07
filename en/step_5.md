@@ -43,8 +43,8 @@ Below your `venus` dictionary, split `lines[3]` and put it in an `earth` diction
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 60
-line_highlights: 75-83
+line_number_start: 59
+line_highlights: 73-81
 ---
   with open('planets.csv') as f:
     data = f.read()
@@ -102,7 +102,7 @@ def draw_orbits():
 
 --- task ---
 
- **Test:** Run your code and see the orbits of Venus and Earth appear.
+ **Test:** Run your code and see the orbit of Earth appear.
 
 ![A black background with a yellow circle, surrounded by three white rings. On two of the rings, red and pink circles orbit the yellow circle.](images/all_orbit.gif)
 
@@ -121,7 +121,7 @@ Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 20
+line_number_start: 19
 line_highlights: 47-57
 ---
 # draw_planets function
@@ -190,7 +190,7 @@ In `mouse_pressed()` add an `elif` statement for Earth like the one you made for
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 115 
+line_number_start: 109 
 line_highlights: 125-127
 ---
 def mouse_pressed():

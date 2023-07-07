@@ -38,8 +38,8 @@ Add a `global` variable for Venus to your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 34
-line_highlights: 36
+line_number_start: 32
+line_highlights: 34
 ---
 # load_planets function
 def load_planets():
@@ -59,8 +59,8 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 38
-line_highlights: 47-49
+line_number_start: 36
+line_highlights: 45-47
 ---
     mercury = {
         'name': 'Mercury',
@@ -127,8 +127,8 @@ Load the list of values from `planet` into a `venus` dictionary. As you are maki
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 47
-line_highlights: 53-60
+line_number_start: 45
+line_highlights: 51-58
 ---
     with open('planets.csv') as f:
       data = f.read()
@@ -138,7 +138,7 @@ line_highlights: 53-60
     #print(planet)
     venus = { 
       'name': planet[0],
-      'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
+      'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
       'size': int(planet[4]), # int() for whole numbers
       'orbit': int(planet[5]),
       'speed': float(planet[6]), # float() for decimals
@@ -176,7 +176,7 @@ def draw_orbits():
 
 --- task ---
 
- **Test:** Run your code and see the orbit of Venus appear.
+**Test:** Run your code and see the orbit of Venus appear.
 
 ![A black background with a yellow circle, surrounded by two white rings. A red circle is orbiting the yellow circle on the inside ring.](images/mercury_venus_orbit.gif)
 
@@ -215,7 +215,7 @@ Then you can make any changes you need to the copy.
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 20
+line_number_start: 18
 line_highlights: 34-44
 ---
 # draw_planets function

@@ -10,9 +10,8 @@ Get to know Python dictionaries by creating a model of the solar system.
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to create the model. Try clicking on each planet to see facts about them.
 </div>
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/33d830b0ce?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/solar-system-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 </div>
 --- /task ---
 
@@ -34,7 +33,7 @@ You will:
  - Create an animated, interactive, solar system model using the `p5` library
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Dicitionaries:**</span> When you make a Python dictionary, it stores things you can look up later. This is a lot like a normal dictionary. But the Python version can store much more than the meanings of words!
+<span style="color: #0faeb0">**Dictionaries:**</span> When you make a Python dictionary, it stores things you can look up later. This is a lot like a normal dictionary. But the Python version can store much more than the meanings of words!
 </p>
 
 ![](http://code.org/api/hour/begin_rp_solar.png)

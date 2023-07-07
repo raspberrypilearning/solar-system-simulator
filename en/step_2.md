@@ -11,9 +11,9 @@ To start, you'll collect some information about Mercury and draw its orbit.
 
 --- task ---
 
-Open the [Solar system starter project](https://trinket.io/python/b5352050e7){:target="_blank"}. Trinket will open in another browser tab.
+Open the [Solar system starter project](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click on the **Save button** to save a copy to your `Projects` library.
 
 --- /task ---
 
@@ -104,7 +104,7 @@ def load_planets():
 
   mercury = {
       'name': 'Mercury',
-      'colour': color(165, 42, 42),
+      'colour': Color(165, 42, 42),
       'size': 15,
       'orbit': 150,
       'speed': 1,
@@ -128,12 +128,11 @@ language: python
 filename: main.py — setup()
 line_numbers: true
 line_number_start: 30
-line_highlights: 34
+line_highlights: 33
 ---
 def setup():
   # Put code to run once here
   size(400, 400)
-  frame_rate(60)
   load_planets()
   
 --- /code ---
@@ -182,8 +181,8 @@ Call your `draw_orbits()` function from your `draw()` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 42
-line_highlights: 47 
+line_number_start: 39
+line_highlights: 42 
 ---
 def draw():
   # Put code to run every frame here
