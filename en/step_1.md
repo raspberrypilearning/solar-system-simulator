@@ -1,3 +1,7 @@
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+</div>
+
 ## You will make
 
 Get to know Python dictionaries by creating a model of the solar system.
