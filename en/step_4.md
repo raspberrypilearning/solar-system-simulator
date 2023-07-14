@@ -43,7 +43,7 @@ line_highlights: 34
 ---
 # load_planets function
 def load_planets():
-  global mercury, venus
+    global mercury, venus
 --- /code ---
 
 --- /task ---
@@ -64,7 +64,7 @@ line_highlights: 45-47
 ---
     mercury = {
         'name': 'Mercury',
-        'colour': color(165, 42, 42),
+        'colour': Color(165, 42, 42),
         'size': 15,
         'orbit': 150,
         'speed': 1,
@@ -93,11 +93,11 @@ line_number_start: 47
 line_highlights: 51-52
 ---
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 
-    planet = lines[2].split(',') # Split Venus' data
-    print(planet)
+        planet = lines[2].split(',') # Split Venus' data
+        print(planet)
 --- /code ---
 
 --- /task ---
@@ -131,18 +131,18 @@ line_number_start: 45
 line_highlights: 51-58
 ---
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 
     planet = lines[2].split(',') # Split Venus' data
     #print(planet)
     venus = { 
-      'name': planet[0],
-      'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
-      'size': int(planet[4]), # int() for whole numbers
-      'orbit': int(planet[5]),
-      'speed': float(planet[6]), # float() for decimals
-      'info': planet[7]
+        'name': planet[0],
+        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
+        'size': int(planet[4]), # int() for whole numbers
+        'orbit': int(planet[5]),
+        'speed': float(planet[6]), # float() for decimals
+        'info': planet[7]
     }
 --- /code ---
 
@@ -164,11 +164,11 @@ line_highlights: 16
 ---
 # draw_orbits function
 def draw_orbits():
-  no_fill()
-  stroke(255) # Make it white
-  
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-  ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+    no_fill()
+    stroke(255) # Make it white
+
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
 
 --- /code ---
 
@@ -220,28 +220,28 @@ line_highlights: 34-44
 ---
 # draw_planets function
 def draw_planets():
-  colour = mercury['colour']
-  orbit = mercury['orbit']
-  size = mercury['size']
-  speed = mercury['speed']
+    colour = mercury['colour']
+    orbit = mercury['orbit']
+    size = mercury['size']
+    speed = mercury['speed']
 
-  make_planet(
-    colour, 
-    orbit, 
-    size, 
-    speed
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
     )
 
-  colour = venus['colour']
-  orbit = venus['orbit']
-  size = venus['size']
-  speed = venus['speed']
+    colour = venus['colour']
+    orbit = venus['orbit']
+    size = venus['size']
+    speed = venus['speed']
 
-  make_planet(
-    colour, 
-    orbit, 
-    size, 
-    speed
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
     )
 --- /code ---
 
@@ -276,15 +276,15 @@ line_number_start: 92
 line_highlights: 99-101
 ---
 def mouse_pressed():
-# Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y))
+    # Put code to run when the mouse is pressed here
+    pixel_colour = Color(get(mouse_x, mouse_y))
 
-  if pixel_colour == mercury['colour']:
-    print(mercury['name'])
-    print(mercury['info'])
-  elif pixel_colour == venus['colour']:
-    print(venus['name'])
-    print(venus['info'])
+    if pixel_colour == mercury['colour']:
+        print(mercury['name'])
+        print(mercury['info'])
+    elif pixel_colour == venus['colour']:
+        print(venus['name'])
+        print(venus['info'])
 
 --- /code ---
 

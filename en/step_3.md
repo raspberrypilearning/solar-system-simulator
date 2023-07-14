@@ -33,18 +33,18 @@ line_highlights: 18-29
 ---
 # draw_planets function
 def draw_planets():
-  
-  colour = mercury['colour']
-  orbit = mercury['orbit']
-  size = mercury['size']
-  speed = mercury['speed']
 
-  make_planet(
-    colour, 
-    orbit, 
-    size, 
-    speed
-  )
+    colour = mercury['colour']
+    orbit = mercury['orbit']
+    size = mercury['size']
+    speed = mercury['speed']
+
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
+    )
 --- /code ---
 
 **Tip:** You created your dictionary with one line for each `key: value` pair. You can do the same when passing values to a function to make your code easier to read.
@@ -64,12 +64,12 @@ line_number_start: 51
 line_highlights: 57
 ---
 def draw():
-  # Put code to run every frame here
-  background(0)
-  no_stroke()
-  draw_sun()
-  draw_orbits()
-  draw_planets()
+    # Put code to run every frame here
+    background(0)
+    no_stroke()
+    draw_sun()
+    draw_orbits()
+    draw_planets()
 --- /code ---
 
 --- /task ---
@@ -109,12 +109,12 @@ line_number_start: 60
 line_highlights: 64-66
 ---
 def mouse_pressed():
-# Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y))
+    # Put code to run when the mouse is pressed here
+    pixel_colour = Color(get(mouse_x, mouse_y))
 
-  if pixel_colour == mercury['colour']:
-    print(mercury['name'])
-    print(mercury['info'])
+    if pixel_colour == mercury['colour']:
+        print(mercury['name'])
+        print(mercury['info'])
 
 --- /code ---
 

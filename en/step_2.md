@@ -67,7 +67,7 @@ Find the `# load_planets function` comment in the starter project. Create the fu
   </tr>
   <tr>
     <td>colour</td>
-    <td>color(165, 42, 42)</td>
+    <td>Color(165, 42, 42)</td>
   </tr>
   <tr>
     <td>size</td>
@@ -100,16 +100,16 @@ line_highlights: 17-27
 ---
 # load_planets function
 def load_planets():
-  global mercury
+    global mercury
 
-  mercury = {
-      'name': 'Mercury',
-      'colour': Color(165, 42, 42),
-      'size': 15,
-      'orbit': 150,
-      'speed': 1,
-      'info': 'The smallest and fastest planet.'
-  }
+    mercury = {
+        'name': 'Mercury',
+        'colour': Color(165, 42, 42),
+        'size': 15,
+        'orbit': 150,
+        'speed': 1,
+        'info': 'The smallest and fastest planet.'
+    }
 --- /code ---
 
 **Tip:** You can put each `key: value` pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
@@ -131,9 +131,9 @@ line_number_start: 30
 line_highlights: 33
 ---
 def setup():
-  # Put code to run once here
-  size(400, 400)
-  load_planets()
+    # Put code to run once here
+    size(400, 400)
+    load_planets()
   
 --- /code ---
 
@@ -163,10 +163,10 @@ line_highlights: 11-15
 ---
 # draw_orbits function
 def draw_orbits():
-  no_fill()
-  stroke(255) # Make it white
-  
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+    no_fill()
+    stroke(255) # Make it white
+
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
   
 --- /code ---
 
@@ -185,11 +185,11 @@ line_number_start: 39
 line_highlights: 42 
 ---
 def draw():
-  # Put code to run every frame here
-  background(0)
-  no_stroke()
-  draw_sun()
-  draw_orbits()
+    # Put code to run every frame here
+    background(0)
+    no_stroke()
+    draw_sun()
+    draw_orbits()
   
 --- /code ---
 
