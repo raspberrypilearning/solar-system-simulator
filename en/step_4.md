@@ -39,7 +39,7 @@ language: python
 filename: main.py — load_planets()
 line_numbers: true
 line_number_start: 32
-line_highlights: 34
+line_highlights: 33
 ---
 # load_planets function
 def load_planets():
@@ -59,8 +59,8 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 36
-line_highlights: 45-47
+line_number_start: 35
+line_highlights: 44-46
 ---
     mercury = {
         'name': 'Mercury',
@@ -72,8 +72,8 @@ line_highlights: 45-47
     }
     
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 --- /code ---
 
 --- /task ---
@@ -89,15 +89,15 @@ Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 47
-line_highlights: 51-52
+line_number_start: 44
+line_highlights: 48-49
 ---
     with open('planets.csv') as f:
         data = f.read()
         lines = data.splitlines()
 
-        planet = lines[2].split(',') # Split Venus' data
-        print(planet)
+    planet = lines[2].split(',')  # Split Venus' data
+    print(planet)
 --- /code ---
 
 --- /task ---
@@ -127,21 +127,21 @@ Load the list of values from `planet` into a `venus` dictionary. As you are maki
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 45
-line_highlights: 51-58
+line_number_start: 44
+line_highlights: 50-57
 ---
     with open('planets.csv') as f:
         data = f.read()
         lines = data.splitlines()
 
-    planet = lines[2].split(',') # Split Venus' data
+    planet = lines[2].split(',')  # Split Venus' data
     #print(planet)
     venus = { 
         'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
-        'size': int(planet[4]), # int() for whole numbers
+        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),  # Make them numbers
+        'size': int(planet[4]),  # int() for whole numbers
         'orbit': int(planet[5]),
-        'speed': float(planet[6]), # float() for decimals
+        'speed': float(planet[6]),  # float() for decimals
         'info': planet[7]
     }
 --- /code ---
@@ -216,7 +216,7 @@ language: python
 filename: main.py — draw_planets()
 line_numbers: true
 line_number_start: 18
-line_highlights: 34-44
+line_highlights: 31-41
 ---
 # draw_planets function
 def draw_planets():
@@ -272,17 +272,17 @@ In `mouse_pressed()` add `elif` statements after the `if` statement you made for
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 92
-line_highlights: 99-101
+line_number_start: 83
+line_highlights: 87-92
 ---
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
-    pixel_colour = Color(get(mouse_x, mouse_y))
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex  # Here the RGB value is converted to Hex so it can be used in a string comparison later
 
-    if pixel_colour == mercury['colour']:
+    if pixel_colour == mercury['colour'].hex:
         print(mercury['name'])
         print(mercury['info'])
-    elif pixel_colour == venus['colour']:
+    elif pixel_colour == venus['colour'].hex:
         print(venus['name'])
         print(venus['info'])
 

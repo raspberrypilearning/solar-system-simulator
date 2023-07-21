@@ -33,7 +33,6 @@ line_highlights: 18-29
 ---
 # draw_planets function
 def draw_planets():
-
     colour = mercury['colour']
     orbit = mercury['orbit']
     size = mercury['size']
@@ -60,8 +59,8 @@ Add a call to `draw_planets()` in the `draw()` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 51
-line_highlights: 57
+line_number_start: 50
+line_highlights: 56
 ---
 def draw():
     # Put code to run every frame here
@@ -94,7 +93,7 @@ def draw():
 
 Users will click on Mercury and your program will print the information in `mercury['info']`.
 
-The `mouse_pressed()` function was included as part of the starter project. It contains code to get the colour a user clicked on. You can use this to tell which planet they have clicked.
+The `mouse_pressed()` function was included as part of the starter project. It contains code to get the hex value of a colour a user clicked on. You can use this to tell which planet they have clicked.
 
 --- task ---
 
@@ -110,15 +109,17 @@ line_highlights: 64-66
 ---
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
-    pixel_colour = Color(get(mouse_x, mouse_y))
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex  # Here the RGB value is converted to Hex so it can be used in a string comparison later
 
-    if pixel_colour == mercury['colour']:
+    if pixel_colour == mercury['colour'].hex:
         print(mercury['name'])
         print(mercury['info'])
 
 --- /code ---
 
 --- /task ---
+
+When the user clicks on a pixel, the hex colour value of the pixel is retrieved and compared against the colours of the planets. If the pixel colour is the same as a planet's colour, information about that planet is displayed.
 
 --- task ---
 

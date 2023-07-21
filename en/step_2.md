@@ -164,7 +164,7 @@ line_highlights: 11-15
 # draw_orbits function
 def draw_orbits():
     no_fill()
-    stroke(255) # Make it white
+    stroke(255)  # Make it white
 
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
   
