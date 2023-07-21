@@ -36,9 +36,9 @@ To make a dictionary, you use curly brackets `{}`, with `key: value` pairs insid
 
 ```python
 person = {
-  'age': 12,
-  'height': 149.5,
-  'hair': 'brown',
+    'age': 12,
+    'height': 149.5,
+    'hair': 'brown',
 }
 ```
 Here, `age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets `[]`. For example:
