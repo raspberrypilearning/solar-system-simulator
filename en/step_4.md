@@ -38,12 +38,12 @@ Add a `global` variable for Venus to your `load_planets()` function:
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 34
-line_highlights: 36
+line_number_start: 32
+line_highlights: 33
 ---
 # load_planets function
 def load_planets():
-  global mercury, venus
+    global mercury, venus
 --- /code ---
 
 --- /task ---
@@ -59,12 +59,12 @@ Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then u
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 38
-line_highlights: 47-49
+line_number_start: 35
+line_highlights: 44-46
 ---
     mercury = {
         'name': 'Mercury',
-        'colour': color(165, 42, 42),
+        'colour': Color(165, 42, 42),
         'size': 15,
         'orbit': 150,
         'speed': 1,
@@ -72,8 +72,8 @@ line_highlights: 47-49
     }
     
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 --- /code ---
 
 --- /task ---
@@ -89,14 +89,14 @@ Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 47
-line_highlights: 51-52
+line_number_start: 44
+line_highlights: 48-49
 ---
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 
-    planet = lines[2].split(',') # Split Venus' data
+    planet = lines[2].split(',')  # Split Venus' data
     print(planet)
 --- /code ---
 
@@ -127,22 +127,22 @@ Load the list of values from `planet` into a `venus` dictionary. As you are maki
 language: python
 filename: main.py — load_planets()
 line_numbers: true
-line_number_start: 47
-line_highlights: 53-60
+line_number_start: 44
+line_highlights: 50-57
 ---
     with open('planets.csv') as f:
-      data = f.read()
-      lines = data.splitlines()
+        data = f.read()
+        lines = data.splitlines()
 
-    planet = lines[2].split(',') # Split Venus' data
+    planet = lines[2].split(',')  # Split Venus' data
     #print(planet)
     venus = { 
-      'name': planet[0],
-      'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), # Make them numbers
-      'size': int(planet[4]), # int() for whole numbers
-      'orbit': int(planet[5]),
-      'speed': float(planet[6]), # float() for decimals
-      'info': planet[7]
+        'name': planet[0],
+        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),  # Make them numbers
+        'size': int(planet[4]),  # int() for whole numbers
+        'orbit': int(planet[5]),
+        'speed': float(planet[6]),  # float() for decimals
+        'info': planet[7]
     }
 --- /code ---
 
@@ -164,11 +164,11 @@ line_highlights: 16
 ---
 # draw_orbits function
 def draw_orbits():
-  no_fill()
-  stroke(255) # Make it white
-  
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-  ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+    no_fill()
+    stroke(255) # Make it white
+
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
 
 --- /code ---
 
@@ -176,7 +176,7 @@ def draw_orbits():
 
 --- task ---
 
- **Test:** Run your code and see the orbit of Venus appear.
+**Test:** Run your code and see the orbit of Venus appear.
 
 ![A black background with a yellow circle, surrounded by two white rings. A red circle is orbiting the yellow circle on the inside ring.](images/mercury_venus_orbit.gif)
 
@@ -215,33 +215,33 @@ Then you can make any changes you need to the copy.
 language: python
 filename: main.py — draw_planets()
 line_numbers: true
-line_number_start: 20
-line_highlights: 34-44
+line_number_start: 18
+line_highlights: 31-41
 ---
 # draw_planets function
 def draw_planets():
-  colour = mercury['colour']
-  orbit = mercury['orbit']
-  size = mercury['size']
-  speed = mercury['speed']
+    colour = mercury['colour']
+    orbit = mercury['orbit']
+    size = mercury['size']
+    speed = mercury['speed']
 
-  make_planet(
-    colour, 
-    orbit, 
-    size, 
-    speed
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
     )
 
-  colour = venus['colour']
-  orbit = venus['orbit']
-  size = venus['size']
-  speed = venus['speed']
+    colour = venus['colour']
+    orbit = venus['orbit']
+    size = venus['size']
+    speed = venus['speed']
 
-  make_planet(
-    colour, 
-    orbit, 
-    size, 
-    speed
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
     )
 --- /code ---
 
@@ -272,19 +272,19 @@ In `mouse_pressed()` add `elif` statements after the `if` statement you made for
 language: python
 filename: main.py — mouse_pressed()
 line_numbers: true
-line_number_start: 92
-line_highlights: 99-101
+line_number_start: 83
+line_highlights: 87-92
 ---
 def mouse_pressed():
-# Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y))
+    # Put code to run when the mouse is pressed here
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex  # Here the RGB value is converted to Hex so it can be used in a string comparison later
 
-  if pixel_colour == mercury['colour']:
-    print(mercury['name'])
-    print(mercury['info'])
-  elif pixel_colour == venus['colour']:
-    print(venus['name'])
-    print(venus['info'])
+    if pixel_colour == mercury['colour'].hex:
+        print(mercury['name'])
+        print(mercury['info'])
+    elif pixel_colour == venus['colour'].hex:
+        print(venus['name'])
+        print(venus['info'])
 
 --- /code ---
 

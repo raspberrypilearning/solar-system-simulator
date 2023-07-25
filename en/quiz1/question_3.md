@@ -15,9 +15,9 @@ language: python
 pets = ['cat', 'dog', 'rabbit']
 
 person = {
-  'age': 12,
-  'hair': 'brown',
-  'pet': pets[1]
+    'age': 12,
+    'hair': 'brown',
+    'pet': pets[1]
 }
 
 print(person['pet'])
