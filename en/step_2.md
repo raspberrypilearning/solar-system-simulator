@@ -211,6 +211,8 @@ def draw():
 
 **Debug:** If the orbit is a filled circle, instead of a ring, check you have `no_fill()` in your `draw_orbits()` function.
 
+**Debug:** If you get a `bad input` error, check that you have a `:` in between the keys and values of your `mercury` dictionary, and that each line (except the very last one) has a comma.
+
 --- /task ---
 
 --- save ---
