@@ -11,9 +11,9 @@ To start, you'll collect some information about Mercury and draw its orbit.
 
 --- task ---
 
-Open the [Solar system starter project](https://trinket.io/python/b5352050e7){:target="_blank"}. Trinket will open in another browser tab.
+Open the [Solar system starter project](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click on the **Save button** to save a copy to your `Projects` library.
 
 --- /task ---
 
@@ -36,9 +36,9 @@ To make a dictionary, you use curly brackets `{}`, with `key: value` pairs insid
 
 ```python
 person = {
-  'age': 12,
-  'height': 149.5,
-  'hair': 'brown',
+    'age': 12,
+    'height': 149.5,
+    'hair': 'brown',
 }
 ```
 Here, `age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets `[]`. For example:
@@ -66,7 +66,7 @@ Find the `# load_planets function` comment in the starter project. Create the fu
   </tr>
   <tr>
     <td>colour</td>
-    <td>color(165, 42, 42)</td>
+    <td>Color(165, 42, 42)</td>
   </tr>
   <tr>
     <td>size</td>
@@ -97,7 +97,15 @@ line_highlights: 17-27
 # load_planets function
 def load_planets(): global mercury
 
-  mercury = { 'name': 'Mercury', 'colour': color(165, 42, 42), 'size': 15, 'orbit': 150, 'speed': 1, 'info': 'The smallest and fastest planet.' } --- /code ---
+    mercury = {
+        'name': 'Mercury',
+        'colour': Color(165, 42, 42),
+        'size': 15,
+        'orbit': 150,
+        'speed': 1,
+        'info': 'The smallest and fastest planet.'
+    }
+--- /code ---
 
 **Tip:** You can put each `key: value` pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
 
@@ -112,9 +120,9 @@ Call `load_planets()` in your `setup()` function.
 --- code ---
 ---
 language: python filename: main.py — setup() line_numbers: true line_number_start: 30
-line_highlights: 34
+line_highlights: 33
 ---
-def setup(): # Put code to run once here size(400, 400) frame_rate(60) load_planets()
+def setup(): # Put code to run once here size(400, 400) load_planets()
 
 --- /code ---
 
@@ -140,9 +148,9 @@ language: python filename: main.py — draw_orbits() line_numbers: true line_nu
 line_highlights: 11-15
 ---
 # draw_orbits function
-def draw_orbits(): no_fill() stroke(255) # Make it white
+def draw_orbits(): no_fill() stroke(255)  # Make it white
 
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 --- /code ---
 
@@ -154,8 +162,8 @@ Call your `draw_orbits()` function from your `draw()` function.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 42
-line_highlights: 47
+language: python filename: main.py — draw() line_numbers: true line_number_start: 39
+line_highlights: 42
 ---
 def draw(): # Put code to run every frame here background(0) no_stroke() draw_sun() draw_orbits()
 
@@ -178,6 +186,8 @@ def draw(): # Put code to run every frame here background(0) no_stroke() draw_su
  - Check `draw_orbits()` to be sure you have used `stroke(255)` to make the ellipse white
 
 **Debug:** If the orbit is a filled circle, instead of a ring, check you have `no_fill()` in your `draw_orbits()` function.
+
+**Debug:** If you get a `bad input` error, check that you have a `:` in between the keys and values of your `mercury` dictionary, and that each line (except the very last one) has a comma.
 
 --- /task ---
 
