@@ -43,7 +43,7 @@ Add an extra planet to the solar system. Create a new `global` variable with a d
 title: Completed project
 ---
 
-You can view the [completed project here](https://trinket.io/python/33d830b0ce){:target="_blank"}.
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/solar-system-example){:target="_blank"}.
 
 --- /collapse ---
 
