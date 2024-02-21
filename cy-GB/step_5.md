@@ -35,14 +35,34 @@ Below your `venus` dictionary, split `lines[3]` and put it in an `earth` diction
 
 --- code ---
 ---
-language: python filename: main.py — load_planets() line_numbers: true line_number_start: 60
-line_highlights: 75-83
+language: python filename: main.py — load_planets() line_numbers: true line_number_start: 56
+line_highlights: 71-79
 ---
-  with open('planets.csv') as f: data = f.read() lines = data.splitlines()
 
-  planet = lines[2].split(',') #print(planet) venus = { 'name': planet[0], 'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), 'size': int(planet[4]), 'orbit': int(planet[5]), 'speed': float(planet[6]), 'info': planet[7] }
-
-  planet = lines[3].split(',') earth = { 'name': planet[0], 'colour': color(int(planet[1]), int(planet[2]), int(planet[3])), 'size': int(planet[4]), 'orbit': int(planet[5]), 'speed': float(planet[6]), 'info': planet[7] }
+    with open('planets.csv') as f:
+        data = f.read()
+        lines = data.splitlines()
+    
+    planet = lines[2].split(',')
+    #print(planet)
+    venus = { 
+        'name': planet[0],
+        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
+        'size': int(planet[4]), 
+        'orbit': int(planet[5]),
+        'speed': float(planet[6]), 
+        'info': planet[7]
+    }
+    
+    planet = lines[3].split(',') 
+    earth = { 
+        'name': planet[0],
+        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
+        'size': int(planet[4]), 
+        'orbit': int(planet[5]),
+        'speed': float(planet[6]), 
+        'info': planet[7]
+    }
 
 --- /code ---
 
@@ -58,9 +78,11 @@ language: python filename: main.py — draw_orbits() line_numbers: true line_num
 line_highlights: 17
 ---
 # draw_orbits function
-def draw_orbits(): no_fill() stroke(255) # Make it white
+def draw_orbits(): no_fill() stroke(255)  # Make it white
 
-  ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit']) ellipse(width / 2, height / 2, venus['orbit'], venus['orbit']) ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+    ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
 
 --- /code ---
 
@@ -68,7 +90,7 @@ def draw_orbits(): no_fill() stroke(255) # Make it white
 
 --- task ---
 
- **Test:** Run your code and see the orbits of Venus and Earth appear.
+ **Test:** Run your code and see the orbit of Earth appear.
 
 ![A black background with a yellow circle, surrounded by three white rings. On two of the rings, red and pink circles orbit the yellow circle.](images/all_orbit.gif)
 
@@ -84,21 +106,44 @@ Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the
 
 --- code ---
 ---
-language: python filename: main.py — draw_planets() line_numbers: true line_number_start: 20
-line_highlights: 47-57
+language: python filename: main.py — draw_planets() line_numbers: true line_number_start: 19
+line_highlights: 45-55
 ---
 # draw_planets function
 def draw_planets(): colour = mercury['colour'] orbit = mercury['orbit'] size = mercury['size'] speed = mercury['speed']
 
-  make_planet( colour, orbit, size, speed )
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
+    )
+    
+    colour = venus['colour']
+    orbit = venus['orbit']
+    size = venus['size']
+    speed = venus['speed']
+    
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
+    )
+    
+    colour = earth['colour']
+    orbit = earth['orbit']
+    size = earth['size']
+    speed = earth['speed']
+    
+    make_planet(
+        colour, 
+        orbit, 
+        size, 
+        speed
+    )
 
-  colour = venus['colour'] orbit = venus['orbit'] size = venus['size'] speed = venus['speed']
-
-  make_planet( colour, orbit, size, speed )
-
-  colour = earth['colour'] orbit = earth['orbit'] size = earth['size'] speed = earth['speed']
-
-  make_planet( colour, orbit, size, speed ) --- /code ---
+--- /code ---
 
 --- /task ---
 
@@ -124,14 +169,20 @@ In `mouse_pressed()` add an `elif` statement for Earth like the one you made for
 
 --- code ---
 ---
-language: python filename: main.py — mouse_pressed() line_numbers: true line_number_start: 115
-line_highlights: 125-127
+language: python filename: main.py — mouse_pressed() line_numbers: true line_number_start: 108
+line_highlights: 118-120
 ---
-def mouse_pressed():
-# Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y))
+def mouse_pressed(): # Put code to run when the mouse is pressed here pixel_colour = Color(get(mouse_x, mouse_y)).hex  # Here the RGB value is converted to Hex so it can be used in a string comparison later
 
-  if pixel_colour == mercury['colour']: print(mercury['name']) print(mercury['info']) elif pixel_colour == venus['colour']: print(venus['name']) print(venus['info']) elif pixel_colour == earth['colour']: print(earth['name']) print(earth['info'])
+    if pixel_colour == mercury['colour'].hex:
+        print(mercury['name'])
+        print(mercury['info'])
+    elif pixel_colour == venus['colour'].hex:
+        print(venus['name'])
+        print(venus['info'])
+    elif pixel_colour == earth['colour'].hex:
+        print(earth['name'])
+        print(earth['info'])
 
 --- /code ---
 
