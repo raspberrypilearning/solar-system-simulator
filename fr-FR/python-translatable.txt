@@ -4,6 +4,8 @@ age
 
 height
 
+149.5
+
 hair
 
 brown
