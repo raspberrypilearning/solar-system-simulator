@@ -1,93 +1,93 @@
-## Create a dictionary
+## Créer un dictionnaire
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To start, you'll collect some information about Mercury and draw its orbit.
+Pour commencer, tu vas collecter quelques informations sur Mercure et dessiner son orbite.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png){:width="300px"}
+![Un arrière-plan noir avec un cercle jaune, entouré d'un anneau blanc.](images/mercury_orbit.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Solar system starter project](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Ouvre le [projet de démarrage Le système solaire](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. Le Code Editor Raspberry Pi s'ouvre dans un autre onglet du navigateur.
 
-If you have a Raspberry Pi account, you can click on the **Save button** to save a copy to your `Projects` library.
+Si tu as un compte Raspberry Pi, tu peux cliquer sur le bouton **Enregistrer** pour enregistrer une copie dans ta bibliothèque `Projets`.
 
 --- /task ---
 
-### Make a dictionary
+### Faire un dictionnaire
 
-Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (like `'distance'`) to get a value that's a number, or anything else you can store in Python.
+Les dictionnaires Python te permettent de rechercher une **clé** et d'obtenir sa **valeur**. Il peut s'agir d'un mot et de sa signification, qui sont tous deux des textes. Mais tu pourrais aussi utiliser une clé de texte (comme `'distance'`) pour obtenir une valeur qui est un nombre, ou tout autre chose que tu peux stocker en Python.
 
 --- collapse ---
 ---
-title: Python dictionaries
+title: Dictionnaires Python
 ---
 
-A dictionary in Python stores pairs of **keys** and **values**.
+En Python, un dictionnaire stocke des paires de **clés** et de **valeurs**.
 
-Keys and values can be almost any value you can store in Python. Although lists and dictionaries cannot be keys.
+Les clés et les valeurs peuvent être presque toutes les valeurs que tu peux stocker en Python. En dehors des listes et des dictionnaires, il ne peut s'agir de clés.
 
-You can use a key to get its associated value.
+Tu peux utiliser une clé pour obtenir la valeur qui lui est associée.
 
-To make a dictionary, you use curly brackets `{}`, with `key: value` pairs inside. A pair is a key, followed by a colon (`:`), followed by the value connected to that key. For example:
+Pour faire un dictionnaire, tu utilises des accolades `{}`, avec des paires `clé: valeur` à l'intérieur. Une paire est une clé, suivie de deux points (`:`), suivie de la valeur connectée à cette clé. Par exemple :
 
 ```python
-person = {
+persone = {
     'age': 12,
-    'height': 149.5,
-    'hair': 'brown',
+    'hauteur': 149.5,
+    'cheveux': 'brun',
 }
 ```
-Here, `age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets `[]`. For example:
+Ici, `age`, `taille` et `cheveux` sont les clés. Tu peux les utiliser pour rechercher leurs valeurs avec les crochets `[]`. Par exemple :
 
 ```python
 print(person['hair'])
 ```
-This will print out the value `brown`. --- /collapse ---
+Ceci imprimera la valeur `brun`. --- /collapse ---
 
 --- task ---
 
-Find the `# load_planets function` comment in the starter project. Create the function below the comment. Inside the function, make a global `mercury` dictionary. Then, add information about Mercury to the dictionary.
+Trouve le commentaire `# Fonction charger_planetes` dans le projet de démarrage. Crée la fonction sous le commentaire. À l'intérieur de la fonction, crée un dictionnaire global `mercure`. Ensuite, ajoute des informations sur Mercure au dictionnaire.
 
 <table>
 <thead>
   <tr>
-    <th>Key</th>
-    <th>Value</th>
+    <th>Clé</th>
+    <th>Valeur</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>name</td>
-    <td>Mercury</td>
+    <td>nom</td>
+    <td>Mercure</td>
   </tr>
   <tr>
-    <td>colour</td>
+    <td>couleur</td>
     <td>Color(165, 42, 42)</td>
   </tr>
   <tr>
-    <td>size</td>
+    <td>taille</td>
     <td>15</td>
   </tr>
   <tr>
-    <td>orbit</td>
+    <td>orbite</td>
     <td>150</td>
   </tr>
   <tr>
-    <td>speed</td>
+    <td>vitesse</td>
     <td>1</td>
   </tr>
   <tr>
     <td>info</td>
-    <td>The smallest and fastest planet.</td>
+    <td>La plus petite et la plus rapide des planètes.</td>
   </tr>
 </tbody>
 </table>
 
-Curly brackets `{}` are used to start and end the dictionary. A colon `:` is used to separate the key and the value(s). A comma `,` is used to separate each dictionary item.
+Les accolades `{}` sont utilisées pour démarrer et terminer le dictionnaire. Les deux points `:` sont utilisés pour séparer la clé et la (les) valeur(s). Une virgule `,` est utilisée pour séparer chaque élément du dictionnaire.
 
 --- code ---
 ---
@@ -107,15 +107,15 @@ def load_planets(): global mercury
     }
 --- /code ---
 
-**Tip:** You can put each `key: value` pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
+**Astuce :** tu peux mettre chaque paire `clé: valeur` sur sa propre ligne. Cela rend le code plus facile à lire, mais veille à tout garder à l'intérieur des accolades `{}`.
 
 --- /task ---
 
-Using a dictionary lets you keep all the information about Mercury in one place. This makes it easier to find it, and change it if you need to.
+L'utilisation d'un dictionnaire te permet de garder toutes les informations sur Mercure en un seul endroit. Il est ainsi plus facile de les retrouver et de les modifier si nécessaire.
 
 --- task ---
 
-Call `load_planets()` in your `setup()` function.
+Appelle `charger_planetes()` dans ta fonction `configuration()`.
 
 --- code ---
 ---
@@ -128,17 +128,17 @@ def setup(): # Put code to run once here size(400, 400) load_planets()
 
 --- /task ---
 
-### Draw Mercury's orbit
+### Dessiner l'orbite de Mercure
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Modelling orbits:**</span> The real planets' orbits are not perfect circles — they're the shape of an ellipse. But using circles makes the model easier to build!
+<span style="color: #0faeb0">**Modélisation des orbites :**</span> les orbites des vraies planètes ne sont pas des cercles parfaits, elles ont la forme d'une ellipse. Mais l'utilisation de cercles rend le modèle plus facile à construire !
 </p>
 
-You can get a value from a dictionary by putting its key in square brackets `[]`, just like getting a list item by its index. For example, `mercury['size']` would get you the matching value `15`.
+Tu peux obtenir une valeur d'un dictionnaire en mettant sa clé entre crochets `[]`, tout comme tu obtiens un élément de liste par son index. Par exemple, `mercure['taille']` t'obtiendrait la valeur correspondante `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the `draw_orbits()` function below it. Then draw Mercury's orbit as an `ellipse` centered in the middle  of the model `width/2` and `height/2`. The size of the `ellipse` will be `mercury['orbit']`, which is stored in your dictionary as `150`.
+Trouve le commentaire `# Fonction dessiner_orbites`. Crée la fonction `dessiner_orbites()` en dessous de celle-ci. Dessine ensuite l'orbite de Mercure sous la forme d'une `ellipse` centrée au milieu du modèle `width/2` et `height/2`. La taille de l'`ellipse` sera `mercure['orbite']`, qui est stockée dans ton dictionnaire sous la forme `150`.
 
 [[[processing-python-ellipse]]]
 
@@ -158,7 +158,7 @@ def draw_orbits(): no_fill() stroke(255)  # Make it white
 
 --- task ---
 
-Call your `draw_orbits()` function from your `draw()` function.
+Appelle ta fonction `dessiner_orbites()` à partir de ta fonction `dessiner()`.
 
 --- code ---
 ---
@@ -173,21 +173,21 @@ def draw(): # Put code to run every frame here background(0) no_stroke() draw_su
 
 --- task ---
 
- **Test:** Run your code and see the orbit of Mercury appear.
+ **Test :** exécute ton code et vois apparaître l'orbite de Mercure.
 
-![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png)
+![Un arrière-plan noir avec un cercle jaune, entouré d'un anneau blanc.](images/mercury_orbit.png)
 
-**Debug:** If you see a message about `mercury` being 'not defined':
- - Check your `load_planets()` function to be sure that it declares `mercury` as `global`
- - Check that `load_planets()` is called in `setup()`
+**Débogage :** si tu vois un message indiquant que `mercure` n'est pas "défini" :
+ - Vérifie ta fonction `charger_planetes()` pour être sûr qu'elle déclare `mercure` comme `global`
+ - Vérifie que `charger_planetes()` est appelé dans `configuration()`
 
-**Debug:** If the orbit doesn't appear:
- - Check that you have called `draw_orbits()` in your `draw()` function
- - Check `draw_orbits()` to be sure you have used `stroke(255)` to make the ellipse white
+**Débogage :** si l'orbite n'apparaît pas :
+ - Vérifie que tu as bien appelé `dessiner_orbites()` dans ta fonction `dessiner()`
+ - Vérifie `dessiner_orbites()` pour être sûr que tu as bien utilisé `stroke(255)` pour rendre l'ellipse blanche
 
-**Debug:** If the orbit is a filled circle, instead of a ring, check you have `no_fill()` in your `draw_orbits()` function.
+**Débogage :** si l'orbite est un cercle rempli, au lieu d'un anneau, vérifie que tu as `no_fill()` dans ta fonction `dessiner_orbites()`.
 
-**Debug:** If you get a `bad input` error, check that you have a `:` in between the keys and values of your `mercury` dictionary, and that each line (except the very last one) has a comma.
+**Débogage :** si tu obtiens une erreur `bad input`, vérifie que tu as bien un `:` entre les clés et les valeurs de ton dictionnaire `mercure`, et que chaque ligne (sauf la toute dernière) comporte une virgule.
 
 --- /task ---
 
