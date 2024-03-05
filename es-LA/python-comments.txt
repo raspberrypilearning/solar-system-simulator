@@ -1,0 +1,71 @@
+load_planets function
+
+Put code to run once here
+
+draw_orbits function
+
+Make it white
+
+Put code to run every frame here
+
+draw_planets function
+
+Put code to run when the mouse is pressed here
+
+Here the RGB value is converted to Hex so it can be used in a string comparison later
+
+Split Venus' data
+
+int() for whole numbers
+
+float() for decimals
+
+Yellow
+
+2D transformation
+
+Centre the orbit on the centre of the model
+
+Rotate 'speed' degrees every frame
+
+Draw the planet
+
+End the 2D transformation
+
+Mercury
+
+Venus
+
+Earth
+
+Mars
+
+Jupiter
+
+Saturn
+
+Uranus
+
+Neptune
+
+The smallest and fastest planet.
+
+The hottest planet in the solar system. Water would turn to steam and some metals would melt just by being there!
+
+You are here — the only planet we know of that can support life.
+
+Home of Olympus Mons — the highest mountain in the Solar System.
+
+The largest planet in the Solar System but with the shortest day — a little under ten hours.
+
+Saturn's rings are wide enough to fit almost 10 Earths side-by-side. But they're only around 10 metres high!
+
+The coldest planet in the Solar System and the first discovered after the telescope was invented.
+
+The farthest planet from the Sun. Neptune's day is only 16 hours — but its year is 165 Earth years!
+
+Kangchenjunga
+
+Himalayas
+
+8586 metres
