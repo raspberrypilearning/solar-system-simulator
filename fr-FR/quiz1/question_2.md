@@ -1,10 +1,10 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-Your project read a lot of data from dictionaries to create the planets and their orbits. If your program contained this dictionary, how would you print the height of the mountain?
+Ton projet a lu beaucoup de données dans les dictionnaires pour créer les planètes et leurs orbites. Si ton programme contenait ce dictionnaire, comment imprimerais-tu la hauteur de la montagne ?
 
 ```python
 
@@ -24,7 +24,7 @@ print(height)
 ```
   --- feedback ---
 
-  Not exactly, this would print a variable called `height`. This dictionary is called `mountain`.
+  Pas exactement, cela imprimerait une variable appelée `hauteur`. Ce dictionnaire est appelé `montagne`.
 
   --- /feedback ---
 
@@ -35,7 +35,7 @@ print(mountain['height'])
 
   --- feedback ---
 
-    Correct! This will print the value stored with the `height` key.
+    Correct ! Cela imprimera la valeur stockée dans la clé 'hauteur'.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ print(mountain{'height'})
 
   --- feedback ---
 
-  Almost right — braces (`{}`) are used to create a dictionary. But a different pair of characters are used to get a value from it.
+  C'est presque vrai : les accolades (`{}`) sont utilisées pour créer un dictionnaire. Mais une autre paire de caractères est utilisée pour obtenir une valeur.
 
   --- /feedback ---
 
@@ -57,7 +57,7 @@ print(mountain)
 
   --- feedback ---
 
-  Close! This will print the whole dictionary — you just want to print the value stored with the `height` key.
+  Fermer ! Cela imprimera tout le dictionnaire. Tu veux juste imprimer la valeur stockée avec la clé `hauteur`.
 
   --- /feedback ---
 
