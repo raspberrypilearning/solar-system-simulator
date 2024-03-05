@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
 
-Your program took values from a list and stored them in a dictionary. Now, you have a program with this code:
+Ton programme a pris des valeurs dans une liste et les a stockées dans un dictionnaire. Maintenant, tu as un programme avec ce code :
 
 --- code ---
 ---
@@ -14,34 +14,34 @@ language: python
 
 pets = ['cat', 'dog', 'rabbit']
 
-person = { 'age': 12, 'hair': 'brown', 'pet': pets[1] }
+personne = { 'age': 12, 'cheveux': 'brun', 'animal': animaux[1] }
 
 print(person['pet'])
 
 --- /code ---
 
-If you run the program, which of these would you expect it to display?
+Lorsque tu lanceras le programme, laquelle de ces options devrait s'afficher ?
 
 --- choices ---
 
 - (x)
 ```
-dog
+chien
 ```
   --- feedback ---
 
-  That's right! The `person` dictionary has saved 'dog' — which has the index `1` in the `pets` list — with the `pet` key.
+  C'est exact ! Le dictionnaire `personne` a enregistré 'chien' - qui a l'indice `1` dans la liste `animaux` - avec la clé `animal`.
 
   --- /feedback ---
 
 - ( )
 ```
-cat
+chat
 ```
 
   --- feedback ---
 
-  Close — 'cat' is the first item in `pets`, but list indexes don't start from `1`.
+  Presque - 'chat' est le premier élément dans `animaux`, mais les index de liste ne commencent pas à partir de `1`.
 
   --- /feedback ---
 
@@ -52,7 +52,7 @@ pets[1]
 
   --- feedback ---
 
-  Not exactly. Python will get the string stored at `pets[1]` and store that string in `person` with the `pet` key.
+  Pas exactement. Python récupère la chaîne stockée dans `animaux[1]` et la stocke dans `personne` avec la clé `animal`.
 
   --- /feedback ---
 
@@ -63,7 +63,7 @@ pets[1]
 
   --- feedback ---
 
-  Not quite. This is the whole `pets` list. But only one item from that list was added to the dictionary.
+  Pas tout à fait. Voici la liste complète des `animaux` . Mais un seul élément de cette liste a été ajouté au dictionnaire.
 
   --- /feedback ---
 
