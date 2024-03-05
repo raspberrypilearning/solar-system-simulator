@@ -1,37 +1,37 @@
-## Make Venus
+## Créer Vénus
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time for Venus to join Mercury in your model.
+Il est temps pour Vénus de rejoindre Mercure dans ton modèle.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle. Information about Venus appears in the text output.](images/venus_info.gif)
+![Un arrière-plan noir avec un cercle jaune, entouré de deux anneaux blanc. Sur les anneaux, des cercles rouges et roses gravitent autour du cercle jaune. Des informations sur Venus apparaissent dans text output.](images/venus_info.gif)
 </div>
 </div>
 
-Values for other planets are in the `planets.csv` file.
+Les valeurs des autres planètes se trouvent dans le fichier `planets.csv`.
 
 --- collapse ---
 ---
-title: What's in planets.csv?
+title: Que contient planets.csv ?
 ---
 
-The file `planets.csv` has a line of headings, followed by one line for each planet in the solar system. The colour of a planet is made up of three values — one each for red, green, and blue. For example:
+Le fichier `planets.csv` comporte une ligne de titres, suivie d'une ligne pour chaque planète du système solaire. La couleur d'une planète est composée de trois valeurs : une pour le rouge, une pour le vert et une pour le bleu. Par exemple :
 
 ```
 planet,colour_r,colour_g,colour_b,size,orbit,speed,info
 Mercury,165,42,42,15,150,1,The smallest and fastest planet.
-Venus,255,190,200,30,200,0.75,The hottest planet in the solar system. Water would turn to steam and some metals would melt just by being there!
+Venus,255,190,200,30,200,0.75,The hottest planet in the solar system. L'eau s'y transformerait en vapeur et certains métaux fondraient rien qu'en s'y trouvant !
 Earth,104,149,197,35,300,0.5,You are here — the only planet we know of that can support life.
 ```
 
 --- /collapse ---
 
-### Load the data
+### Charger les données
 
 --- task ---
 
-Add a `global` variable for Venus to your `load_planets()` function:
+Ajoute une variable `global` pour Vénus à ta fonction `charger_planetes()` :
 
 --- code ---
 ---
@@ -45,7 +45,7 @@ def load_planets(): global mercury, venus --- /code ---
 
 --- task ---
 
-Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then use the `splitlines()` function to split the text string in `data` into a list. Each line in the string will become an item in the list.
+Sous ton dictionnaire `mercure`, charge `planets.csv` dans une variable `donnees`. Utilise ensuite la fonction `splitlines()` pour diviser la chaîne de texte contenue dans `donnees` en une liste. Chaque ligne de la chaîne devient un élément de la liste.
 
 [[[generic-python-file-read]]]
 
@@ -71,11 +71,11 @@ line_highlights: 44-46
 
 --- /task ---
 
-Now you have the data in your program. Next, you'll make that data into dictionaries, like the one you made for Mercury. `lines[2]` has the data for Venus, and `lines[3]` has the data for Earth.
+Tu as maintenant les données dans ton programme. Ensuite, tu transformeras ces données en dictionnaires, comme celui que tu as créé pour Mercure. `lignes[2]` a les données pour Vénus, et `lignes[3]` a les données pour la Terre.
 
 --- task ---
 
-Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out.
+Divise `lignes[2]` au niveau des virgules et stocke-la dans `planete`. Puis imprime `planete` en sortie.
 
 --- code ---
 ---
@@ -95,23 +95,23 @@ line_highlights: 48-49
 
 --- task ---
 
-**Test:** Try running your code, and look at the list of data it prints out. Notice that the numbers are inside  quotes `'`. This shows that Python sees them as text strings, instead of numbers it could do maths with.
+**Test :** essaie d'exécuter ton code, et regarde la liste des données qu'il imprime. Remarque que les chiffres sont entre guillemets `'`. Cela montre que Python les considère comme des chaînes de texte, et non comme des nombres avec lesquels il pourrait faire des calculs.
 
-![The information about Venus, printed out as a list.](images/venus_dict.png)
+![Les informations sur Vénus, imprimées sous forme de liste.](images/venus_dict.png)
 
-**Debug:** If your `planet` prints out a list with only one item, then check that you have `','` in the `()` of `lines[2].split()`.
+**Débogage :** si ta `planete` imprime une liste avec un seul élément, alors vérifie que tu as bien `','` dans le `()` de `lignes[2].split()`.
 
-**Debug:** If you see a message about `split` being 'not defined', check that you have included `lines[2].` before it.
+**Débogage :** si tu vois un message indiquant que `split` est "non défini", vérifie que tu as bien inclus `lignes[2].` avant lui.
 
-**Debug:** If you see a message like `'list' object has no attribute 'split'`, check that you have included `[2]` after `lines`.
+**Débogage :** si tu vois un message `'list' object has no attribute 'split'`, vérifie que tu as bien inclus `[2]` après `lignes`.
 
-**Tip:** Now that you've used it for testing, you can comment-out `print(planet)` with `#`.
+**Astuce :** maintenant que tu l'as utilisé pour tester, tu peux commenter `print(planete)` avec `#`.
 
 --- /task ---
 
 --- task ---
 
-Load the list of values from `planet` into a `venus` dictionary. As you are making the dictionary, change any numbers from text to numbers. Use `int()` for whole numbers and `float()` for decimals.
+Charge la liste des valeurs de `planete` dans un dictionnaire `venus`. Lorsque tu créeras le dictionnaire, change tous les nombres de texte en nombres. Utilise `int()` pour les nombres entiers et `float()` pour les décimales.
 
 --- code ---
 ---
@@ -139,9 +139,9 @@ line_highlights: 50-57
 
 --- task ---
 
-### Draw the orbit
+### Dessiner l'orbite
 
-Go to your `draw_orbits()` function and add the orbit of Venus.
+Va dans ta fonction `dessiner_orbites()` et ajoute l'orbite de Vénus.
 
 --- code ---
 ---
@@ -160,37 +160,37 @@ def draw_orbits(): no_fill() stroke(255) # Make it white
 
 --- task ---
 
-**Test:** Run your code and see the orbit of Venus appear.
+**Test :** exécute ton code et vois apparaître l'orbite de Vénus.
 
-![A black background with a yellow circle, surrounded by two white rings. A red circle is orbiting the yellow circle on the inside ring.](images/mercury_venus_orbit.gif)
+![Un arrière-plan noir avec un cercle jaune, entouré de deux anneaux blanc. Un cercle rouge tourne autour du cercle jaune sur l’anneau intérieur.](images/mercury_venus_orbit.gif)
 
-**Debug:** If you see a message about `venus` being 'not defined', check `load_planets()`. Make sure you have declared `venus`  as `global`.
+**Débogage :** si tu vois un message indiquant que `venus` n'est pas "défini", vérifie `charger_planetes()`. Assure-toi d'avoir déclaré `venus` comme `global`.
 
 --- /task ---
 
-### Draw the planet
+### Dessiner la planète
 
 --- task ---
 
-Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Venus.
+Va dans ta fonction `dessiner_planetes()`. Ajoute un appel `creer_planete()`, en lui transmettant les valeurs pour Vénus.
 
-**Tip:** You can copy and paste the code you used to make Mercury to save some time and typing. Just change all the mentions of `mercury` to `venus` in the copy.
+**Astuce :** tu peux copier et coller le code que tu as utilisé pour créer Mercure afin de gagner du temps et d'éviter les fautes de frappe. Il suffit de changer toutes les mentions de `mercure` en `venus` dans la copie.
 
 --- collapse ---
 ---
-title: Copy and pasting
+title: Copier et coller
 ---
 
-You can copy text and paste a copy in another place.
+Tu peux copier du texte et coller une copie à un autre endroit.
 
- 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose **Edit** > **Copy**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows or Linux, or <kbd>Cmd</kbd>+<kbd>C</kbd> on a Mac.
- 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
+ 1. Sélectionne le texte que tu veux copier en faisant glisser ta souris dessus tout en maintenant le bouton gauche enfoncé.
+ 2. Copie le texte en utilisant le menu de ton navigateur - choisis **Editer** > **Copier**. Tu peux aussi utiliser un raccourci clavier - <kbd>Ctrl</kbd>+<kbd>C</kbd> sous Windows ou Linux, ou <kbd>Cmd</kbd>+<kbd>C</kbd> sur Mac.
+ 3. Déplace ton curseur de texte (la ligne clignotante qui indique l'endroit où tu es en train de taper) à l'endroit où tu veux placer une copie du texte.
+ 4. Colle le texte en utilisant le menu de ton navigateur - choisis **Editer** > **Coller**. Tu peux aussi utiliser un raccourci clavier - <kbd>Ctrl</kbd>+<kbd>V</kbd> sous Windows ou Linux, ou <kbd>Cmd</kbd>+<kbd>V</kbd> sur un Mac.
 
-Then you can make any changes you need to the copy.
+Tu peux ensuite apporter toutes les modifications nécessaires à la copie.
 
-![Code being copied and changed as described.](images/code_copy.gif){:width="300px"}
+![Code copié et modifié comme décrit.](images/code_copy.gif){:width="300px"}
 
 --- /collapse ---
 
@@ -226,23 +226,23 @@ def draw_planets(): colour = mercury['colour'] orbit = mercury['orbit'] size = m
 
 --- task ---
 
-**Test:** Run your code and check that Venus orbits the Sun.
+**Test :** exécute ton code et vérifie que Vénus tourne autour du Soleil.
 
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle.](images/mercury_venus.gif){:width="400px"}
+![Un arrière-plan noir avec un cercle jaune, entouré de deux anneaux blanc. Sur les anneaux, des cercles rouges et roses gravitent autour du cercle jaune.](images/mercury_venus.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
+**Débogage :** si tu obtiens un message de type "KeyError", vérifie l'orthographe de tes clés dans `creer_planete()`. Assure-toi que l'orthographe est la même dans `charger_planetes()`. Le fait que les lettres soient en majuscules ou en minuscules est également important.
 
-**Debug:** If any planet is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Débogage :** si une planète est trop grande, trop lente ou non visible, vérifie que ton code `dessiner_planetes()` est le même que celui de l'exemple. Vérifie notamment que les clés sont dans le bon ordre.
 
 --- /task ---
 
-### Tell users about Venus
+### Parler de Venus aux utilisateurs
 
-Like Mercury, Venus should print out an interesting fact when it's clicked on.
+Comme Mercure, Vénus devrait imprimer une information intéressante lorsqu'on clique dessus.
 
 --- task ---
 
-In `mouse_pressed()` add `elif` statements after the `if` statement you made for Mercury. Have these check for Venus' colour. Then, if there's a match, `print()` the right fact.
+Dans `mouse_pressed()`, ajoute des instructions `elif` après l'instruction `if` que tu as faite pour Mercure. Fais-le vérifier la couleur de Vénus. Ensuite, s'il y a une correspondance, `print()` la bonne information.
 
 --- code ---
 ---
@@ -264,11 +264,11 @@ def mouse_pressed(): # Put code to run when the mouse is pressed here pixel_colo
 
 --- task ---
 
-**Test:** Run your code. Click on Venus to see its information print out.
+**Test :** exécute ton code. Clique sur Vénus pour voir ses informations imprimées.
 
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle. Information about Venus appears in the text output.](images/venus_info.gif){:width="400px"}
+![Un arrière-plan noir avec un cercle jaune, entouré de deux anneaux blanc. Sur les anneaux, des cercles rouges et roses gravitent autour du cercle jaune. Des informations sur Vénus apparaissent dans text output.](images/venus_info.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Venus, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Débogage :** si rien ne se passe lorsque tu cliques sur Vénus, vérifie sa déclaration `elif`. Assure-toi qu'elle ressemble exactement à l'exemple ci-dessus. Vérifie que tu as bien `==` et non `=`.
 
 --- /task ---
 
