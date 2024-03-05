@@ -1,16 +1,16 @@
 from p5 import *
 
 
-def make_planet(colour, orbit, size, speed):
+def creer_planete(couleur, orbite, taille, vitesse):
     no_stroke()
-    fill(colour)
-    # 2D transformation
+    fill(couleur)
+    # Transformation 2D
     push_matrix()
-    # Centre the orbit on the centre of the model
+    # Centrer l'orbite sur le centre du modèle
     translate(width / 2, height / 2)
-    # Rotate 'speed' degrees every frame
-    rotate(radians((frame_count * speed) % 360))
-    # Draw the planet
-    ellipse(orbit / 2, 0, size, size)
-    # End the 2D transformation
+    # Rotation de la "vitesse" en degrés à chaque frame
+    rotate(radians((frame_count * vitesse) % 360))
+    # Dessiner la planète
+    ellipse(orbite / 2, 0, taille, taille)
+    # Fin de la transformation 2D
     pop_matrix()
