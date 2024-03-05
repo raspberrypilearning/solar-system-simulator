@@ -1,49 +1,49 @@
-## Upgrade your project
+## Améliorer ton projet
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, add more planets to your model, or change the ones you have.
+Dans cette étape, ajoute d'autres planètes à ton modèle, ou modifie celles que tu as.
 </div>
 <div>
-![A model of the solar system with all eight planets.](images/full_solar.gif){:width="300px"}
+![Un modèle du système solaire avec les huit planètes.](images/full_solar.gif){:width="300px"}
 </div>
 </div>
 
-### Add more planets
-The `planets.csv` file has information for the other five planets too. Add as many of them as you want.
+### Ajouter plus de planètes
+Le fichier `planets.csv` contient également des informations sur les cinq autres planètes. Ajoutes-en autant que tu le souhaites.
 
 --- task ---
 
-To add a planet to your model you will need to:
- - Add code to load it in `load_planets()`
- - Add code to draw its orbit in `draw_orbits()`
- - Add code to draw the planet in `draw_planets()`
- - Add code to notice when the planet is clicked, and print out its info in `mouse_pressed()`
+Pour ajouter une planète à ton modèle, tu devras :
+ - Ajouter du code pour le charger dans `charger_planetes()`
+ - Ajouter du code pour dessiner son orbite dans `dessiner_orbites()`
+ - Ajouter du code pour dessiner la planète dans `dessiner_planetes()`
+ - Ajouter du code pour savoir quand la planète est cliquée, et imprimer ses informations dans `mouse_pressed()`
 
- **Tip:** Don't forget you can copy and paste code!
+ **Astuce :** n'oublie pas que tu peux copier et coller du code !
 
 --- /task ---
 
 --- task ---
 
-Increase the `size()` in your `setup()` function to make the model large enough to see your new planets; `size(900, 900)` will fit them all in.
+Augmente la `taille()` dans ta fonction `configuration()` pour que le modèle soit assez grand pour voir tes nouvelles planètes ; `size(900, 900)` les fera toutes rentrer.
 
 --- /task ---
 
-### Make up a planet!
+### Créer une planète !
 
 --- task ---
 
-Add an extra planet to the solar system. Create a new `global` variable with a dictionary for it. Then, add code to draw it and to print out its info.
+Ajoute une planète supplémentaire au système solaire. Crée une nouvelle variable `global` avec un dictionnaire pour elle. Ensuite, ajoute du code pour la dessiner et pour imprimer ses informations.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Completed project
+title: Le projet terminé
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/solar-system-example){:target="_blank"}.
+Tu peux voir le [projet terminé ici](https://editor.raspberrypi.org/en/projects/solar-system-example){:target="_blank"}.
 
 --- /collapse ---
 
