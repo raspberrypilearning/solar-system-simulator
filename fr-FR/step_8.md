@@ -1,10 +1,10 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Codebreaker](https://projects.raspberrypi.org/en/projects/codebreaker/) project. In that project, you will analyse a graph to crack a hidden code!
+Si tu suis le parcours [Plus de Python](https://projects.raspberrypi.org/en/pathways/more-python), tu peux passer au projet [Codebreaker](https://projects.raspberrypi.org/en/projects/codebreaker/). Dans ce projet, tu analyseras un graphique pour déchiffrer un code caché !
 
 --- print-only ---
 
-![The codebreaker project.](images/codebreaker.png)
+![Le projet Codebreaker.](images/codebreaker.png)
 
 --- /print-only ---
 
@@ -15,4 +15,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Si tu veux t'amuser davantage en explorant Python, tu peux essayer l'un de [ces projets](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
