@@ -3,129 +3,129 @@ from p5 import *
 from make_planet import make_planet
 
 
-def draw_sun():
-    fill(255, 255, 0)  # Yellow
+def dessiner_soleil():
+    fill(255, 255, 0)  # Jaune
     ellipse(width / 2, height / 2, 100, 100)
 
 
-# draw_orbits function
-def draw_orbits():
+# Fonction dessiner_orbites
+def dessiner_orbites():
     no_fill()
-    stroke(255)  # Make it white
+    stroke(255)  # Rendre blanc
 
-    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
-    ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+    ellipse(width / 2, height / 2, mercure['orbite'], mercure['orbite'])
+    ellipse(width / 2, height / 2, venus['orbite'], venus['orbite'])
+    ellipse(width / 2, height / 2, terre['orbite'], terre['orbite'])
 
-# draw_planets function
+# Fonction dessiner_planetes
 
 
-def draw_planets():
+def dessiner_planetes():
 
-    colour = mercury['colour']
-    orbit = mercury['orbit']
-    size = mercury['size']
-    speed = mercury['speed']
+    couleur = mercure['couleur']
+    orbite = mercure['orbite']
+    taille = mercure['taille']
+    vitesse = mercure['vitesse']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    creer_planete(
+        couleur,
+        orbite,
+        taille,
+        vitesse
     )
 
-    colour = venus['colour']
-    orbit = venus['orbit']
-    size = venus['size']
-    speed = venus['speed']
+    couleur = venus['couleur']
+    orbite = venus['orbite']
+    taille = venus['taille']
+    vitesse = venus['vitesse']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    creer_planete(
+        couleur,
+        orbite,
+        taille,
+        vitesse
     )
 
-    colour = earth['colour']
-    orbit = earth['orbit']
-    size = earth['size']
-    speed = earth['speed']
+    couleur = terre['couleur']
+    orbite = terre['orbite']
+    taille = terre['taille']
+    vitesse = terre['vitesse']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    creer_planete(
+        couleur,
+        orbite,
+        taille,
+        vitesse
     )
 
 
-# load_planets function
-def load_planets():
-    global mercury, venus, earth
+# Fonction charger_planetes
+def charger_planetes():
+    global mercure, venus, terre
 
-    mercury = {
-        'name': 'Mercury',
-        'colour': Color(165, 42, 42),
-        'size': 15,
-        'orbit': 150,
-        'speed': 1,
-        'info': 'The smallest, and fastest, planet.'
+    mercure = {
+        'nom': 'Mercure',
+        'couleur': Color(165, 42, 42),
+        'taille': 15,
+        'orbite': 150,
+        'vitesse': 1,
+        'info': 'La plus petite et la plus rapide des planètes.'
     }
 
     with open('planets.csv') as f:
-        data = f.read()
-        lines = data.splitlines()
+        donnees = f.read()
+        lignes = donnees.splitlines()
 
-    planet = lines[2].split(',')  # Split Venus' data
+    planete = lignes[2].split(',')  # Diviser les données de Vénus
     venus = {
-        'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),  # int() for whole numbers
-        'orbit': int(planet[5]),
-        'speed': float(planet[6]),  # float() for decimals
-        'info': planet[7]
+        'nom': planete[0],
+        'couleur': Color(int(planete[1]), int(planete[2]), int(planete[3])),
+        'taille': int(planete[4]),  # int() pour les nombres entiers
+        'orbite': int(planete[5]),
+        'vitesse': float(planete[6]),  # float() pour les décimales
+        'info': planete[7]
     }
 
-    planet = lines[3].split(',')
-    earth = {
-        'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),
-        'orbit': int(planet[5]),
-        'speed': float(planet[6]),
-        'info': planet[7]
+    planete = lignes[3].split(',')
+    terre = {
+        'nom': planete[0],
+        'couleur': Color(int(planete[1]), int(planete[2]), int(planete[3])),
+        'taille': int(planete[4]),
+        'orbite': int(planete[5]),
+        'vitesse': float(planete[6]),
+        'info': planete[7]
     }
 
 
 def setup():
-    # Put code to run once here
+    # Mettre le code à exécuter ci-dessous
     size(400, 400)
-    load_planets()
+    charger_planetes()
 
 
 def draw():
-    # Put code to run every frame here
+    # Mettre le code pour exécuter chaque frame ici
     background(0)
     no_stroke()
-    draw_sun()
-    draw_orbits()
-    draw_planets()
+    dessiner_soleil()
+    dessiner_orbites()
+    dessiner_planetes()
 
 
 def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    # Mettre le code à exécuter lorsque la souris est pressée ici
+    # Ici, la valeur RVB est convertie en hexadécimal afin de pouvoir être utilisée ultérieurement dans une comparaison de chaînes de caractères
+    couleur_pixel = Color(get(mouse_x, mouse_y)).hex
 
-    if pixel_colour == mercury['colour'].hex:
-        print(mercury['name'])
-        print(mercury['info'])
-    elif pixel_colour == venus['colour'].hex:
-        print(venus['name'])
+    if couleur_pixel == mercure['couleur'].hex:
+        print(mercure['nom'])
+        print(mercure['info'])
+    elif couleur_pixel == venus['couleur'].hex:
+        print(venus['nom'])
         print(venus['info'])
-    elif pixel_colour == earth['colour'].hex:
-        print(earth['name'])
-        print(earth['info'])
+    elif couleur_pixel == terre['couleur'].hex:
+        print(terre['nom'])
+        print(terre['info'])
 
 
 run(frame_rate=60)
