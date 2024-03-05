@@ -1,24 +1,24 @@
-load_planets function
+Fonction charger_planetes
 
-Put code to run once here
+Mettre le code à exécuter une fois ici
 
-draw_orbits function
+Fonction dessiner_orbites
 
-Make it white
+Rendre blanc
 
-Put code to run every frame here
+Mettre le code pour exécuter chaque image ici
 
-draw_planets function
+Fonction dessiner_planetes
 
-Put code to run when the mouse is pressed here
+Mettre le code à exécuter lorsque la souris est pressée ici
 
-Here the RGB value is converted to Hex so it can be used in a string comparison later
+Ici, la valeur RVB est convertie en hexadécimal afin de pouvoir être utilisée ultérieurement dans une comparaison de chaînes de caractères
 
-Split Venus' data
+Diviser les données de Vénus
 
-int() for whole numbers
+int() pour les nombres entiers
 
-float() for decimals
+float() pour les décimales
 
 Yellow
 
@@ -32,40 +32,40 @@ Draw the planet
 
 End the 2D transformation
 
-Mercury
+Mercure
 
-Venus
+Vénus
 
-Earth
+Terre
 
 Mars
 
 Jupiter
 
-Saturn
+Saturne
 
 Uranus
 
 Neptune
 
-The smallest and fastest planet.
+La plus petite et la plus rapide des planètes.
 
-The hottest planet in the solar system. Water would turn to steam and some metals would melt just by being there!
+La planète la plus chaude du système solaire. L'eau se transformerait en vapeur et certains métaux fondraient s'ils étaient là !
 
-You are here — the only planet we know of that can support life.
+Tu es ici. La seule planète que nous connaissons qui puisse abriter la vie.
 
-Home of Olympus Mons — the highest mountain in the Solar System.
+Elle abrite Olympus Mons - la plus haute montagne du système solaire.
 
-The largest planet in the Solar System but with the shortest day — a little under ten hours.
+La plus grande planète du système solaire, mais avec le jour le plus court - un peu moins de 10 heures.
 
-Saturn's rings are wide enough to fit almost 10 Earths side-by-side. But they're only around 10 metres high!
+Les anneaux de Saturne sont assez larges pour contenir près de 10 Terres côte à côte. Mais ils ne font qu'une dizaine de mètres de haut !
 
-The coldest planet in the Solar System and the first discovered after the telescope was invented.
+La planète la plus froide du système solaire et la première découverte après l'invention du télescope.
 
-The farthest planet from the Sun. Neptune's day is only 16 hours — but its year is 165 Earth years!
+La planète la plus éloignée du Soleil. Une journée sur Neptune ne dure que 16 heures, mais une année dure 165 années terrestres !
 
 Kangchenjunga
 
-Himalayas
+Himalaya
 
-8586 metres
+8586 mètres
