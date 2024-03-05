@@ -1,19 +1,19 @@
-## Make Earth
+## Créer la Terre
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now finish the model by adding the planet you're on!
+Maintenant, termine le modèle en ajoutant la planète sur laquelle tu te trouves !
 </div>
 <div>
-![A black background with a yellow circle, surrounded by three white rings. On  the rings, red, pink, and blue circles orbit around the yellow circle. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
+![Un arrière-plan noir avec un cercle jaune, entouré de trois anneaux blanc. Sur les anneaux, des cercles rouges, roses et bleus orbitent autour du cercle jaune. Des informations sur la Terre apparaissent dans text output.](images/all_planets_info.gif){:width="400px"}
 </div>
 </div>
 
-### Load the data
+### Charger les données
 
 --- task ---
 
-Add a `global` variable for Earth to your `load_planets()` function:
+Ajoute une variable `global` pour la Terre à ta fonction `charger_planetes()` :
 
 --- code ---
 ---
@@ -25,13 +25,13 @@ def load_planets(): global mercury, venus, earth --- /code ---
 
 --- /task ---
 
-You already have the data in your program: Earth's data was loaded into `lines` when you loaded `planets.csv`.
+Tu as déjà les données dans ton programme : les données de la Terre ont été chargées dans `lignes` lorsque tu as chargé `planets.csv`.
 
 --- task ---
 
-Below your `venus` dictionary, split `lines[3]` and put it in an `earth` dictionary.
+En dessous de ton dictionnaire `venus`, divise `lignes[3]` et mets-le dans un dictionnaire `terre`.
 
-**Tip:** You can copy and paste the code you used to make the `venus` dictionary to save you some time. Then just make small changes — `lines[2]` to `lines[3]`, and `venus` to `earth`.
+**Astuce :** tu peux copier et coller le code que tu as utilisé pour réaliser le dictionnaire `venus` pour te faire gagner du temps. Ensuite, il suffit de faire de petits changements - `lignes[2]` en `lignes[3]`, et `venus` en `terre`.
 
 --- code ---
 ---
@@ -68,9 +68,9 @@ line_highlights: 71-79
 
 --- /task ---
 
-### Draw the orbit
+### Dessiner l'orbite
 
-Go to your `draw_orbits()` function and add the orbit of Earth.
+Va dans ta fonction `dessiner_orbites()` et ajoute l'orbite de la Terre.
 
 --- code ---
 ---
@@ -90,19 +90,19 @@ def draw_orbits(): no_fill() stroke(255)  # Make it white
 
 --- task ---
 
- **Test:** Run your code and see the orbit of Earth appear.
+ **Test :** exécute ton code et vois apparaître l'orbite de la Terre.
 
-![A black background with a yellow circle, surrounded by three white rings. On two of the rings, red and pink circles orbit the yellow circle.](images/all_orbit.gif)
+![Un arrière-plan noir avec un cercle jaune, entouré de trois anneaux blanc. Sur deux des anneaux, des cercles rouges et roses gravitent autour du cercle jaune.](images/all_orbit.gif)
 
-**Debug:** If you see a message about `earth` being 'not defined', check `load_planets()`. Make sure you have declared `earth`  as `global`.
+**Débogage :** si tu vois un message indiquant que `terre` n'est pas "défini", vérifie `charger_planetes()`. Assure-toi d'avoir déclaré `terre` comme `global`.
 
 --- /task ---
 
-### Draw Earth
+### Dessiner la Terre
 
 --- task ---
 
-Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Earth. Like with Venus, you can copy and paste code here to save yourself some work.
+Va dans ta fonction `dessiner_planetes()`. Ajoute un appel `creer_planete()`, en lui transmettant les valeurs pour la Terre. Comme pour Vénus, tu peux copier et coller du code ici pour t'épargner du travail.
 
 --- code ---
 ---
@@ -149,23 +149,23 @@ def draw_planets(): colour = mercury['colour'] orbit = mercury['orbit'] size = m
 
 --- task ---
 
-**Test:** Run your code and check that Earth orbits the Sun.
+**Test :** exécute ton code et vérifie que la Terre tourne autour du Soleil.
 
-![A black background with a yellow circle, surrounded by three white rings. On the rings, red, pink, and blue circles orbit around the yellow circle.](images/all_planets.gif){:width="400px"}
+![Un arrière-plan noir avec un cercle jaune, entouré de trois anneaux blanc. Sur les anneaux, des cercles rouges, roses et bleus gravitent autour du cercle jaune.](images/all_planets.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
+**Débogage :** si tu obtiens un message de type "KeyError", vérifie l'orthographe de tes clés dans `creer_planete()`. Assure-toi que l'orthographe est la même dans `charger_planetes()`. Le fait que les lettres soient en majuscules ou en minuscules est également important.
 
-**Debug:** If any planet is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Débogage :** si une planète est trop grande, trop lente ou non visible, vérifie que ton code `dessiner_planetes()` est le même que celui de l'exemple. Vérifie notamment que les clés sont dans le bon ordre.
 
 --- /task ---
 
-### Tell users about Earth
+### Parler de la Terre aux utilisateurs
 
-Like Mercury and Venus, Earth should print out an interesting fact when it's clicked on.
+Comme Mercure et Vénus, la Terre devrait imprimer une information intéressante lorsqu'on clique dessus.
 
 --- task ---
 
-In `mouse_pressed()` add an `elif` statement for Earth like the one you made for Venus. Have it check for Earth's colour. Then, if there's a match, `print()` the right fact.
+Dans `mouse_pressed()`, ajoute une instruction `elif` pour la Terre comme celle que tu as faite pour Vénus. Fais en sorte qu'elle vérifie la couleur de la Terre. Ensuite, s'il y a une correspondance, `print()` la bonne information.
 
 --- code ---
 ---
@@ -190,11 +190,11 @@ def mouse_pressed(): # Put code to run when the mouse is pressed here pixel_colo
 
 --- task ---
 
-**Test:** Run your code. Click on Earth to see its information print out.
+**Test :** exécute ton code. Clique sur la Terre pour voir ses informations imprimées.
 
-![A black background with a yellow circle, surrounded by three white rings. On the rings, red, pink, and blue circles orbit around the yellow circle. Information about Earth appears in the text output.](images/all_planets_info.gif){:width="400px"}
+![Un arrière-plan noir avec un cercle jaune, entouré de trois anneaux blanc. Sur les anneaux, des cercles rouges, roses et bleus gravitent autour du cercle jaune. Des informations sur la Terre apparaissent dans text output.](images/all_planets_info.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Earth, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Débogage :** si rien ne se passe lorsque tu cliques sur la Terre, vérifie sa déclaration `elif`. Assure-toi qu'elle ressemble exactement à l'exemple ci-dessus. Vérifie que tu as bien `==` et non `=`.
 
 --- /task ---
 
