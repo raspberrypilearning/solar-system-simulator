@@ -1,18 +1,18 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-You made a lot of dictionaries in your project. Which of these is the right way to create a dictionary about a person?
+Tu as créé beaucoup de dictionnaires dans ton projet. Quelle est la bonne façon de créer un dictionnaire sur une personne ?
 
 --- choices ---
 
@@ -23,7 +23,7 @@ person = ['age', 12, 'hair', 'brown']
 
   --- feedback ---
 
-  Not quite, this is a list. Lists are made with square brackets (`[]`).
+  Pas tout à fait, c'est une liste. Les listes sont créées avec des crochets (`[]`).
 
   --- /feedback ---
 
@@ -37,7 +37,7 @@ person = {
 
   --- feedback ---
 
-  Close! But, when making a dictionary, keys and their values aren't separated by `=`.
+  Fermer ! Mais lors de la création d'un dictionnaire, les clés et leurs valeurs ne sont pas séparées par des `=`.
 
   --- /feedback ---
 
@@ -51,7 +51,7 @@ person =
 
   --- feedback ---
 
-  Almost. Dictionaries need to begin and end with curly brackets `{` `}`.
+  Presque. Les dictionnaires doivent commencer et se terminer par des accolades `{` `}`.
 
   --- /feedback ---
 
@@ -65,7 +65,7 @@ person = {
 
   --- feedback ---
 
-  Correct! Dictionaries are created with `{}`. Each key and value is separated with `:`, and pairs of `key: value` are separated by `,`. You can also make the dictionary with one line for each pair, to make it easier to read.
+  Correct ! Les dictionnaires sont créés avec `{}`. Chaque clé et chaque valeur sont séparées par `:`, et les paires de `clé: valeur` sont séparées par `,`. Tu peux aussi faire le dictionnaire avec une ligne pour chaque paire, pour faciliter la lecture.
 
   --- /feedback ---
 
