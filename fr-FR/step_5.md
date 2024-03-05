@@ -70,6 +70,8 @@ line_highlights: 71-79
 
 ### Dessiner l'orbite
 
+--- task ---
+
 Va dans ta fonction `dessiner_orbites()` et ajoute l'orbite de la Terre.
 
 --- code ---
