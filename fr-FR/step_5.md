@@ -78,6 +78,8 @@ line_highlights: 71-79
 
 ### Dessiner l'orbite
 
+--- task ---
+
 Va dans ta fonction `dessiner_orbites()` et ajoute l'orbite de la Terre.
 
 --- code ---
@@ -98,6 +100,8 @@ def dessiner_orbites():
     ellipse(width / 2, height / 2, terre['orbite'], terre['orbite'])
 
 --- /code ---
+
+--- /task ---
 
 --- task ---
 

@@ -77,6 +77,8 @@ line_highlights: 71-79
 
 ### Draw the orbit
 
+--- task ---
+
 Go to your `draw_orbits()` function and add the orbit of Earth.
 
 --- code ---
@@ -97,6 +99,8 @@ def draw_orbits():
     ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
 
 --- /code ---
+
+--- /task ---
 
 --- task ---
 
