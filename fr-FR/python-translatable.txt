@@ -1,63 +1,63 @@
-person
+personne
 
 age
 
-height
+hauteur
 
 149.5
 
-hair
+cheveux
 
-brown
+brun
 
-load_planets
+charger_planetes
 
-mercury
+mercure
 
-name
+nom
 
-colour
+couleur
 
-size
+taille
 
-orbit
+orbite
 
-speed
+vitesse
 
 info
 
-draw_orbits
+dessiner_orbites
 
-draw_sun
+dessiner_soleil
 
-draw_planets
+dessiner_planetes
 
-make_planet
+creer_planete
 
-pixel_colour
+couleur_pixel
 
-planet,colour_r,colour_g,colour_b,size,orbit,speed,info
+planete,couleur_r,couleur_g,couleur_b,taille,orbite,vitesse,info
 
 venus
 
-data
+donnees
 
-lines
+lignes
 
-earth
+terre
 
-mountain
+montagne
 
-range
+distance
 
-height
+hauteur
 
-cat
+chat
 
-dog
+chien
 
-rabbit
+lapin
 
-pets
+animaux
 
-planet
+planete
