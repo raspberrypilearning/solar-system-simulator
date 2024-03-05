@@ -99,8 +99,6 @@ def dessiner_orbites():
 
 --- /code ---
 
---- /task ---
-
 --- task ---
 
  **Test :** exécute ton code et vois apparaître l'orbite de la Terre.

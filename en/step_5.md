@@ -98,8 +98,6 @@ def draw_orbits():
 
 --- /code ---
 
---- /task ---
-
 --- task ---
 
  **Test:** Run your code and see the orbit of Earth appear.
