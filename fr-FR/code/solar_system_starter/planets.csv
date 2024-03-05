@@ -1,0 +1,9 @@
+planete,couleur_r,couleur_g,couleur_b,taille,orbite,vitesse,info
+Mercure,165,42,42,15,150,1,La plus petite et la plus rapide des planètes.
+Vénus,255,190,200,30,200,0.75,La planète la plus chaude du système solaire. L'eau se transformerait en vapeur et certains métaux fondraient s'ils étaient là !
+Terre,104,149,197,35,300,0.5,Tu es ici. La seule planète que nous connaissons qui puisse abriter la vie.
+Mars,223,30,38,15,400,0.25,Elle abrite Olympus Mons - la plus haute montagne du système solaire.
+Jupiter,148,26,28,60,500,0.2,La plus grande planète du système solaire, mais avec le jour le plus court - un peu moins de 10 heures.
+Saturne,241,169,78,50,600,0.1,Les anneaux de Saturne sont assez larges pour contenir près de 10 Terres côte à côte. Mais ils ne font qu'une dizaine de mètres de haut !
+Uranus,214,236,239,40,700,0.05,La planète la plus froide du système solaire et la première découverte après l'invention du télescope.
+Neptune,0,105,148,40,800,0.025,La planète la plus éloignée du Soleil. Une journée sur Neptune ne dure que 16 heures, mais une année dure 165 années terrestres !

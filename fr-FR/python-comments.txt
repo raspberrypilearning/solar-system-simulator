@@ -1,0 +1,71 @@
+Fonction charger_planetes
+
+Mettre le code à exécuter une fois ici
+
+Fonction dessiner_orbites
+
+Rendre blanc
+
+Mettre le code pour exécuter chaque image ici
+
+Fonction dessiner_planetes
+
+Mettre le code à exécuter lorsque la souris est pressée ici
+
+Ici, la valeur RVB est convertie en hexadécimal afin de pouvoir être utilisée ultérieurement dans une comparaison de chaînes de caractères
+
+Diviser les données de Vénus
+
+int() pour les nombres entiers
+
+float() pour les décimales
+
+Yellow
+
+2D transformation
+
+Centre the orbit on the centre of the model
+
+Rotate 'speed' degrees every frame
+
+Draw the planet
+
+End the 2D transformation
+
+Mercure
+
+Vénus
+
+Terre
+
+Mars
+
+Jupiter
+
+Saturne
+
+Uranus
+
+Neptune
+
+La plus petite et la plus rapide des planètes.
+
+La planète la plus chaude du système solaire. L'eau se transformerait en vapeur et certains métaux fondraient s'ils étaient là !
+
+Tu es ici. La seule planète que nous connaissons qui puisse abriter la vie.
+
+Elle abrite Olympus Mons - la plus haute montagne du système solaire.
+
+La plus grande planète du système solaire, mais avec le jour le plus court - un peu moins de 10 heures.
+
+Les anneaux de Saturne sont assez larges pour contenir près de 10 Terres côte à côte. Mais ils ne font qu'une dizaine de mètres de haut !
+
+La planète la plus froide du système solaire et la première découverte après l'invention du télescope.
+
+La planète la plus éloignée du Soleil. Une journée sur Neptune ne dure que 16 heures, mais une année dure 165 années terrestres !
+
+Kangchenjunga
+
+Himalaya
+
+8586 mètres
