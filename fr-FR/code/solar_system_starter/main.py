@@ -3,36 +3,36 @@ from p5 import *
 from make_planet import make_planet
 
 
-def draw_sun():
-    fill(255, 255, 0)  # Yellow
+def dessiner_soleil():
+    fill(255, 255, 0)  # Jaune
     ellipse(width / 2, height / 2, 100, 100)
 
 
-# draw_orbits function
+# Fonction dessiner_orbites
 
 
-# draw_planets function
+# Fonction dessiner_planetes
 
 
-# load_planets function
+# Fonction charger_planetes
 
 
 def setup():
-    # Put code to run once here
+    # Mettre le code à exécuter ci-dessous
     size(400, 400)
 
 
 def draw():
-    # Put code to run every frame here
+    # Mettre le code pour exécuter chaque frame ici
     background(0)
     no_stroke()
-    draw_sun()
+    dessiner_soleil()
 
 
 def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    # Mettre le code à exécuter lorsque la souris est pressée ici
+    # Ici, la valeur RVB est convertie en hexadécimal afin de pouvoir être utilisée ultérieurement dans une comparaison de chaînes de caractères
+    couleur_pixel = Color(get(mouse_x, mouse_y)).hex
 
 
 run(frame_rate=60)
