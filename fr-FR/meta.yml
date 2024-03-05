@@ -1,30 +1,30 @@
 ---
-title: Solar system
+title: Le système solaire
 hero_image: images/banner.png
-description: Get to know Python dictionaries by creating a model of the solar system
-meta_title: Python coding projects for kids and teens | Solar system
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Get to know Python dictionaries by creating a model of the solar system.
+description: Apprends les dictionnaires Python en créant un modèle du système solaire
+meta_title: Projets de codage Python pour enfants et adolescents | Le système solaire
+meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Apprends les dictionnaires Python en créant un modèle du système solaire.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-13"
 steps:
   - 
-    title: You will make
+    title: Ce que tu vas faire
   - 
-    title: Create a dictionary
+    title: Créer un dictionnaire
   - 
-    title: Make Mercury
+    title: Créer Mercure
     completion:
       - engaged
   - 
-    title: Make Venus
+    title: Créer Vénus
   - 
-    title: Make Earth
+    title: Créer la Terre
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Questionnaire rapide
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: What next?
+    title: Et ensuite ?
