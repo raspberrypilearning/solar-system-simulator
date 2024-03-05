@@ -1,0 +1,30 @@
+---
+title: Le système solaire
+hero_image: images/banner.png
+description: Apprends les dictionnaires Python en créant un modèle du système solaire
+meta_title: Projets de codage Python pour enfants et adolescents | Le système solaire
+meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Apprends les dictionnaires Python en créant un modèle du système solaire.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-13"
+steps:
+  - title: Ce que tu vas faire
+  - title: Créer un dictionnaire
+  - title: Créer Mercure
+    completion:
+      - engaged
+  - title: Créer Vénus
+  - title: Créer la Terre
+    completion:
+      - internal
+  - title: Questionnaire rapide
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Améliorer ton projet
+  - title: Et ensuite ?
