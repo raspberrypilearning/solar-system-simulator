@@ -1,25 +1,25 @@
-## Make Mercury
+## Maak Mercurius
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you'll put Mercury in orbit of the sun.
+Nu ga je Mercurius in een baan om de zon brengen.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury_click.gif){:width="300px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door een witte ring. Er draait een rode cirkel rond de ring.](images/mercury_click.gif){:width="300px"}
 </div>
 </div>
 
-### Draw Mercury
+### Teken Mercurius
 
-The `make_planet()` function is written in a separate file that is included as part of the starter project and imported into `main.py` for you to use.
+De functie `maak_planeet()` is geschreven in een apart bestand dat is opgenomen als onderdeel van het startproject en geïmporteerd in `main.py` zodat je deze kan gebruiken.
 
-`make_planet()` uses the colour, orbit, size, and speed of a planet to draw the planet orbiting the sun.
+`maak_planeet()` maakt gebruik van de kleur, baan, grootte en snelheid van een planeet om deze te laten draaien rond de zon.
 
 --- task ---
 
-Find the `# draw_planets function` comment. Create the function below it.
+Zoek de `# teken_planeten functie` opmerking. Maak de functie hieronder aan.
 
-Make variables to store the values needed to draw Mercury. Then call `make_planet()`, passing it those values.
+Maak variabelen om de waarden op te slaan die nodig zijn om Mercurius te tekenen. Roep vervolgens `maak_planeet()` aan en geef deze waarden door.
 
 [[[parameters]]]
 
@@ -39,13 +39,13 @@ def draw_planets(): colour = mercury['colour'] orbit = mercury['orbit'] size = m
     )
 --- /code ---
 
-**Tip:** You created your dictionary with one line for each `key: value` pair. You can do the same when passing values to a function to make your code easier to read.
+**Tip:** Je hebt je dictionary gemaakt met één regel voor elk `sleutel: waarde` paar. Je kunt hetzelfde doen bij het doorgeven van waarden aan een functie om je code gemakkelijker te kunnen lezen.
 
 --- /task ---
 
 --- task ---
 
-Add a call to `draw_planets()` in the `draw()` function.
+Voeg een aanroep toe aan `teken_planeten()` in de `draw()` functie.
 
 --- code ---
 ---
@@ -58,29 +58,29 @@ def draw(): # Put code to run every frame here background(0) no_stroke() draw_su
 
 --- task ---
 
-**Test:** Run your code and see Mercury in orbit!
+**Test:** Voer je code uit en zie Mercurius in de ruimte!
 
-![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring.](images/mercury.gif){:width="400px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door een witte ring. Een rode cirkel draait rond de ring.](images/mercury.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
+**Debug:** Als je een bericht krijgt over 'KeyError', controleer dan de spelling van je sleutels in `maak_planeet()`. Zorg ervoor dat de spelling hetzelfde is als in `laad_planeten()`. Of de letters HOOFDLETTERS of kleine letters zijn, is ook belangrijk.
 
-**Debug:** If Mercury doesn't appear:
- - Check that you are calling `draw_planets()` in `draw()`
- - Make sure that that call is after `background(0)`
+**Debug:** Als Mercurius niet verschijnt:
+ - Controleer of je `teken_planeten()` aanroept in `draw()`
+ - Zorg ervoor dat de aanroep na `background(0)`komt
 
-**Debug:** If Mercury is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Debug:** Als Mercurius te groot, te langzaam of niet zichtbaar is, controleer dan of je `teken_planeten()` code hetzelfde is als in het voorbeeld. Controleer vooral of de sleutels in de juiste volgorde staan.
 
 --- /task ---
 
-### Tell users about the planet
+### Vertel gebruikers over de planeet
 
-Users will click on Mercury and your program will print the information in `mercury['info']`.
+Gebruikers klikken op Mercurius en je programma drukt de informatie af in `mercurius['info']`.
 
-The `mouse_pressed()` function was included as part of the starter project. It contains code to get the hex value of a colour a user clicked on. You can use this to tell which planet they have clicked.
+De functie `mouse_pressed()` is opgenomen als onderdeel van het startproject. Het bevat code om de hexadecimale waarde te verkrijgen van een kleur waarop een gebruiker heeft geklikt. Je kunt dit gebruiken om te zeggen op welke planeet ze hebben geklikt.
 
 --- task ---
 
-Find `mouse_pressed()` and add an `if` statement. Have it `print` Mercury's name and information when the user clicks on the planet.
+Vind `mouse_pressed()` en voeg een `if` statement toe. Laat het de naam en informatie van Mercurius `afdrukken` wanneer de gebruiker op de planeet klikt.
 
 --- code ---
 ---
@@ -97,17 +97,17 @@ def mouse_pressed(): # Put code to run when the mouse is pressed here pixel_colo
 
 --- /task ---
 
-When the user clicks on a pixel, the hex colour value of the pixel is retrieved and compared against the colours of the planets. If the pixel colour is the same as a planet's colour, information about that planet is displayed.
+Wanneer de gebruiker op een pixel klikt, wordt de hex-kleurwaarde van de pixel opgehaald en vergeleken met de kleuren van de planeten. Als de pixelkleur hetzelfde is als de kleur van een planeet, wordt informatie over die planeet weergegeven.
 
 --- task ---
 
-**Test:** Run your code and click on Mercury to see its information print out. If it's moving too fast, change the `frame_rate` value in the `run()` function to slow the whole model down.
+**Test:** Voer je code uit en klik op Mercurius om de informatie te zien. Als hij te snel beweegt, verander dan de waarde `frame_rate` in de functie `run()` om het hele model te vertragen.
 
-![A black background with a yellow circle, surrounded by a white ring. A red circle is orbiting around the ring. Information about Mercury appears in the text output.](images/mercury_click.gif){:width="400px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door een witte ring. Een rode cirkel draait rond de ring. Informatie over Mercurius verschijnt in de tekstuitvoer.](images/mercury_click.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Mercury, check your `if` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Debug:** Als er niets gebeurt wanneer je op Mercurius klikt, controleer dan je `if` statement. Zorg ervoor dat het er precies zo uitziet als in het bovenstaande voorbeeld. Controleer of je `==` hebt en niet `=`.
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys (`'name'` and `'info'`) in `mouse_pressed()`. Make sure the spelling is the same in `load_planets()`.
+**Debug:** Als je een bericht krijgt over 'KeyError', Controleer de spelling van je sleutels (`'naam'` en `'info'`) in `mouse_pressed()`. Zorg ervoor dat de spelling hetzelfde is in `laad_planeten()`.
 
 --- /task ---
 
