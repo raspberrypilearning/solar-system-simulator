@@ -2,16 +2,16 @@ from p5 import *
 import __main__
 
 
-def make_planet(colour, orbit, size, speed):
+def maak_planeet(kleur, baan, grootte, snelheid):
     no_stroke()
     fill(colour)
-    # 2D transformation
+    # 2D transformatie
     push_matrix()
-    # Centre the orbit on the centre of the model
+    # Centreer de baan op het midden van het model
     translate(width / 2, height / 2)
-    # Rotate 'speed' degrees every frame
-    rotate(radians((frame_count * speed) % 360))
-    # Draw the planet
-    ellipse(orbit / 2, 0, size, size)
-    # End the 2D transformation
+    # Draai 'snelheid' graden elk frame
+    rotate(radians((frame_count * snelheid) % 360))
+    # Teken de planeet
+    ellipse(baan / 2, 0, grootte, grootte)
+    # Beëindig de 2D-transformatie
     pop_matrix()
