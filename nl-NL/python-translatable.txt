@@ -1,63 +1,63 @@
-person
+persoon
 
-age
+leeftijd
 
-height
+lengte
 
 149.5
 
-hair
+haarkleur
 
-brown
+bruin
 
-load_planets
+laad_planeten
 
-mercury
+mercurius
 
-name
+naam
 
-colour
+kleur
 
-size
+grootte
 
-orbit
+baan
 
-speed
+snelheid
 
 info
 
-draw_orbits
+teken_banen
 
-draw_sun
+teken_zon
 
-draw_planets
+teken_planeten
 
-make_planet
+maak_planeet
 
-pixel_colour
+pixel_kleur
 
-planet,colour_r,colour_g,colour_b,size,orbit,speed,info
+planeet,kleur_r,kleur_g,kleur_b,grootte,baan,snelheid,info
 
 venus
 
-data
+gegevens
 
-lines
+lijnen
 
-earth
+aarde
 
-mountain
+berg
 
-range
+bereik
 
-height
+lengte
 
-cat
+kat
 
-dog
+hond
 
-rabbit
+konijn
 
-pets
+huisdieren
 
-planet
+planeet
