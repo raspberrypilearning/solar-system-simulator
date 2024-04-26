@@ -1,18 +1,18 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
 
-You made a lot of dictionaries in your project. Which of these is the right way to create a dictionary about a person?
+Je hebt veel dictionaries gemaakt in je project. Welke van deze is de juiste manier om een dictionary over een persoon te maken?
 
 --- choices ---
 
@@ -23,7 +23,7 @@ person = ['age', 12, 'hair', 'brown']
 
   --- feedback ---
 
-  Not quite, this is a list. Lists are made with square brackets (`[]`).
+  Niet helemaal, dit is een lijst. Lijsten worden gemaakt met vierkante haken (`[]`).
 
   --- /feedback ---
 
@@ -37,7 +37,7 @@ person = {
 
   --- feedback ---
 
-  Close! But, when making a dictionary, keys and their values aren't separated by `=`.
+  Bijna! Maar als je een dictionary maakt, worden sleutels en hun waarden niet gescheiden door `=`.
 
   --- /feedback ---
 
@@ -51,7 +51,7 @@ person =
 
   --- feedback ---
 
-  Almost. Dictionaries need to begin and end with curly brackets `{` `}`.
+  Bijna. Dictionaries moeten beginnen en eindigen met accolades `{` `}`.
 
   --- /feedback ---
 
@@ -65,7 +65,7 @@ person = {
 
   --- feedback ---
 
-  Correct! Dictionaries are created with `{}`. Each key and value is separated with `:`, and pairs of `key: value` are separated by `,`. You can also make the dictionary with one line for each pair, to make it easier to read.
+  Juist! Dictionaries worden gemaakt met `{}`. Elke sleutel en waarde wordt gescheiden door `:`, en paren van `sleutel: waarde` worden gescheiden door `,`. Je kunt de dictionary ook met één regel voor elk paar maken, zodat het gemakkelijker leesbaar is.
 
   --- /feedback ---
 
