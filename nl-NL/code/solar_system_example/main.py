@@ -79,7 +79,7 @@ def laad_planeten():
     planeet = lijnen[2].split(',') # Splits de gegevens van Venus
     venus = {
         'naam': planeet[0],
-        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])).hex,
+        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
         'grootte': int(planeet[4]), # int() voor hele getallen
         'baan': int(planeet[5]),
         'snelheid': float(planeet[6]), # float() voor decimalen
@@ -89,7 +89,7 @@ def laad_planeten():
     planeet = lijnen[3].split(',')
     aarde = {
         'naam': planeet[0],
-        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])).hex,
+        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
         'grootte': int(planeet[4]),
         'baan': int(planeet[5]),
         'snelheid': float(planeet[6]),
