@@ -1,24 +1,24 @@
-load_planets function
+laad_planeten functie
 
-Put code to run once here
+Zet de code om eenmalig uit te voeren hier onder
 
-draw_orbits function
+teken_banen functie
 
-Make it white
+Maak het wit
 
-Put code to run every frame here
+Zet hier code om bij elk frame uit te voeren
 
-draw_planets function
+teken_planeten functie
 
-Put code to run when the mouse is pressed here
+Zet code hier die moet worden uitgevoerd wanneer de muis wordt ingedrukt
 
-Here the RGB value is converted to Hex so it can be used in a string comparison later
+Hier wordt de RGB-waarde omgezet naar Hex, zodat deze later in een stringvergelijking kan worden gebruikt
 
-Split Venus' data
+Splits de gegevens van Venus
 
-int() for whole numbers
+int() voor hele getallen
 
-float() for decimals
+float() voor decimalen
 
 Yellow
 
@@ -32,40 +32,40 @@ Draw the planet
 
 End the 2D transformation
 
-Mercury
+Mercurius
 
 Venus
 
-Earth
+Aarde
 
 Mars
 
 Jupiter
 
-Saturn
+Saturnus
 
 Uranus
 
-Neptune
+Neptunus
 
-The smallest and fastest planet.
+De kleinste en snelste planeet.
 
-The hottest planet in the solar system. Water would turn to steam and some metals would melt just by being there!
+De warmste planeet in het zonnestelsel. Water zou in stoom veranderen en sommige metalen zouden smelten als ze er waren!
 
-You are here — the only planet we know of that can support life.
+Je bent hier – de enige planeet die we kennen die leven kan ondersteunen.
 
-Home of Olympus Mons — the highest mountain in the Solar System.
+Thuisbasis van Olympus Mons – de hoogste berg in het zonnestelsel.
 
-The largest planet in the Solar System but with the shortest day — a little under ten hours.
+De grootste planeet in het zonnestelsel, maar met de kortste dag: iets minder dan tien uur.
 
-Saturn's rings are wide enough to fit almost 10 Earths side-by-side. But they're only around 10 metres high!
+De ringen van Saturnus zijn breed genoeg om bijna tien aardes naast elkaar in te passen. Maar ze zijn slechts ongeveer 10 meter hoog!
 
-The coldest planet in the Solar System and the first discovered after the telescope was invented.
+De koudste planeet in het zonnestelsel en de eerste die werd ontdekt nadat de telescoop was uitgevonden.
 
-The farthest planet from the Sun. Neptune's day is only 16 hours — but its year is 165 Earth years!
+De verste planeet van de zon. De dag van Neptunus duurt slechts 16 uur – maar het jaar ervan is 165 aardse jaren!
 
 Kangchenjunga
 
-Himalayas
+Himalaya
 
-8586 metres
+8586 meter
