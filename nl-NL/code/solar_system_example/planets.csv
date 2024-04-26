@@ -1,0 +1,9 @@
+planeet,kleur_r,kleur_g,kleur_b,grootte,baan,snelheid,info
+Mercurius,165,42,42,15,150,1,De kleinste en snelste planeet.
+Venus,255,190,200,30,200,0.75,De warmste planeet in het zonnestelsel. Water zou in stoom veranderen en sommige metalen zouden smelten als ze er waren!
+Aarde,104,149,197,35,300,0.5,Je bent hier – de enige planeet die we kennen die leven kan ondersteunen.
+Mars,223,30,38,15,400,0.25,Huis van Olympus Mons - de hoogste berg van het zonnestelsel.
+Jupiter,148,26,28,60,500,0.2,De grootste planeet in het zonnestelsel, maar met de kortste dag: iets minder dan tien uur.
+Saturnus,241,169,78,50,600,0.1,De ringen van Saturnus zijn breed genoeg om bijna tien aardes naast elkaar in te passen. Maar ze zijn slechts ongeveer 10 meter hoog!
+Uranus,214,236,239,40,700,0.05,De koudste planeet in het zonnestelsel en de eerste die werd ontdekt nadat de telescoop was uitgevonden.
+Neptunus,0,105,148,40,800,0.025,De verste planeet van de zon. De dag van Neptunus duurt slechts 16 uur – maar het jaar ervan is 165 aardse jaren!
