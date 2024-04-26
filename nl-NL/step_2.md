@@ -1,93 +1,93 @@
-## Create a dictionary
+## Maak een dictionary
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To start, you'll collect some information about Mercury and draw its orbit.
+Om te beginnen verzamel je wat informatie over Mercurius en teken je zijn baan.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png){:width="300px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door een witte ring.](images/mercury_orbit.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Solar system starter project](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Open het [Zonnestelsel startproject](https://editor.raspberrypi.org/en/projects/solar-system-starter){:target="_blank"}. De Raspberry Pi code-editor wordt geopend in een ander browsertabblad.
 
-If you have a Raspberry Pi account, you can click on the **Save button** to save a copy to your `Projects` library.
+Als je een Raspberry Pi-account hebt, kun je op de **Save knop** klikken om een kopie op te slaan in je `Projects` bibliotheek.
 
 --- /task ---
 
-### Make a dictionary
+### Maak een dictionary
 
-Python dictionaries let you look up a **key** and get its **value**. That could be a word and its meaning, which are both text. But you could also use a text key (like `'distance'`) to get a value that's a number, or anything else you can store in Python.
+Python dictionaries laten je een **sleutel** opzoeken en de **waarde** ophalen. Dat kan een woord en de betekenis ervan zijn, die beide tekst zijn. Maar je kunt ook een tekstsleutel gebruiken (zoals `'afstand'`) om een waarde te krijgen die een getal is, of iets anders dat je in Python kunt opslaan.
 
 --- collapse ---
 ---
 title: Python dictionaries
 ---
 
-A dictionary in Python stores pairs of **keys** and **values**.
+Een dictionary in Python slaat paren van **sleutels** en **waarden**op.
 
-Keys and values can be almost any value you can store in Python. Although lists and dictionaries cannot be keys.
+Sleutels en waarden kunnen bijna elke waarde zijn die je in Python kunt opslaan. Behalve lijsten en dictionaries; die kunnen geen sleutels zijn.
 
-You can use a key to get its associated value.
+Je kunt een sleutel gebruiken om de bijbehorende waarde te krijgen.
 
-To make a dictionary, you use curly brackets `{}`, with `key: value` pairs inside. A pair is a key, followed by a colon (`:`), followed by the value connected to that key. For example:
+Om een dictionary te maken, gebruik je accolades `{}`, met de `sleutel: waarde` paren erin. Een paar is een sleutel, gevolgd door een dubbele punt (`:`), gevolgd door de waarde die aan die sleutel is gekoppeld. Bijvoorbeeld:
 
 ```python
-person = {
-    'age': 12,
-    'height': 149.5,
-    'hair': 'brown',
+persoon = {
+    'leeftijd': 12,
+    'lengte': 149.5,
+    'haarkleur': 'bruin',
 }
 ```
-Here, `age`, `height`, and `hair` are keys. You can use them to look up their values with square brackets `[]`. For example:
+Hier zijn `leeftijd`, `lengte`en `haarkleur` de sleutels. Je kunt ze gebruiken om hun waarden op te zoeken met vierkante haken `[]`. Bijvoorbeeld:
 
 ```python
 print(person['hair'])
 ```
-This will print out the value `brown`. --- /collapse ---
+Hierdoor wordt de waarde `bruin`afgedrukt. --- /collapse ---
 
 --- task ---
 
-Find the `# load_planets function` comment in the starter project. Create the function below the comment. Inside the function, make a global `mercury` dictionary. Then, add information about Mercury to the dictionary.
+Zoek het `# laad_planeten functie` commentaar in het starterproject. Maak de functie aan onder de opmerking. Maak binnen de functie een globale `mercurius` dictionary. Voeg vervolgens informatie over Mercurius toe aan de dictionary.
 
 <table>
 <thead>
   <tr>
-    <th>Key</th>
-    <th>Value</th>
+    <th>Sleutel</th>
+    <th>Waarde</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>name</td>
-    <td>Mercury</td>
+    <td>naam</td>
+    <td>Mercurius</td>
   </tr>
   <tr>
-    <td>colour</td>
+    <td>kleur</td>
     <td>Color(165, 42, 42)</td>
   </tr>
   <tr>
-    <td>size</td>
+    <td>grootte</td>
     <td>15</td>
   </tr>
   <tr>
-    <td>orbit</td>
+    <td>baan</td>
     <td>150</td>
   </tr>
   <tr>
-    <td>speed</td>
+    <td>snelheid</td>
     <td>1</td>
   </tr>
   <tr>
     <td>info</td>
-    <td>The smallest and fastest planet.</td>
+    <td>De kleinste en snelste planeet.</td>
   </tr>
 </tbody>
 </table>
 
-Curly brackets `{}` are used to start and end the dictionary. A colon `:` is used to separate the key and the value(s). A comma `,` is used to separate each dictionary item.
+Accolades `{}` worden gebruikt om de dictionary te starten en te beëindigen. Een dubbele punt `:` wordt gebruikt om de sleutel en de waarde(n) te scheiden. Een komma `,` wordt gebruikt om elk dictionary-item te scheiden.
 
 --- code ---
 ---
@@ -107,15 +107,15 @@ def load_planets(): global mercury
     }
 --- /code ---
 
-**Tip:** You can put each `key: value` pair on its own line. This makes the code easier to read, but be sure to keep it all inside the curly brackets `{}`.
+**Tip:** Je kunt elk `sleutel: waarde` paar op een eigen regel zetten. Dit maakt de code makkelijker te lezen, maar zorg er wel voor dat alles binnen de accolades `{}`blijft.
 
 --- /task ---
 
-Using a dictionary lets you keep all the information about Mercury in one place. This makes it easier to find it, and change it if you need to.
+Met behulp van een dictionary kun je alle informatie over Mercurius op één plek bewaren. Dit maakt het gemakkelijker om het te vinden en te wijzigen als dat nodig is.
 
 --- task ---
 
-Call `load_planets()` in your `setup()` function.
+Roep `laad_planeten()` aan in je `setup()` functie.
 
 --- code ---
 ---
@@ -128,17 +128,17 @@ def setup(): # Put code to run once here size(400, 400) load_planets()
 
 --- /task ---
 
-### Draw Mercury's orbit
+### Teken de baan van Mercurius
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Modelling orbits:**</span> The real planets' orbits are not perfect circles — they're the shape of an ellipse. But using circles makes the model easier to build!
+<span style="color: #0faeb0">**Banen modelleren:**</span> De banen van de echte planeten zijn geen perfecte cirkels; ze hebben de vorm van een ellips. Maar door cirkels te gebruiken, is het model gemakkelijker te bouwen!
 </p>
 
-You can get a value from a dictionary by putting its key in square brackets `[]`, just like getting a list item by its index. For example, `mercury['size']` would get you the matching value `15`.
+Je kunt een waarde uit een dictionary halen door de sleutel ervan tussen vierkante haakjes te zetten `[]`, net zoals je een lijstitem ophaalt via zijn index. Met `mercurius['grootte']` krijg je bijvoorbeeld de overeenkomende waarde `15`.
 
 --- task ---
 
-Find the `#draw_orbits function` comment. Create the `draw_orbits()` function below it. Then draw Mercury's orbit as an `ellipse` centered in the middle  of the model `width/2` and `height/2`. The size of the `ellipse` will be `mercury['orbit']`, which is stored in your dictionary as `150`.
+Zoek de `#teken_banen functie` opmerking. Maak eronder de functie `teken_banen()`. Teken vervolgens de baan van Mercuria als een `ellips` gecentreerd in het midden van het model `breedte/2` en `hoogte/2`. De grootte van de `ellips` zal `mercurius['baan']` zijn, die is opgeslagen in je dictionary als `150`.
 
 [[[processing-python-ellipse]]]
 
@@ -158,7 +158,7 @@ def draw_orbits(): no_fill() stroke(255)  # Make it white
 
 --- task ---
 
-Call your `draw_orbits()` function from your `draw()` function.
+Roep je functie `teken_banen()` aan vanuit je functie `draw()`.
 
 --- code ---
 ---
@@ -173,21 +173,21 @@ def draw(): # Put code to run every frame here background(0) no_stroke() draw_su
 
 --- task ---
 
- **Test:** Run your code and see the orbit of Mercury appear.
+ **Test:** Voer je code uit en zie de baan van Mercurius verschijnen.
 
-![A black background with a yellow circle, surrounded by a white ring.](images/mercury_orbit.png)
+![Een zwarte achtergrond met een gele cirkel, omgeven door een witte ring.](images/mercury_orbit.png)
 
-**Debug:** If you see a message about `mercury` being 'not defined':
- - Check your `load_planets()` function to be sure that it declares `mercury` as `global`
- - Check that `load_planets()` is called in `setup()`
+**Debug:** Als je een bericht ziet dat `mercurius` 'niet gedefinieerd' is:
+ - Controleer de functie `laad_planeten()` om er zeker van te zijn dat deze `mercurius` declareert als `global`
+ - Controleer of `laad_planeten()` wordt aangeroepen in `setup()`
 
-**Debug:** If the orbit doesn't appear:
- - Check that you have called `draw_orbits()` in your `draw()` function
- - Check `draw_orbits()` to be sure you have used `stroke(255)` to make the ellipse white
+**Debug:** Als de baan niet verschijnt:
+ - Controleer of je `teken_banen()` hebt aangeroepen in je `draw()` functie
+ - Controleer `teken_banen()` om er zeker van te zijn dat je `stroke(255)` hebt gebruikt om de ellips wit te maken
 
-**Debug:** If the orbit is a filled circle, instead of a ring, check you have `no_fill()` in your `draw_orbits()` function.
+**Debug:** Als de baan een gevulde cirkel is, in plaats van een ring, controleer dan of je `no_fill()` in je `teken_banen()` functie hebt gezet.
 
-**Debug:** If you get a `bad input` error, check that you have a `:` in between the keys and values of your `mercury` dictionary, and that each line (except the very last one) has a comma.
+**Debug:** Als je een `bad input` fout krijgt, controleer dan of er een `:` tussen de sleutels en waarden staat in je `mercurius` dictionary, en dat elke regel (behalve de allerlaatste) een komma heeft.
 
 --- /task ---
 
