@@ -46,7 +46,7 @@ Hier zijn `leeftijd`, `lengte`en `haarkleur` de sleutels. Je kunt ze gebruiken o
 ```python
 print(persoon['haarkleur'])
 ```
-Hierdoor wordt de waarde `bruin`afgedrukt.
+Hierdoor wordt de waarde `bruin` afgedrukt.
 --- /collapse ---
 
 --- task ---

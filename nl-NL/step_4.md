@@ -5,7 +5,7 @@
 Het is tijd voor Venus om mee te doen met Mercurius in jouw model.
 </div>
 <div>
-![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Op de ringen draaien rode en roze cirkels rond de gele cirkel. Informatie over Venus verschijnt in de tekstuitvoer.](images/venus_info.gif)
+![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Op de ringen draaien rode en roze cirkels rond de gele cirkel. Informatie over Venus verschijnt in de tekstuitvoer.](images/venus_info.gif){:width="300px"}
 </div>
 </div>
 
