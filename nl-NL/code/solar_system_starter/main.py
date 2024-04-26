@@ -1,38 +1,38 @@
 #!/bin/python3
 from p5 import *
-from make_planet import make_planet
+from make_planet import maak_planeet
 
 
-def draw_sun():
-    fill(255, 255, 0)  # Yellow
+def teken_zon():
+    fill(255, 255, 0) # Geel
     ellipse(width / 2, height / 2, 100, 100)
 
 
-# draw_orbits function
+# teken_baan functie
 
 
-# draw_planets function
+# teken_planeten functie
 
 
-# load_planets function
+# laad_planeten functie
 
 
 def setup():
-    # Put code to run once here
+    # Zet de code om eenmalig uit te voeren hier onder
     size(400, 400)
 
 
 def draw():
-    # Put code to run every frame here
+    # Zet hier code om bij elk frame uit te voeren
     background(0)
     no_stroke()
-    draw_sun()
+    teken_zon()
 
 
 def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    # Zet code hier die moet worden uitgevoerd wanneer de muis wordt ingedrukt
+    # Hier wordt de RGB-waarde omgezet naar Hex, zodat deze later in een stringvergelijking kan worden gebruikt
+    pixel_kleur = Color(get(mouse_x, mouse_y)).hex
 
 
 run(frame_rate=60)
