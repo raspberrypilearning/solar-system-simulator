@@ -1,22 +1,22 @@
-## Make Venus
+## Maak Venus
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time for Venus to join Mercury in your model.
+Het is tijd voor Venus om mee te doen met Mercurius in jouw model.
 </div>
 <div>
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle. Information about Venus appears in the text output.](images/venus_info.gif)
+![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Op de ringen draaien rode en roze cirkels rond de gele cirkel. Informatie over Venus verschijnt in de tekstuitvoer.](images/venus_info.gif)
 </div>
 </div>
 
-Values for other planets are in the `planets.csv` file.
+Waarden voor andere planeten staan in het bestand `planets.csv`.
 
 --- collapse ---
 ---
-title: What's in planets.csv?
+title: Wat zit er in planets.csv?
 ---
 
-The file `planets.csv` has a line of headings, followed by one line for each planet in the solar system. The colour of a planet is made up of three values — one each for red, green, and blue. For example:
+Het bestand `planets.csv` heeft een rij kopjes, gevolgd door één regel voor elke planeet in het zonnestelsel. De kleur van een planeet bestaat uit drie waarden: één voor rood, groen en blauw. Bijvoorbeeld:
 
 ```
 planet,colour_r,colour_g,colour_b,size,orbit,speed,info
@@ -27,11 +27,11 @@ Earth,104,149,197,35,300,0.5,You are here — the only planet we know of that ca
 
 --- /collapse ---
 
-### Load the data
+### Laad de gegevens
 
 --- task ---
 
-Add a `global` variable for Venus to your `load_planets()` function:
+Voeg een `global` variabele voor Venus toe aan je `laad_planeten()` functie:
 
 --- code ---
 ---
@@ -45,7 +45,7 @@ def load_planets(): global mercury, venus --- /code ---
 
 --- task ---
 
-Below your `mercury` dictionary, load `planets.csv` to a `data` variable. Then use the `splitlines()` function to split the text string in `data` into a list. Each line in the string will become an item in the list.
+Laad onder je `mercurius` dictionary `planets.csv` naar een `data` variabele. Gebruik vervolgens de functie `splitlines()` om de tekstreeks in `data` in een lijst te splitsen. Elke regel in de string wordt een item in de lijst.
 
 [[[generic-python-file-read]]]
 
@@ -71,11 +71,11 @@ line_highlights: 44-46
 
 --- /task ---
 
-Now you have the data in your program. Next, you'll make that data into dictionaries, like the one you made for Mercury. `lines[2]` has the data for Venus, and `lines[3]` has the data for Earth.
+Nu heb je de gegevens in je programma. Vervolgens maak je van die gegevens dictionaries, zoals degene die je voor Mercurius hebt gemaakt. `lijnen[2]` heeft de gegevens voor Venus, en `lijnen[3]` heeft de gegevens voor de aarde.
 
 --- task ---
 
-Split `lines[2]` at the commas and store it in `planet`. Then print `planet` out.
+Splits `regels[2]` bij de komma's en sla deze op in `planeet`. Druk vervolgens `planeet` af.
 
 --- code ---
 ---
@@ -95,23 +95,23 @@ line_highlights: 48-49
 
 --- task ---
 
-**Test:** Try running your code, and look at the list of data it prints out. Notice that the numbers are inside  quotes `'`. This shows that Python sees them as text strings, instead of numbers it could do maths with.
+**Test:** Probeer je code uit te voeren en kijk naar de data die hij afgedrukt. Merk op dat de getallen zich binnen aanhalingstekens `'` bevinden. Dit laat zien dat Python ze ziet als tekstreeksen, in plaats van getallen waarmee het zou kunnen rekenen.
 
-![The information about Venus, printed out as a list.](images/venus_dict.png)
+![De informatie over Venus, afgedrukt als een lijst.](images/venus_dict.png)
 
-**Debug:** If your `planet` prints out a list with only one item, then check that you have `','` in the `()` of `lines[2].split()`.
+**Debug:** Als je `planeet` een lijst afdrukt met slechts één item, controleer dan of je `','` in de `()` van `regels[2].split()` hebt.
 
-**Debug:** If you see a message about `split` being 'not defined', check that you have included `lines[2].` before it.
+**Debug:** Als je een bericht ziet dat `split` 'not defined' is, controleer dan of je `regels[2].` ervoor hebt toegevoegd.
 
-**Debug:** If you see a message like `'list' object has no attribute 'split'`, check that you have included `[2]` after `lines`.
+**Debug:** Als je een bericht ziet als `'list' object heeft geen attribuut 'split'`, controleer dan of je `[ 2]` hebt opgenomen na `regels`.
 
-**Tip:** Now that you've used it for testing, you can comment-out `print(planet)` with `#`.
+**Tip:** Nu je het hebt gebruikt om het te testen, kun je `print(planeet)` met `#` in een comment veranderen.
 
 --- /task ---
 
 --- task ---
 
-Load the list of values from `planet` into a `venus` dictionary. As you are making the dictionary, change any numbers from text to numbers. Use `int()` for whole numbers and `float()` for decimals.
+Laad de lijst met waarden van `planeet` in een `venus` dictionary. Terwijl je de dictionary maakt, verander je alle getallen van tekst in getallen. Gebruik `int()` voor hele getallen en `float()` voor decimalen.
 
 --- code ---
 ---
@@ -139,9 +139,9 @@ line_highlights: 50-57
 
 --- task ---
 
-### Draw the orbit
+### Teken de baan
 
-Go to your `draw_orbits()` function and add the orbit of Venus.
+Ga naar je `teken_banen()` functie en voeg de baan van Venus toe.
 
 --- code ---
 ---
@@ -160,37 +160,37 @@ def draw_orbits(): no_fill() stroke(255) # Make it white
 
 --- task ---
 
-**Test:** Run your code and see the orbit of Venus appear.
+**Test:** Voer je code uit en zie de baan van Venus verschijnen.
 
-![A black background with a yellow circle, surrounded by two white rings. A red circle is orbiting the yellow circle on the inside ring.](images/mercury_venus_orbit.gif)
+![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Een rode cirkel draait rond de gele cirkel op de binnenring.](images/mercury_venus_orbit.gif)
 
-**Debug:** If you see a message about `venus` being 'not defined', check `load_planets()`. Make sure you have declared `venus`  as `global`.
+**Debug:** Als je een bericht ziet dat `venus` 'not defined' is, controleer dan `laad_planeten()`. Zorg ervoor dat je `venus`  hebt aangeduid als `global`.
 
 --- /task ---
 
-### Draw the planet
+### Teken de planeet
 
 --- task ---
 
-Go to your `draw_planets()` function. Add a `make_planet()` call, passing it the values for Venus.
+Ga naar je `teken_planeten()` functie. Voeg een `maak_planeten()` aanroep toe, waarbij je de waarden voor Venus doorgeeft.
 
-**Tip:** You can copy and paste the code you used to make Mercury to save some time and typing. Just change all the mentions of `mercury` to `venus` in the copy.
+**Tip:** Je kunt de code die je hebt gebruikt om Mercurius te maken, kopiëren en plakken om wat tijd en typwerk te besparen. Verander gewoon alle vermeldingen van `mercurius` in `venus` in de kopie.
 
 --- collapse ---
 ---
-title: Copy and pasting
+title: Kopiëren en plakken
 ---
 
-You can copy text and paste a copy in another place.
+Je kunt tekst kopiëren en een kopie op een andere plaats plakken.
 
- 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose **Edit** > **Copy**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows or Linux, or <kbd>Cmd</kbd>+<kbd>C</kbd> on a Mac.
- 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
+ 1. Selecteer de tekst die je wilt kopiëren door de muis erover te slepen terwijl je de linkerknop ingedrukt houdt.
+ 2. Kopieer de tekst via het menu van je browser - kies **Bewerken** > **Kopieer**. Je kunt ook een sneltoets gebruiken - <kbd>Ctrl</kbd>+<kbd>C</kbd> op Windows of Linux, of <kbd>Cmd</kbd>+<kbd>C</kbd> op een Mac.
+ 3. Verplaats je tekstcursor (de knipperende lijn die laat zien waar je typt) naar waar je een kopie van de tekst wilt plaatsen.
+ 4. Kopieer de tekst via het menu van je browser - kies **Bewerken** > **Plakken**. Je kunt ook een sneltoets gebruiken - <kbd>Ctrl</kbd>+<kbd>V</kbd> op Windows of Linux, of <kbd>Cmd</kbd>+<kbd>V</kbd> op een Mac.
 
-Then you can make any changes you need to the copy.
+Vervolgens kun je de gewenste wijzigingen in de kopie aanbrengen.
 
-![Code being copied and changed as described.](images/code_copy.gif){:width="300px"}
+![Code wordt gekopieerd en gewijzigd zoals beschreven.](images/code_copy.gif){:width="300px"}
 
 --- /collapse ---
 
@@ -226,23 +226,23 @@ def draw_planets(): colour = mercury['colour'] orbit = mercury['orbit'] size = m
 
 --- task ---
 
-**Test:** Run your code and check that Venus orbits the Sun.
+**Test:** Voer je code uit en controleer of Venus om de zon draait.
 
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle.](images/mercury_venus.gif){:width="400px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Op de ringen draaien rode en roze cirkels rond de gele cirkel.](images/mercury_venus.gif){:width="400px"}
 
-**Debug:** If you get a message about 'KeyError', check the spelling of your keys in `make_planet()`. Make sure the spelling is the same in `load_planets()`. Whether the letters are UPPER CASE or lower case is important too.
+**Debug:** Als je een bericht krijgt over 'KeyError', controleer dan de spelling van je sleutels in `maak_planeet()`. Zorg ervoor dat de spelling hetzelfde is in `laad_planeten()`. Of de letters HOOFDLETTERS of kleine letters zijn, is ook belangrijk.
 
-**Debug:** If any planet is too big, too slow, or not visible, check that your `draw_planets()` code is the same as the example. In particular, check that the keys are in the right order.
+**Debug:** Als een planeet te groot, te langzaam of niet zichtbaar is, controleer dan of je `teken_planeten()` code hetzelfde is als in het voorbeeld. Controleer vooral of de sleutels in de juiste volgorde staan.
 
 --- /task ---
 
-### Tell users about Venus
+### Vertel gebruikers over Venus
 
-Like Mercury, Venus should print out an interesting fact when it's clicked on.
+Net als Mercurius zou Venus een interessant feit moeten afdrukken wanneer erop wordt geklikt.
 
 --- task ---
 
-In `mouse_pressed()` add `elif` statements after the `if` statement you made for Mercury. Have these check for Venus' colour. Then, if there's a match, `print()` the right fact.
+In `mouse_pressed()` voeg een `elif` statement toe na de `if` opdracht die je voor Mercurius hebt gemaakt. Laat deze controleren op de kleur van Venus. Als er dan een overeenkomst is, `print()` het juiste feit.
 
 --- code ---
 ---
@@ -264,11 +264,11 @@ def mouse_pressed(): # Put code to run when the mouse is pressed here pixel_colo
 
 --- task ---
 
-**Test:** Run your code. Click on Venus to see its information print out.
+**Test:** Voer je code uit. Klik op Venus om zijn informatie te zien.
 
-![A black background with a yellow circle, surrounded by two white rings. On the rings, red and pink circles are orbiting around the yellow circle. Information about Venus appears in the text output.](images/venus_info.gif){:width="400px"}
+![Een zwarte achtergrond met een gele cirkel, omgeven door twee witte ringen. Op de ringen draaien rode en roze cirkels rond de gele cirkel. Informatie over Venus verschijnt in de tekstuitvoer.](images/venus_info.gif){:width="400px"}
 
-**Debug:** If nothing happens when you click on Venus, check its `elif` statement. Make sure it looks exactly like the example above. Check that you have `==` and not `=`.
+**Debug:** Als er niets gebeurt wanneer je op Venus klikt, controleer dan de instructie `elif`. Zorg ervoor dat het er precies zo uitziet als in het bovenstaande voorbeeld. Controleer of je `==` hebt en niet `=`.
 
 --- /task ---
 
