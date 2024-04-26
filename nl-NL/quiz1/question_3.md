@@ -62,7 +62,7 @@ huisdieren[1]
 
 - ( )
 ```
-['cat', 'dog', 'rabbit']
+['kat', 'hond', 'konijn']
 ```
 
   --- feedback ---
