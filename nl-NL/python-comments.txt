@@ -1,0 +1,71 @@
+laad_planeten functie
+
+Zet de code om eenmalig uit te voeren hier onder
+
+teken_banen functie
+
+Maak het wit
+
+Zet hier code om bij elk frame uit te voeren
+
+teken_planeten functie
+
+Zet code hier die moet worden uitgevoerd wanneer de muis wordt ingedrukt
+
+Hier wordt de RGB-waarde omgezet naar Hex, zodat deze later in een stringvergelijking kan worden gebruikt
+
+Splits de gegevens van Venus
+
+int() voor hele getallen
+
+float() voor decimalen
+
+Yellow
+
+2D transformation
+
+Centre the orbit on the centre of the model
+
+Rotate 'speed' degrees every frame
+
+Draw the planet
+
+End the 2D transformation
+
+Mercurius
+
+Venus
+
+Aarde
+
+Mars
+
+Jupiter
+
+Saturnus
+
+Uranus
+
+Neptunus
+
+De kleinste en snelste planeet.
+
+De warmste planeet in het zonnestelsel. Water zou in stoom veranderen en sommige metalen zouden smelten als ze er waren!
+
+Je bent hier – de enige planeet die we kennen die leven kan ondersteunen.
+
+Thuisbasis van Olympus Mons – de hoogste berg in het zonnestelsel.
+
+De grootste planeet in het zonnestelsel, maar met de kortste dag: iets minder dan tien uur.
+
+De ringen van Saturnus zijn breed genoeg om bijna tien aardes naast elkaar in te passen. Maar ze zijn slechts ongeveer 10 meter hoog!
+
+De koudste planeet in het zonnestelsel en de eerste die werd ontdekt nadat de telescoop was uitgevonden.
+
+De verste planeet van de zon. De dag van Neptunus duurt slechts 16 uur – maar het jaar ervan is 165 aardse jaren!
+
+Kangchenjunga
+
+Himalaya
+
+8586 meter
