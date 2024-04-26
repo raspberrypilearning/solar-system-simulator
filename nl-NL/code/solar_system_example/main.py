@@ -1,131 +1,131 @@
 #!/bin/python3
 from p5 import *
-from make_planet import make_planet
+from make_planet import maak_planeet
 
 
-def draw_sun():
-    fill(255, 255, 0)  # Yellow
+def teken_zon():
+    fill(255, 255, 0) # Geel
     ellipse(width / 2, height / 2, 100, 100)
 
 
-# draw_orbits function
-def draw_orbits():
+# teken_banen functie
+def teken_banen():
     no_fill()
-    stroke(255)  # Make it white
+    stroke(255) # Maak het wit
 
-    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
-    ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+    ellipse(width / 2, height / 2, mercurius['baan'], mercurius['baan'])
+    ellipse(width / 2, height / 2, venus['baan'], venus['baan'])
+    ellipse(width / 2, height / 2, aarde['baan'], aarde['baan'])
 
-# draw_planets function
+# teken_planeten functie
 
 
-def draw_planets():
+def teken_planeten():
 
-    colour = mercury['colour']
-    orbit = mercury['orbit']
-    size = mercury['size']
-    speed = mercury['speed']
+    kleur = mercurius['kleur']
+    baan = mercurius['baan']
+    grootte = mercurius['grootte']
+    snelheid = mercurius['snelheid']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    maak_planeet(
+        kleur,
+        baan,
+        grootte,
+        snelheid
     )
 
-    colour = venus['colour']
-    orbit = venus['orbit']
-    size = venus['size']
-    speed = venus['speed']
+    kleur = venus['kleur']
+    baan = venus['baan']
+    grootte = venus['grootte']
+    snelheid = venus['snelheid']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    maak_planeet(
+        kleur,
+        baan,
+        grootte,
+        snelheid
     )
 
-    colour = earth['colour']
-    orbit = earth['orbit']
-    size = earth['size']
-    speed = earth['speed']
+    kleur = aarde['kleur']
+    baan = aarde['baan']
+    grootte = aarde['grootte']
+    snelheid = aarde['snelheid']
 
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
+    maak_planeet(
+        kleur,
+        baan,
+        grootte,
+        snelheid
     )
 
 
-# load_planets function
-def load_planets():
-    global mercury, venus, earth
+# laad_planeten functie
+def laad_planeten():
+    global mercurius, venus, aarde
 
-    mercury = {
-        'name': 'Mercury',
-        'colour': Color(165, 42, 42),
-        'size': 15,
-        'orbit': 150,
-        'speed': 1,
-        'info': 'The smallest, and fastest, planet.'
+    mercurius = {
+        'naam': 'Mercurius',
+        'kleur': Color(165, 42, 42),
+        'grootte': 15,
+        'baan': 150,
+        'snelheid': 1,
+        'info': 'De kleinste en snelste planeet.'
     }
 
-    with open('planets.csv') as f:
+    with open('planets.csv', 'w') as f:
         data = f.read()
-        lines = data.splitlines()
+        lijnen = data.splitlines()
 
-    planet = lines[2].split(',')  # Split Venus' data
+    planeet = lijnen[2].split(',') # Splits de gegevens van Venus
     venus = {
-        'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),  # int() for whole numbers
-        'orbit': int(planet[5]),
-        'speed': float(planet[6]),  # float() for decimals
-        'info': planet[7]
+        'naam': planeet[0],
+        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
+        'grootte': int(planeet[4]), # int() voor hele getallen
+        'baan': int(planeet[5]),
+        'snelheid': float(planet[6]), # float() voor decimalen
+        'info': planeet[7]
     }
 
-    planet = lines[3].split(',')
-    earth = {
-        'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),
-        'orbit': int(planet[5]),
-        'speed': float(planet[6]),
-        'info': planet[7]
+    planeet = lijnen[3].split(',')
+    aarde = {
+        'naam': planeet[0],
+        'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
+        'grootte': int(planeet[4]),
+        'baan': int(planeet[5]),
+        'snelheid': float(planeet[6]),
+        'info': planeet[7]
     }
 
 
 def setup():
-    # Put code to run once here
+    # Zet de code om eenmalig uit te voeren hier onder
     size(400, 400)
-    load_planets()
+    laad_planeten()
 
 
 def draw():
-    # Put code to run every frame here
+    # Zet hier code om bij elk frame uit te voeren
     background(0)
     no_stroke()
-    draw_sun()
-    draw_orbits()
-    draw_planets()
+    teken_zon()
+    teken_banen()
+    teken_planeten()
 
 
 def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    # Zet code hier die moet worden uitgevoerd wanneer de muis wordt ingedrukt
+    # Hier wordt de RGB-waarde omgezet naar Hex, zodat deze later in een stringvergelijking kan worden gebruikt
+    pixel_kleur = Color(get(mouse_x, mouse_y)).hex
 
-    if pixel_colour == mercury['colour'].hex:
-        print(mercury['name'])
-        print(mercury['info'])
-    elif pixel_colour == venus['colour'].hex:
-        print(venus['name'])
+    if pixel_kleur == mercurius['kleur'].hex:
+        print(mercurius['naam'])
+        print(mercurius['info'])
+    elif pixel_kleur == venus['kleur'].hex:
+        print(venus['naam'])
         print(venus['info'])
-    elif pixel_colour == earth['colour'].hex:
-        print(earth['name'])
-        print(earth['info'])
+    elif pixel_kleur == aarde['kleur'].hex:
+        print(aarde['naam'])
+        print(aarde['info'])
 
 
 run(frame_rate=60)
