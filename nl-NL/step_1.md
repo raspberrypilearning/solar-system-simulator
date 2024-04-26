@@ -1,18 +1,18 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Vul onze enquête in</a> om onze Code Editor te helpen verbeteren!
 </div>
 
-## You will make
+## Wat ga je maken
 
-Get to know Python dictionaries by creating a model of the solar system.
+Leer Python dictionaries kennen door een model van het zonnestelsel te maken.
 
 --- no-print ---
 
 --- task ---
-### Play ▶️
+### Afspelen ▶️
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to create the model. Try clicking on each planet to see facts about them.
+Voer het programma uit om het model te maken. Probeer op elke planeet te klikken om feiten over hen te zien.
 </div>
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/solar-system-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
@@ -24,18 +24,18 @@ Run the program to create the model. Try clicking on each planet to see facts ab
 --- print-only --- ![Completed project.](images/completed_preview.png) --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The limits of models:**</span> Even very advanced models leave out details to make them easier to build and run. In fact, it's not possible to make an accurate model of the whole solar system as all the planets pull on each other because of gravity. The maths to predict exactly where they will go has not been invented yet as a result.
+<span style="color: #0faeb0">**De limieten van modellen:**</span> Zelfs zeer geavanceerde modellen laten details weg om ze gemakkelijker te bouwen en uit te voeren. In feite is het niet mogelijk om een accuraat model van het hele zonnestelsel te maken, omdat alle planeten aan elkaar trekken vanwege de zwaartekracht. De wiskunde om precies te voorspellen waar ze naartoe zullen gaan, is daarom nog niet uitgevonden.
 
-<br>This model uses the order of the planets, and their speeds and sizes. But, for example, Mercury needs to be slow enough so you can click on it. So the model makes Mercury faster than the other planets, but not as fast as it really is.
+<br>Dit model gebruikt de volgorde van de planeten en hun snelheden en afmetingen. Maar Mercuriuus moet bijvoorbeeld langzaam genoeg gaan zodat je erop kunt klikken. Het model maakt Mercurius dus sneller dan de andere planeten, maar niet zo snel als het in het echt is.
 </p>
 
-You will:
- - Use **dictionaries** to store and look up data
- - Load data from a file into **dictionaries**
- - Create an animated, interactive, solar system model using the `p5` library
+Je gaat:
+ - **Dictionaries** gebruiken om gegevens op te slaan en op te zoeken
+ - Gegevens uit een bestand laden in **dictionaries**
+ - Een geanimeerd, interactief zonnestelselmodel maken met behulp van de `p5` bibliotheek
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Dictionaries:**</span> When you make a Python dictionary, it stores things you can look up later. This is a lot like a normal dictionary. But the Python version can store much more than the meanings of words!
+<span style="color: #0faeb0">**Dictionaries:**</span> Wanneer je een Python-dictionary maakt, worden er dingen opgeslagen die je later kunt opzoeken. Dit lijkt veel op een normaal woordenboek. Maar de Python-versie kan veel meer opslaan dan alleen de betekenis van woorden!
 </p>
 
 ![](http://code.org/api/hour/begin_rp_solar.png)
