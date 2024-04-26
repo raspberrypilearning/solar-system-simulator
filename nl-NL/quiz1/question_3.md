@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-Your program took values from a list and stored them in a dictionary. Now, you have a program with this code:
+Je programma nam waarden uit een lijst en heeft ze opgeslagen in een dictionary. Nu heb je een programma met deze code:
 
 --- code ---
 ---
@@ -14,34 +14,34 @@ language: python
 
 pets = ['cat', 'dog', 'rabbit']
 
-person = { 'age': 12, 'hair': 'brown', 'pet': pets[1] }
+persoon = { 'leeftijd': 12, 'haar': 'bruin', 'huisdier': huisdieren[1] }
 
 print(person['pet'])
 
 --- /code ---
 
-If you run the program, which of these would you expect it to display?
+Als je het programma uitvoert, welke van deze opties verwacht je dan dat deze wordt weergegeven?
 
 --- choices ---
 
 - (x)
 ```
-dog
+hond
 ```
   --- feedback ---
 
-  That's right! The `person` dictionary has saved 'dog' — which has the index `1` in the `pets` list — with the `pet` key.
+  Dat klopt! De `persoon` dictionary heeft 'hond' opgeslagen — met de index `1` in de `huisdieren` lijst — met de `huisdier`-sleutel.
 
   --- /feedback ---
 
 - ( )
 ```
-cat
+kat
 ```
 
   --- feedback ---
 
-  Close — 'cat' is the first item in `pets`, but list indexes don't start from `1`.
+  Niet helemaal - 'kat' is het eerste item in `huisdieren`, maar lijstindexen beginnen niet vanaf `1`.
 
   --- /feedback ---
 
@@ -52,7 +52,7 @@ pets[1]
 
   --- feedback ---
 
-  Not exactly. Python will get the string stored at `pets[1]` and store that string in `person` with the `pet` key.
+  Niet helemaal. Python zal de string opslaan bij `huisdieren[1]` en die string opslaan in `persoon` met de `huisdier`-sleutel.
 
   --- /feedback ---
 
@@ -63,7 +63,7 @@ pets[1]
 
   --- feedback ---
 
-  Not quite. This is the whole `pets` list. But only one item from that list was added to the dictionary.
+  Niet helemaal. Dit is de hele `huisdieren` lijst. Maar slechts één item uit die lijst werd aan de dictionary toegevoegd.
 
   --- /feedback ---
 
