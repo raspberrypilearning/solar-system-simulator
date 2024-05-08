@@ -4,7 +4,7 @@ import __main__
 
 def maak_planeet(kleur, baan, grootte, snelheid):
     no_stroke()
-    fill(colour)
+    fill(kleur)
     # 2D transformatie
     push_matrix()
     # Centreer de baan op het midden van het model
