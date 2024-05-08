@@ -4,7 +4,7 @@ import __main__
 
 def creer_planete(couleur, orbite, taille, vitesse):
     no_stroke()
-    fill(colour)
+    fill(couleur)
     # Transformation 2D
     push_matrix()
     # Centrer l'orbite sur le centre du modèle
