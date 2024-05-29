@@ -61,13 +61,13 @@ line_highlights: 71-79
         'info': planeet[7]
     }
 
-    planeet = lijnen[3].split(',') 
-    aarde = { 
+    planet = lijnen[3].split(',') 
+    earth = { 
         'naam': planeet[0],
         'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
         'grootte': int(planeet[4]), 
         'baan': int(planeet[5]),
-        'snelheid': float(planeet[6]), 
+        'snelheid': float(planet[6]), 
         'info': planeet[7]
     }
 
@@ -116,7 +116,7 @@ def teken_banen():
 
 --- task ---
 
-Ga naar je `teken_planeten()` functie. Voeg een `maak_planeten()` aanroep toe, waarbij je de waarden voor Aarde doorgeeft. Net als bij Venus kun je hier code kopiëren en plakken om jezelf wat werk te besparen.
+Ga naar je `teken_planeten()` functie. Voeg een `maak_planeet()` aanroep toe, waarbij je de waarden voor Aarde doorgeeft. Net als bij Venus kun je hier code kopiëren en plakken om jezelf wat werk te besparen.
 
 --- code ---
 ---
