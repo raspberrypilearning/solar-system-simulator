@@ -8,7 +8,7 @@ def teken_zon():
     ellipse(width / 2, height / 2, 100, 100)
 
 
-# teken_baan functie
+# teken_banen functie
 
 
 # teken_planeten functie
