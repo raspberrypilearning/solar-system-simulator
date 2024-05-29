@@ -13,7 +13,7 @@ Nu ga je Mercurius in een baan om de zon brengen.
 
 De functie `maak_planeet()` is geschreven in een apart bestand dat is opgenomen als onderdeel van het startproject en geïmporteerd in `main.py` zodat je deze kan gebruiken.
 
-`maak_planeet()` maakt gebruik van de kleur, baan, grootte en snelheid van een planeet om deze te laten draaien rond de zon.
+`maak_planeet()` maakt gebruik van de kleur, baan, grootte en snelheid van een planeet om deze draaiend rond de zon te tekenen.
 
 --- task ---
 
