@@ -26,7 +26,7 @@ Voer het programma uit om het model te maken. Probeer op elke planeet te klikken
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**De limieten van modellen:**</span> Zelfs zeer geavanceerde modellen laten details weg om ze gemakkelijker te bouwen en uit te voeren. In feite is het niet mogelijk om een accuraat model van het hele zonnestelsel te maken, omdat alle planeten aan elkaar trekken vanwege de zwaartekracht. De wiskunde om precies te voorspellen waar ze naartoe zullen gaan, is daarom nog niet uitgevonden.
 
-<br>Dit model gebruikt de volgorde van de planeten en hun snelheden en afmetingen. Maar Mercuriuus moet bijvoorbeeld langzaam genoeg gaan zodat je erop kunt klikken. Het model maakt Mercurius dus sneller dan de andere planeten, maar niet zo snel als het in het echt is.
+<br>Dit model gebruikt de volgorde van de planeten en hun snelheden en afmetingen. Maar Mercurius moet bijvoorbeeld langzaam genoeg gaan zodat je erop kunt klikken. Het model maakt Mercurius dus sneller dan de andere planeten, maar niet zo snel als het in het echt is.
 </p>
 
 Je gaat:
