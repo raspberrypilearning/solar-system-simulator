@@ -116,7 +116,7 @@ def teken_banen():
 
 --- task ---
 
-Ga naar je `teken_planeten()` functie. Voeg een `maak_planeten()` aanroep toe, waarbij je de waarden voor Aarde doorgeeft. Net als bij Venus kun je hier code kopiëren en plakken om jezelf wat werk te besparen.
+Ga naar je `teken_planeten()` functie. Voeg een `maak_planeet()` aanroep toe, waarbij je de waarden voor Aarde doorgeeft. Net als bij Venus kun je hier code kopiëren en plakken om jezelf wat werk te besparen.
 
 --- code ---
 ---
