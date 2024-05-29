@@ -61,13 +61,13 @@ line_highlights: 71-79
         'info': planeet[7]
     }
 
-    planet = lijnen[3].split(',') 
-    earth = { 
+    planeet = lijnen[3].split(',') 
+    aarde = { 
         'naam': planeet[0],
         'kleur': Color(int(planeet[1]), int(planeet[2]), int(planeet[3])),
         'grootte': int(planeet[4]), 
         'baan': int(planeet[5]),
-        'snelheid': float(planet[6]), 
+        'snelheid': float(planeet[6]), 
         'info': planeet[7]
     }
 
