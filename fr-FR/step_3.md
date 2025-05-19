@@ -31,8 +31,8 @@ line_numbers: true
 line_number_start: 17
 line_highlights: 18-29
 ---
-# Fonction dessiner_orbites
-def dessiner_orbites():
+# Fonction dessiner_planetes
+def dessiner_planetes():
     couleur = mercure['couleur']
     orbite = mercure['orbite']
     taille = mercure['taille']
